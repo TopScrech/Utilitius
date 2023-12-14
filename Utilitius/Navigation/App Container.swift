@@ -5,8 +5,7 @@ struct AppContainer: View {
     
     var body: some View {
         NavigationStack(path: $navState.path) {
-//            AppList() // For PWS
-            ProductivityEnvironment()
+            AppList()
                 .withNavDestinations()
         }
         .environment(navState)

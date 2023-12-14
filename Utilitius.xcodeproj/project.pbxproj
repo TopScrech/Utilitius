@@ -12,7 +12,6 @@
 		F30A583B2AD315140070B906 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A583A2AD315140070B906 /* MathView.swift */; };
 		F30AD1CA2ADEFB4E0080E879 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AD1C92ADEFB4E0080E879 /* Sorting.swift */; };
 		F30AD1CC2ADEFC300080E879 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F30AD1CB2ADEFC300080E879 /* ScrechKit */; };
-		F30B61D12B29148B00F447B4 /* Productivity Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30B61D02B29148B00F447B4 /* Productivity Environment.swift */; };
 		F30DED0B2A615E4F00EAF963 /* Button Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30DED0A2A615E4F00EAF963 /* Button Create.swift */; };
 		F317E76C2A90E5E700D5B904 /* Intentory Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76B2A90E5E700D5B904 /* Intentory Item.swift */; };
 		F317E76E2A90E63B00D5B904 /* Inventory View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76D2A90E63B00D5B904 /* Inventory View.swift */; };
@@ -208,7 +207,6 @@
 		F30627C92AAB053900A65D63 /* NFCMessageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCMessageCard.swift; sourceTree = "<group>"; };
 		F30A583A2AD315140070B906 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
 		F30AD1C92ADEFB4E0080E879 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
-		F30B61D02B29148B00F447B4 /* Productivity Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Productivity Environment.swift"; sourceTree = "<group>"; };
 		F30DED0A2A615E4F00EAF963 /* Button Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button Create.swift"; sourceTree = "<group>"; };
 		F317E76B2A90E5E700D5B904 /* Intentory Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intentory Item.swift"; sourceTree = "<group>"; };
 		F317E76D2A90E63B00D5B904 /* Inventory View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inventory View.swift"; sourceTree = "<group>"; };
@@ -395,14 +393,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F30B61CF2B29144500F447B4 /* PWS */ = {
-			isa = PBXGroup;
-			children = (
-				F30B61D02B29148B00F447B4 /* Productivity Environment.swift */,
-			);
-			path = PWS;
-			sourceTree = "<group>";
-		};
 		F30B61D22B2915A800F447B4 /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
@@ -769,7 +759,6 @@
 			isa = PBXGroup;
 			children = (
 				F30B61D22B2915A800F447B4 /* Bundle */,
-				F30B61CF2B29144500F447B4 /* PWS */,
 				F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */,
 				F30450B42A9135C1006C6037 /* App List.swift */,
 				F3A43DB22AE3B6980072F7FA /* AlertKit.swift */,
@@ -1186,7 +1175,6 @@
 				F357BA1A2ADC6FA300DB249F /* Math Utilities.swift in Sources */,
 				F3C022C02AD7D2FB008013A2 /* Goida Memory View.swift in Sources */,
 				F3ABCA022ADAA1C100A414AC /* Goida Network View.swift in Sources */,
-				F30B61D12B29148B00F447B4 /* Productivity Environment.swift in Sources */,
 				F3C022BD2AD7CAF2008013A2 /* OrientationVM.swift in Sources */,
 				F394C5072AD5410900C56527 /* GoidaListLink.swift in Sources */,
 				F3C5FC8D2AA9DBDA000D9CAD /* NFCMessagesView.swift in Sources */,

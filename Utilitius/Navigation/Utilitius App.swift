@@ -7,13 +7,14 @@ struct UtilitiusApp: App {
     
     init() {
         do {
-            container = try ModelContainer(for: InventoryItem.self,
-                                           Tag.self,
-                                           Note.self,
-                                           Reminder.self,
-                                           Countdown.self,
-                                           Subscription.self,
-                                           NFCMessage.self
+            container = try ModelContainer(
+                for: InventoryItem.self,
+                Tag.self,
+                Note.self,
+                Reminder.self,
+                Countdown.self,
+                Subscription.self,
+                NFCMessage.self
             )
         } catch {
             fatalError("Failed to create model container")
