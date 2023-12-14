@@ -45,14 +45,15 @@ struct ProductivityEnvironment: View {
                 Label("Stopwatch", systemImage: "stopwatch")
             }
             
-            NavigationView {
-                TagList()
-            }
-            .tag(ProductivityTabs.tags)
-            .tabItem {
-                Label("Tags", systemImage: "tag")
-            }
+//            NavigationView {
+//                TagList()
+//            }
+//            .tag(ProductivityTabs.tags)
+//            .tabItem {
+//                Label("Tags", systemImage: "tag")
+//            }
         }
+        .ignoresSafeArea()
     }
 }
 

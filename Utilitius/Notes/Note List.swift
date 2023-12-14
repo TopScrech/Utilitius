@@ -105,7 +105,7 @@ struct NoteList: View {
             }
 #if os(iOS)
             ToolbarItem(placement: .navigationBarTrailing) {
-                EditButton()
+//                EditButton()
             }
 #endif
         }

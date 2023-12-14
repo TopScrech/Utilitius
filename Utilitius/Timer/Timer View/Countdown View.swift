@@ -9,6 +9,8 @@ struct CountdownView: View {
     
     var body: some View {
         VStack {
+            Spacer()
+            
             HStack {
                 Spacer()
                 Spacer()
@@ -26,10 +28,10 @@ struct CountdownView: View {
             
             TextField("Name", text: $countdown.name)
             
-            TextEditor(text: $countdown.note)
-                .frame(height: 160)
-                .textInputAutocapitalization(.sentences)
-                .background(.secondary)
+//            TextEditor(text: $countdown.note)
+//                .frame(height: 160)
+//                .textInputAutocapitalization(.sentences)
+//                .background(.secondary)
             
             DatePicker("Date", selection: $countdown.deadline)
                 .datePickerStyle(.graphical)
