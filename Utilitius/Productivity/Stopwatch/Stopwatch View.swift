@@ -4,20 +4,20 @@ struct StopwatchView: View {
     private var stopwatch = StopwatchVM()
     
     var body: some View {
+        let shortestLap = stopwatch.lapTimes.first {
+            $0.time == stopwatch.lapTimes.map { $0.time }.min()
+        }
+        
+        let longestLap = stopwatch.lapTimes.last {
+            $0.time == stopwatch.lapTimes.map { $0.time }.max()
+        }
+        
         VStack {
             Text(stopwatch.timeString(stopwatch.timeElapsed))
                 .largeTitle()
                 .monospaced()
                 .numericTransition()
                 .animation(.easeOut, value: stopwatch.timeElapsed)
-            
-            let shortestLap = stopwatch.lapTimes.first {
-                $0.time == stopwatch.lapTimes.map { $0.time }.min()
-            }
-            
-            let longestLap = stopwatch.lapTimes.last {
-                $0.time == stopwatch.lapTimes.map { $0.time }.max()
-            }
             
             List {
                 Section {

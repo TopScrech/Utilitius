@@ -408,6 +408,7 @@
 		F30DED082A60CB4B00EAF963 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F398BEDA2B291EB700F01836 /* Torch */,
 				F3CAABD42A60BAC3000B2495 /* Preview Data.swift */,
 				F3CAAC0B2A60BE1E000B2495 /* System Alerts.swift */,
 				F36B92C92A979F6D000658CE /* Logger.swift */,
@@ -758,14 +759,13 @@
 		F3CAAB9D2A60B9F7000B2495 /* Utilitius */ = {
 			isa = PBXGroup;
 			children = (
-				F30B61D22B2915A800F447B4 /* Bundle */,
 				F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */,
-				F30450B42A9135C1006C6037 /* App List.swift */,
+				F30B61D22B2915A800F447B4 /* Bundle */,
 				F3A43DB22AE3B6980072F7FA /* AlertKit.swift */,
 				F3CAABD22A60BAC3000B2495 /* SwiftData Models */,
-				F398BEDA2B291EB700F01836 /* Torch */,
 				F3CAABD62A60BAC3000B2495 /* Navigation */,
 				F3CAABD82A60BAC3000B2495 /* Home */,
+				F3D8C1142B2B968000C7B0A9 /* Productivity */,
 				F386B43F2AC438C200F6C2BB /* Calculator */,
 				F3DFB7CF2AEB165D00191EAC /* Subscriptions */,
 				F359DB4E2AC6BADF0064F55C /* True or Not */,
@@ -774,13 +774,9 @@
 				F367D4D32AE26F8C0088DA7A /* YouTube Downloader */,
 				F3AE03DC2AEAE75D00559F5D /* Reminder */,
 				F38A644B2AE0503000A72651 /* Voice Memos */,
-				F3A1F4462AD8963600C85355 /* Stopwatch */,
 				F3ECD38F2A90E4FC00CF14F1 /* Inventory */,
 				F3308D482ABC4D4400837C8F /* Morse */,
 				F3ACF38E2AA7D42C002B4638 /* NFC */,
-				F3CAABCF2A60BAC3000B2495 /* Tags */,
-				F3CAAC082A60BE1E000B2495 /* Notes */,
-				F3CAABDE2A60BAC4000B2495 /* Timer */,
 				F3CAABE72A60BAC4000B2495 /* Settings */,
 				F3B49AE02A92AF280065B5EC /* Developer Utilities */,
 				F30DED082A60CB4B00EAF963 /* Other */,
@@ -841,6 +837,7 @@
 		F3CAABD82A60BAC3000B2495 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F30450B42A9135C1006C6037 /* App List.swift */,
 				F321D1F82AE6569C005ABC51 /* AppListIcon.swift */,
 				F359DB4C2AC6B7250064F55C /* AppList Card.swift */,
 				F3CE3EB12A91413A00218E01 /* AppCard SF.swift */,
@@ -920,6 +917,17 @@
 				F3D296172AF3C70400ED43A0 /* Reminder Card.swift */,
 			);
 			path = Reminder;
+			sourceTree = "<group>";
+		};
+		F3D8C1142B2B968000C7B0A9 /* Productivity */ = {
+			isa = PBXGroup;
+			children = (
+				F3CAAC082A60BE1E000B2495 /* Notes */,
+				F3CAABDE2A60BAC4000B2495 /* Timer */,
+				F3A1F4462AD8963600C85355 /* Stopwatch */,
+				F3CAABCF2A60BAC3000B2495 /* Tags */,
+			);
+			path = Productivity;
 			sourceTree = "<group>";
 		};
 		F3DFB7CF2AEB165D00191EAC /* Subscriptions */ = {
