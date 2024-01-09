@@ -33,7 +33,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "b39bf064f70cd114ae193bcab7510706a79fbce0"
+        "revision" : "a87f95a7ab173b1c26e87c2dfb8b1393043ff2ae"
       }
     },
     {
@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/scinfu/SwiftSoup.git",
       "state" : {
-        "revision" : "8b6cf29eead8841a1fa7822481cb3af4ddaadba6",
-        "version" : "2.6.1"
+        "revision" : "f83c097597094a04124eb6e0d1e894d24129af87",
+        "version" : "2.7.0"
       }
     },
     {
@@ -68,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/alexeichhorn/YouTubeKit.git",
       "state" : {
-        "revision" : "8748eddb22c8ea78858fdb4653bd568054a0de1a",
-        "version" : "0.1.9"
+        "revision" : "f67f4c3dd53b85a5ce94d16a246613d4dd7faa32",
+        "version" : "0.2.0"
       }
     }
   ],

@@ -3,19 +3,21 @@ import SwiftData
 
 @main
 struct UtilitiusApp: App {
-    let container: ModelContainer
+    private let container: ModelContainer
     
     init() {
+        let schema = Schema([
+            InventoryItem.self,
+            Tag.self,
+            Note.self,
+            Reminder.self,
+            Countdown.self,
+            Subscription.self,
+            NFCMessage.self
+        ])
+        
         do {
-            container = try ModelContainer(
-                for: InventoryItem.self,
-                Tag.self,
-                Note.self,
-                Reminder.self,
-                Countdown.self,
-                Subscription.self,
-                NFCMessage.self
-            )
+            container = try ModelContainer(for: schema)
         } catch {
             fatalError("Failed to create model container")
         }

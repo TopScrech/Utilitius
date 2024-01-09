@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1510"
-   version = "2.2">
+   LastUpgradeVersion = "1520"
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -14,20 +14,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F3CAAB9A2A60B9F7000B2495"
-               BuildableName = "Utilitius.app"
-               BlueprintName = "Utilitius"
+               BlueprintIdentifier = "F3A1F4532AD92D2D00C85355"
+               BuildableName = "Utilitius watchOS.app"
+               BlueprintName = "Utilitius watchOS"
                ReferencedContainer = "container:Utilitius.xcodeproj">
             </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <AutocreatedTestPlanReference>
-            </AutocreatedTestPlanReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
@@ -37,30 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F3CAABAE2A60B9FA000B2495"
-               BuildableName = "UtilitiusTests.xctest"
-               BlueprintName = "UtilitiusTests"
-               ReferencedContainer = "container:Utilitius.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F3CAABB82A60B9FA000B2495"
-               BuildableName = "UtilitiusUITests.xctest"
-               BlueprintName = "UtilitiusUITests"
-               ReferencedContainer = "container:Utilitius.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -76,9 +43,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F3CAAB9A2A60B9F7000B2495"
-            BuildableName = "Utilitius.app"
-            BlueprintName = "Utilitius"
+            BlueprintIdentifier = "F3A1F4532AD92D2D00C85355"
+            BuildableName = "Utilitius watchOS.app"
+            BlueprintName = "Utilitius watchOS"
             ReferencedContainer = "container:Utilitius.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -111,9 +78,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F3CAAB9A2A60B9F7000B2495"
-            BuildableName = "Utilitius.app"
-            BlueprintName = "Utilitius"
+            BlueprintIdentifier = "F3A1F4532AD92D2D00C85355"
+            BuildableName = "Utilitius watchOS.app"
+            BlueprintName = "Utilitius watchOS"
             ReferencedContainer = "container:Utilitius.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
