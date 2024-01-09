@@ -7,6 +7,7 @@ struct UtilitiusApp: App {
     
     init() {
         let schema = Schema([
+            MultiboardItem.self,
             InventoryItem.self,
             Tag.self,
             Note.self,

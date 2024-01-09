@@ -15,6 +15,7 @@ enum NavDestinations: Hashable {
     case toMorse
     case toGoida24
     case toStopwatch
+    case toMultiboard
     case toVoiceMemos
     case toInventoryItem(_ item: InventoryItem)
     case toMath

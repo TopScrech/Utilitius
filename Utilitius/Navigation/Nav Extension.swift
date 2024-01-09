@@ -10,7 +10,8 @@ extension View {
             case .toNote(let note):
                 NoteView(note)
                 
-            case .toXcodes: Xcodes_View()
+            case .toXcodes: XcodesView()
+            case .toMultiboard: MultiboardList()
             case .toBuildTime: BuildTimeView()
             case .toHttpStatusCodes: StatusCodesView()
             case .toFrameworkList: FrameworkListView()

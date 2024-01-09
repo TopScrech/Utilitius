@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct AppList_Section <Content: View>: View {
+struct ApplistSection <Content: View>: View {
     private let header: LocalizedStringKey
     private let icon: String
     private let content: Content
@@ -33,6 +33,6 @@ struct AppList_Section <Content: View>: View {
 }
 
 #Preview {
-    AppList_Section("Preview", icon: "hammer.fill") {}
+    ApplistSection("Preview", icon: "hammer.fill") {}
         .padding(.horizontal)
 }

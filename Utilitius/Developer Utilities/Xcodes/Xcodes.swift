@@ -1,6 +1,6 @@
 import ScrechKit
 
-struct Xcodes_View: View {
+struct XcodesView: View {
     @Bindable private var model = XcodesVM()
     
     @AppStorage("showReleaseDate") private var showReleaseDate = false
@@ -206,6 +206,6 @@ This is not an official Apple service.
 
 #Preview {
     NavigationView {
-        Xcodes_View()
+        XcodesView()
     }
 }

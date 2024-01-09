@@ -166,6 +166,10 @@
 		F3E1BDF22AEAC81200E78037 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3E1BDF12AEAC81200E78037 /* ScrechKit */; };
 		F3E23AC52AD7EEA2004EB064 /* Goida Test List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E23AC42AD7EEA2004EB064 /* Goida Test List.swift */; };
 		F3E5E7162ACFF8300007BD3A /* Location VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E5E7152ACFF8300007BD3A /* Location VM.swift */; };
+		F3ED95DF2B4D440A00A490FC /* Multiboard Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED95DE2B4D440A00A490FC /* Multiboard Item.swift */; };
+		F3ED95E02B4D440F00A490FC /* Multiboard Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED95DE2B4D440A00A490FC /* Multiboard Item.swift */; };
+		F3ED95E22B4D442900A490FC /* Multiboard List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED95E12B4D442900A490FC /* Multiboard List.swift */; };
+		F3ED95E42B4D444C00A490FC /* Multiboard Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED95E32B4D444C00A490FC /* Multiboard Card.swift */; };
 		F3FDFECF2AE1D9E400BCF2B8 /* OTP VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFECE2AE1D9E400BCF2B8 /* OTP VM.swift */; };
 		F3FDFED12AE1DA2700BCF2B8 /* OTP Code View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED02AE1DA2700BCF2B8 /* OTP Code View.swift */; };
 		F3FDFED32AE1DAF800BCF2B8 /* OTP Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED22AE1DAF800BCF2B8 /* OTP Extension.swift */; };
@@ -345,6 +349,9 @@
 		F3DFB7D22AEB169A00191EAC /* Sabscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sabscription.swift; sourceTree = "<group>"; };
 		F3E23AC42AD7EEA2004EB064 /* Goida Test List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Test List.swift"; sourceTree = "<group>"; };
 		F3E5E7152ACFF8300007BD3A /* Location VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location VM.swift"; sourceTree = "<group>"; };
+		F3ED95DE2B4D440A00A490FC /* Multiboard Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiboard Item.swift"; sourceTree = "<group>"; };
+		F3ED95E12B4D442900A490FC /* Multiboard List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiboard List.swift"; sourceTree = "<group>"; };
+		F3ED95E32B4D444C00A490FC /* Multiboard Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiboard Card.swift"; sourceTree = "<group>"; };
 		F3FDFECE2AE1D9E400BCF2B8 /* OTP VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP VM.swift"; sourceTree = "<group>"; };
 		F3FDFED02AE1DA2700BCF2B8 /* OTP Code View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Code View.swift"; sourceTree = "<group>"; };
 		F3FDFED22AE1DAF800BCF2B8 /* OTP Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Extension.swift"; sourceTree = "<group>"; };
@@ -760,6 +767,7 @@
 			isa = PBXGroup;
 			children = (
 				F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */,
+				F3ED95DD2B4D43FE00A490FC /* Multiboard */,
 				F30B61D22B2915A800F447B4 /* Bundle */,
 				F3A43DB22AE3B6980072F7FA /* AlertKit.swift */,
 				F3CAABD22A60BAC3000B2495 /* SwiftData Models */,
@@ -948,6 +956,16 @@
 			);
 			name = Inventory;
 			path = Home/Inventory;
+			sourceTree = "<group>";
+		};
+		F3ED95DD2B4D43FE00A490FC /* Multiboard */ = {
+			isa = PBXGroup;
+			children = (
+				F3ED95DE2B4D440A00A490FC /* Multiboard Item.swift */,
+				F3ED95E12B4D442900A490FC /* Multiboard List.swift */,
+				F3ED95E32B4D444C00A490FC /* Multiboard Card.swift */,
+			);
+			path = Multiboard;
 			sourceTree = "<group>";
 		};
 		F3FDFECD2AE1D9B400BCF2B8 /* OTP */ = {
@@ -1161,6 +1179,7 @@
 				F3D296182AF3C70400ED43A0 /* Reminder Card.swift in Sources */,
 				F3ABCA052ADAA30A00A414AC /* Network VM.swift in Sources */,
 				F3A1F4892AD934C200C85355 /* Nav Extension Watch.swift in Sources */,
+				F3ED95E02B4D440F00A490FC /* Multiboard Item.swift in Sources */,
 				F3A1F46E2AD92E3500C85355 /* Intentory Item.swift in Sources */,
 				F3DAB3112AD96E4600B8462C /* Stopwatch Laps.swift in Sources */,
 				F3A1F47A2AD92EEC00C85355 /* Stopwatch View.swift in Sources */,
@@ -1238,11 +1257,13 @@
 				F3A330E52ABDA28700DEF8FC /* Inventory Card.swift in Sources */,
 				F357BA1E2ADC6FC700DB249F /* MCPSession.swift in Sources */,
 				F38B31FE2AF4ECBE002B6B5A /* Reminder VM.swift in Sources */,
+				F3ED95DF2B4D440A00A490FC /* Multiboard Item.swift in Sources */,
 				F3CAABF72A60BAC4000B2495 /* Countdown Parent.swift in Sources */,
 				F3CAAC152A60BE1E000B2495 /* Note.swift in Sources */,
 				F3D510042A628E0D006F6D10 /* Timer Create.swift in Sources */,
 				F36859442AD7BFEA0017898B /* Altitude VM.swift in Sources */,
 				F36B92CC2A97A0B6000658CE /* BuildTime Card.swift in Sources */,
+				F3ED95E42B4D444C00A490FC /* Multiboard Card.swift in Sources */,
 				F33C17112B29F22A0040FA63 /* Note Assets.swift in Sources */,
 				F394C5092AD55D7000C56527 /* Goida Sensors View.swift in Sources */,
 				F357BA1C2ADC6FBB00DB249F /* Nearby VM.swift in Sources */,
@@ -1261,6 +1282,7 @@
 				F3ABCA042ADAA1ED00A414AC /* Network VM.swift in Sources */,
 				F3CAABF92A60BAC4000B2495 /* Emoji Extension.swift in Sources */,
 				F3CAABED2A60BAC4000B2495 /* Preview Data.swift in Sources */,
+				F3ED95E22B4D442900A490FC /* Multiboard List.swift in Sources */,
 				F359DB4D2AC6B7250064F55C /* AppList Card.swift in Sources */,
 				F3CAABF52A60BAC4000B2495 /* Timer Card.swift in Sources */,
 				F3CAABF42A60BAC4000B2495 /* Nav Extension.swift in Sources */,

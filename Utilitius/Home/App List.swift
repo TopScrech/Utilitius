@@ -50,65 +50,69 @@ struct AppList: View {
             
             Spacer().frame(height: 32)
             
-            //            AppList_Section("Test", icon: "hammer") {
+            //            ApplistSection("Test", icon: "hammer") {
             //                NavigationLink("Test") {
             //                    TONGameView()
             //                }
             //            }
             
             //#if DEBUG
-            //                AppList_Card("Math", description: "-") {
+            //                ApplistCard("Math", description: "-") {
             //                    navState.navigate(.toMath)
             //                }
             //#endif
             
-            AppList_Section("Other", icon: "command") {
-                AppList_Card("OTP", description: "-") {
+            ApplistSection("Other", icon: "command") {
+                ApplistCard("OTP", description: "-") {
                     navState.navigate(.toOTP)
                 }
 #if !DEBUG
                 .disabled(true)
                 .foregroundStyle(.secondary)
 #endif
-                AppList_Card("GOIDA24", description: "Hardware and software information utility") {
+                ApplistCard("GOIDA24", description: "Hardware and software information utility") {
                     navState.navigate(.toGoida24)
                 }
                 
-                AppList_Card("YouTube", description: "Download YouTube videos or extract high-quality audio") {
+                ApplistCard("Multiboard", description: "-") {
+                    navState.navigate(.toMultiboard)
+                }
+                
+                ApplistCard("YouTube", description: "Download YouTube videos or extract high-quality audio") {
                     //                    YTDownloaderView()
                 }
                 .foregroundStyle(.secondary)
                 .disabled(true)
                 
-                AppList_Card("NFC", description: "Read and write data to NFC-tags") {
+                ApplistCard("NFC", description: "Read and write data to NFC-tags") {
                     navState.navigate(.toNFCScan)
                 }
                 
-                AppList_Card("Morse", description: "Translator from Morse code and vice versa") {
+                ApplistCard("Morse", description: "Translator from Morse code and vice versa") {
                     navState.navigate(.toMorse)
                 }
                 
-                AppList_Card("Inventory", description: "Record the amount of stock broken down by category") {
+                ApplistCard("Inventory", description: "Record the amount of stock broken down by category") {
                     navState.navigate(.toInventory)
                 }
             }
             
-            AppList_Section("Development", icon: "hammer.fill") {
-                AppList_Card("Xcodes", description: "All Xcode versions") {
+            ApplistSection("Development", icon: "hammer.fill") {
+                ApplistCard("Xcodes", description: "All Xcode versions") {
                     navState.navigate(.toXcodes)
                 }
                 
-                AppList_Card("Review Time", description: "App Store review time and more") {
+                ApplistCard("Review Time", description: "App Store review time and more") {
                     navState.navigate(.toBuildTime)
                 }
                 
-                AppList_Card("Frameworks", description: "-") {
+                ApplistCard("Frameworks", description: "-") {
                     navState.navigate(.toFrameworkList)
                 }
                 .foregroundStyle(.secondary)
                 .disabled(true)
                 
-                AppList_Card("HTTP Status Codes", description: "All existing codes and their meaning") {
+                ApplistCard("HTTP Status Codes", description: "All existing codes and their meaning") {
                     navState.navigate(.toHttpStatusCodes)
                 }
             }

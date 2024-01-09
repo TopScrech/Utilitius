@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct AppList_Card: View {
+struct ApplistCard: View {
     private let title, description: LocalizedStringKey
     private let action: () -> Void
     
@@ -36,10 +36,10 @@ struct AppList_Card: View {
 }
 
 #Preview {
-    AppList_Card("Preview", description: "Preview description") {}
+    ApplistCard("Preview", description: "Preview description") {}
         .padding(.horizontal)
 }
 
 #Preview {
-    AppList_Card("Preview", description: "Preview description that is also sooooooooo much loooooong") {}
+    ApplistCard("Preview", description: "Preview description that is also sooooooooo much loooooong") {}
 }
