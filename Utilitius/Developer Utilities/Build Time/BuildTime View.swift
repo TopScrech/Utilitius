@@ -2,11 +2,11 @@ import SwiftUI
 import SwiftSoup
 
 struct BuildTimeView: View {
-    private var model = BuildTimeModel()
+    private var vm = BuildTimeVM()
     
     var body: some View {
         List {
-            if let buildTime = model.buildTime {
+            if let buildTime = vm.buildTime {
                 Section {
                     BuildTimeCard("Build Processing",
                                   value: buildTime.buildProcessing)
@@ -32,7 +32,7 @@ struct BuildTimeView: View {
                 }
                 .padding(.top)
                 
-                BuildTimeCard("Updated", 
+                BuildTimeCard("Updated",
                               value: buildTime.updated
                 )
             }
@@ -42,10 +42,10 @@ struct BuildTimeView: View {
         .navigationTitle("Review Time")
         .scrollIndicators(.never)
         .refreshable {
-            model.fetch()
+            vm.fetch()
         }
         .task {
-            model.fetch()
+            vm.fetch()
         }
     }
 }
@@ -61,7 +61,6 @@ struct ReviewTimeData {
 
 struct ReviewTime: Identifiable {
     let id: Int
-    
     let month: String
     let avg: String
     let max: String

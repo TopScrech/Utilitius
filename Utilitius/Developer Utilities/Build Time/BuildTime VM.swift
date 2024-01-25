@@ -3,7 +3,7 @@ import Observation
 import SwiftSoup
 
 @Observable
-final class BuildTimeModel {
+final class BuildTimeVM {
     var buildTime: ReviewTimeData?
     
     func fetch() {

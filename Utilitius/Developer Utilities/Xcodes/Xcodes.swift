@@ -1,7 +1,7 @@
 import ScrechKit
 
 struct XcodesView: View {
-    @Bindable private var model = XcodesVM()
+    @Bindable private var vm = XcodesVM()
     
     @AppStorage("showReleaseDate") private var showReleaseDate = false
     @AppStorage("showMinimumMacos") private var showMinimumMacOS = false
@@ -34,11 +34,11 @@ struct XcodesView: View {
                     Toggle("visionOS", isOn: $showSDKvisionOS.animation())
                 }
                 
-                Picker("Xcode Version", selection: $model.selectedVersion) {
+                Picker("Xcode Version", selection: $vm.selectedVersion) {
                     Text("All")
                         .tag("All")
                     
-                    ForEach(model.versions, id: \.self) { version in
+                    ForEach(vm.versions, id: \.self) { version in
                         Text(version)
                             .tag(version)
                     }
@@ -46,9 +46,9 @@ struct XcodesView: View {
                 .pickerStyle(.navigationLink)
             }
             
-            if let averageDays = model.averageDaysBetweenReleases {
+            if let averageDays = vm.averageDaysBetweenReleases {
                 let days = String(format: "%.1f", averageDays)
-                let version = model.selectedVersion == "All" ? "all" : "Xcode \(model.selectedVersion)"
+                let version = vm.selectedVersion == "All" ? "all" : "Xcode \(vm.selectedVersion)"
                 
                 HStack {
                     Text("Average days between **\(version)** releases: **\(days)**")
@@ -57,8 +57,8 @@ struct XcodesView: View {
                 .footnote()
             }
             
-            ForEach(model.sortedAndFilteredXcodes.indices, id: \.self) { index in
-                let xcode = model.sortedAndFilteredXcodes[index]
+            ForEach(vm.sortedAndFilteredXcodes.indices, id: \.self) { index in
+                let xcode = vm.sortedAndFilteredXcodes[index]
                 let name = xcode.name
                 let version = xcode.version.number
                 let betaNumber = xcode.version.release.beta?.description ?? ""
@@ -88,7 +88,7 @@ struct XcodesView: View {
                                 .footnote()
                         }
                         
-                        if index < model.sortedAndFilteredXcodes.count - 1, let previousDate = model.sortedAndFilteredXcodes[index + 1].date.date {
+                        if index < vm.sortedAndFilteredXcodes.count - 1, let previousDate = vm.sortedAndFilteredXcodes[index + 1].date.date {
                             let daysDifference = Calendar.current.dateComponents([.day], from: previousDate, to: releaseDate).day
                             
                             if let daysDiff = daysDifference {
@@ -188,7 +188,7 @@ This is not an official Apple service.
                             }
                             ToolbarItem(placement: .topBarTrailing) {
                                 Button("Download") {
-                                    model.download()
+                                    vm.download()
                                 }
                             }
                         }
@@ -196,10 +196,10 @@ This is not an official Apple service.
             }
         }
         .task {
-            model.fetch()
+            vm.fetch()
         }
         .refreshable {
-            model.fetch()
+            vm.fetch()
         }
     }
 }

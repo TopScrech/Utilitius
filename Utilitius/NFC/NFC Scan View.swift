@@ -4,8 +4,8 @@ import CoreNFC
 
 struct NFCScanView: View {
     @Environment(NavState.self) private var navState
-    @Bindable var readerModel = NFCReaderModel()
-    @Bindable var writerModel = NFCWriterModel()
+    @Bindable var readerModel = NFCReaderVM()
+    @Bindable var writerModel = NFCWriterVM()
     
     @State private var sheetTagWriter = false
     

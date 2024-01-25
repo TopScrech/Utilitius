@@ -1,57 +1,57 @@
 import SwiftUI
 
 struct UWTestView: View {
-    private var model = NearbyVM()
+    private var vm = NearbyVM()
     
     var body: some View {
-        @Bindable var binding = model
+        @Bindable var binding = vm
         
         VStack(spacing: 20) {
-            Text(model.distance)
+            Text(vm.distance)
                 .title(.bold)
-                .animation(.easeIn, value: model.distance)
+                .animation(.easeIn, value: vm.distance)
                 .numericTransition()
             
-            Text(model.connectedDeviceName)
+            Text(vm.connectedDeviceName)
             
             //            Text(model.status)
             
             HStack {
                 Image(systemName: "arrow.turn.up.left")
-                    .foregroundStyle(model.azimuthText.contains("-") ? .primary : .secondary)
+                    .foregroundStyle(vm.azimuthText.contains("-") ? .primary : .secondary)
                 
-                Text(model.azimuthText)
+                Text(vm.azimuthText)
                     .monospaced()
                     .padding(.horizontal, 5)
-                    .foregroundStyle(model.currentDistanceDirectionState == .unknown ||
-                                     model.currentDistanceDirectionState == .outOfFOV ? .red : .primary)
+                    .foregroundStyle(vm.currentDistanceDirectionState == .unknown ||
+                                     vm.currentDistanceDirectionState == .outOfFOV ? .red : .primary)
                 
                 Image(systemName: "arrow.turn.up.right")
-                    .foregroundStyle(model.azimuthText.contains("-") ? .secondary : .primary)
+                    .foregroundStyle(vm.azimuthText.contains("-") ? .secondary : .primary)
             }
             
             HStack {
-                if model.elevationText.contains("-") {
+                if vm.elevationText.contains("-") {
                     Image(systemName: "arrow.down")
                 } else {
                     Image(systemName: "arrow.up")
                 }
                 
-                Text(model.elevationText)
+                Text(vm.elevationText)
                     .monospaced()
-                    .foregroundStyle(model.currentDistanceDirectionState == .unknown ||
-                                     model.currentDistanceDirectionState == .outOfFOV ? .red : .primary)
+                    .foregroundStyle(vm.currentDistanceDirectionState == .unknown ||
+                                     vm.currentDistanceDirectionState == .outOfFOV ? .red : .primary)
             }
             
             //            Text("\(model.monkeyRotationAngle)")
             
-            Text(model.monkeyLabel)
+            Text(vm.monkeyLabel)
                 .opacity(1)
                 .fontSize(64)
-                .rotationEffect(.degrees(model.monkeyRotationAngle * 90))
+                .rotationEffect(.degrees(vm.monkeyRotationAngle * 90))
         }
         .padding()
-        .alert(model.alertTitle, isPresented: $binding.showAlert) {
+        .alert(vm.alertTitle, isPresented: $binding.showAlert) {
             Button("Go to Settings") {
                 if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
                     UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
@@ -60,7 +60,7 @@ struct UWTestView: View {
             
             Button("Cancel") {}
         } message: {
-            Text(model.alertMessage)
+            Text(vm.alertMessage)
         }
     }
 }

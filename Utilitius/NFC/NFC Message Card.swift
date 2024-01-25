@@ -3,7 +3,7 @@ import SafariCover
 
 struct NFCMessageCard: View {
     @Bindable private var message: NFCMessage
-    @Bindable var writerModel = NFCWriterModel()
+    @Bindable var writerModel = NFCWriterVM()
     
     init(_ message: NFCMessage) {
         self.message = message

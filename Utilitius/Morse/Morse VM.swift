@@ -2,7 +2,7 @@ import SwiftUI
 import CoreHaptics
 
 @Observable
-final class MorseModel: ObservableObject {
+final class MorseVM: ObservableObject {
     var textField = ""
     
     var translatedText: String {

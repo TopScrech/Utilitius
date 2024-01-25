@@ -2,11 +2,11 @@ import SwiftUI
 
 struct OTPCodeView: View {
     private let secretKey: String
-    private var model: OTPModel
+    private var vm: OTPVM
     
     init(_ secretKey: String) {
         self.secretKey = secretKey
-        self.model = OTPModel(secretKey)
+        self.vm = OTPVM(secretKey)
     }
     
     var body: some View {
@@ -14,7 +14,7 @@ struct OTPCodeView: View {
             Text("Your OTP is: ")
             
             HStack {
-                ForEach(model.otp.split(separator: ""), id: \.self) { number in
+                ForEach(vm.otp.split(separator: ""), id: \.self) { number in
                     Text(number)
                         .monospaced()
                         .largeTitle()
@@ -23,7 +23,7 @@ struct OTPCodeView: View {
                 }
             }
             .onTapGesture {
-                UIPasteboard.general.string = model.otp
+                UIPasteboard.general.string = vm.otp
                 Alert.copied()
             }
             //            Text("\(model.timeLeft) seconds left")
@@ -33,7 +33,7 @@ struct OTPCodeView: View {
         }
         .padding()
         .task {
-            model.generateOTP()
+            vm.generateOTP()
         }
     }
 }

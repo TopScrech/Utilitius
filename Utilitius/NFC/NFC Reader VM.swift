@@ -36,7 +36,7 @@ let nfcMessageTypes: [NFCMessageType] = [
 ]
 
 @Observable
-final class NFCReaderModel: NSObject, NFCNDEFReaderSessionDelegate {
+final class NFCReaderVM: NSObject, NFCNDEFReaderSessionDelegate {
     var content = ""
     var contentMessages: [String] = []
     var sheetNFCReader = false
@@ -74,7 +74,7 @@ final class NFCReaderModel: NSObject, NFCNDEFReaderSessionDelegate {
 }
 
 @Observable
-final class NFCWriterModel: NSObject, NFCNDEFReaderSessionDelegate {
+final class NFCWriterVM: NSObject, NFCNDEFReaderSessionDelegate {
     var readerSession: NFCNDEFReaderSession?
     var ndefMessage: NFCNDEFMessage?
     var alertMessage: String?

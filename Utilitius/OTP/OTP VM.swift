@@ -3,7 +3,7 @@ import CryptoKit
 import SwiftOTP
 
 @Observable
-final class OTPModel {
+final class OTPVM {
     let period: TimeInterval = 30
     let digits = 6
     let secret: Data

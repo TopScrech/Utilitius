@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F30450B52A9135C1006C6037 /* App List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30450B42A9135C1006C6037 /* App List.swift */; };
-		F30627CA2AAB053900A65D63 /* NFCMessageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30627C92AAB053900A65D63 /* NFCMessageCard.swift */; };
+		F30627CA2AAB053900A65D63 /* NFC Message Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30627C92AAB053900A65D63 /* NFC Message Card.swift */; };
 		F30A583B2AD315140070B906 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A583A2AD315140070B906 /* MathView.swift */; };
 		F30AD1CA2ADEFB4E0080E879 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AD1C92ADEFB4E0080E879 /* Sorting.swift */; };
 		F30AD1CC2ADEFC300080E879 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F30AD1CB2ADEFC300080E879 /* ScrechKit */; };
@@ -20,15 +20,15 @@
 		F3281C5D2AD738F40054A45B /* Goida Device View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3281C5C2AD738F40054A45B /* Goida Device View.swift */; };
 		F3281C5F2AD739440054A45B /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3281C5E2AD739440054A45B /* Device VM.swift */; };
 		F32F1EEA2ADB420400633B82 /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F1EE92ADB420400633B82 /* Wifi VM.swift */; };
-		F3308D4A2ABC4D5900837C8F /* MorseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3308D492ABC4D5900837C8F /* MorseView.swift */; };
-		F3308D4C2ABC4D7C00837C8F /* MorseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3308D4B2ABC4D7C00837C8F /* MorseModel.swift */; };
+		F3308D4A2ABC4D5900837C8F /* Morse View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3308D492ABC4D5900837C8F /* Morse View.swift */; };
+		F3308D4C2ABC4D7C00837C8F /* Morse VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3308D4B2ABC4D7C00837C8F /* Morse VM.swift */; };
 		F33C17112B29F22A0040FA63 /* Note Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C17102B29F22A0040FA63 /* Note Assets.swift */; };
 		F33C17132B2A0A360040FA63 /* Hide Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C17122B2A0A360040FA63 /* Hide Gesture.swift */; };
 		F33C17152B2A0D330040FA63 /* Quick Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C17142B2A0D330040FA63 /* Quick Look.swift */; };
 		F34185D62A97A4E000F972C2 /* BuildTime Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34185D52A97A4E000F972C2 /* BuildTime Chart.swift */; };
 		F34185D92A98CB9400F972C2 /* AppCard Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34185D82A98CB9400F972C2 /* AppCard Image.swift */; };
 		F34D5BB42ADC4C8700EA8EA9 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F34D5BB32ADC4C8700EA8EA9 /* ScrechKit */; };
-		F350840F2AEAA34C00865FF6 /* MorseAlphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350840E2AEAA34C00865FF6 /* MorseAlphabet.swift */; };
+		F350840F2AEAA34C00865FF6 /* Morse Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350840E2AEAA34C00865FF6 /* Morse Alphabet.swift */; };
 		F357BA182ADC6F7F00DB249F /* UWTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA172ADC6F7F00DB249F /* UWTestView.swift */; };
 		F357BA1A2ADC6FA300DB249F /* Math Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA192ADC6FA300DB249F /* Math Utilities.swift */; };
 		F357BA1C2ADC6FBB00DB249F /* Nearby VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA1B2ADC6FBB00DB249F /* Nearby VM.swift */; };
@@ -43,7 +43,7 @@
 		F36859442AD7BFEA0017898B /* Altitude VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36859432AD7BFEA0017898B /* Altitude VM.swift */; };
 		F36859462AD7C37A0017898B /* Activity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36859452AD7C37A0017898B /* Activity VM.swift */; };
 		F36859492AD7C6A00017898B /* Color Test View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36859482AD7C6A00017898B /* Color Test View.swift */; };
-		F36B92C82A979E6E000658CE /* BuildTime Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92C72A979E6E000658CE /* BuildTime Model.swift */; };
+		F36B92C82A979E6E000658CE /* BuildTime VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92C72A979E6E000658CE /* BuildTime VM.swift */; };
 		F36B92CA2A979F6D000658CE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92C92A979F6D000658CE /* Logger.swift */; };
 		F36B92CC2A97A0B6000658CE /* BuildTime Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92CB2A97A0B6000658CE /* BuildTime Card.swift */; };
 		F386B4412AC438D300F6C2BB /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386B4402AC438D300F6C2BB /* CalculatorView.swift */; };
@@ -95,10 +95,10 @@
 		F3ABCA022ADAA1C100A414AC /* Goida Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABCA012ADAA1C100A414AC /* Goida Network View.swift */; };
 		F3ABCA042ADAA1ED00A414AC /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABCA032ADAA1ED00A414AC /* Network VM.swift */; };
 		F3ABCA052ADAA30A00A414AC /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABCA032ADAA1ED00A414AC /* Network VM.swift */; };
-		F3ACF3902AA7D447002B4638 /* NFCReaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF38F2AA7D447002B4638 /* NFCReaderModel.swift */; };
-		F3ACF3922AA7D61D002B4638 /* NFCScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF3912AA7D61D002B4638 /* NFCScanView.swift */; };
-		F3ACF3942AA84C85002B4638 /* NFCWriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF3932AA84C85002B4638 /* NFCWriterView.swift */; };
-		F3ACF3962AA85B69002B4638 /* NFCReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF3952AA85B69002B4638 /* NFCReaderView.swift */; };
+		F3ACF3902AA7D447002B4638 /* NFC Reader VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF38F2AA7D447002B4638 /* NFC Reader VM.swift */; };
+		F3ACF3922AA7D61D002B4638 /* NFC Scan View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF3912AA7D61D002B4638 /* NFC Scan View.swift */; };
+		F3ACF3942AA84C85002B4638 /* NFC Writer View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF3932AA84C85002B4638 /* NFC Writer View.swift */; };
+		F3ACF3962AA85B69002B4638 /* NFC Reader View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF3952AA85B69002B4638 /* NFC Reader View.swift */; };
 		F3AE03DE2AEAE76F00559F5D /* Reminder List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE03DD2AEAE76F00559F5D /* Reminder List.swift */; };
 		F3AE03E02AEAE78500559F5D /* Reminder Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE03DF2AEAE78500559F5D /* Reminder Model.swift */; };
 		F3B00BF42A9680B800C20843 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF32A9680B800C20843 /* HTTPStatusCode.swift */; };
@@ -117,7 +117,7 @@
 		F3C022C22AD7D323008013A2 /* Memory VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C022C12AD7D323008013A2 /* Memory VM.swift */; };
 		F3C022C42AD7D88E008013A2 /* Storage VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C022C32AD7D88E008013A2 /* Storage VM.swift */; };
 		F3C5FC8B2AA9D9F9000D9CAD /* NFCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FC8A2AA9D9F9000D9CAD /* NFCMessage.swift */; };
-		F3C5FC8D2AA9DBDA000D9CAD /* NFCMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FC8C2AA9DBDA000D9CAD /* NFCMessagesView.swift */; };
+		F3C5FC8D2AA9DBDA000D9CAD /* NFC Messages View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FC8C2AA9DBDA000D9CAD /* NFC Messages View.swift */; };
 		F3CAAB9F2A60B9F7000B2495 /* Utilitius App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */; };
 		F3CAABA52A60B9FA000B2495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CAABA42A60B9FA000B2495 /* Assets.xcassets */; };
 		F3CAABB42A60B9FA000B2495 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABB32A60B9FA000B2495 /* Tests.swift */; };
@@ -208,7 +208,7 @@
 
 /* Begin PBXFileReference section */
 		F30450B42A9135C1006C6037 /* App List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App List.swift"; sourceTree = "<group>"; };
-		F30627C92AAB053900A65D63 /* NFCMessageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCMessageCard.swift; sourceTree = "<group>"; };
+		F30627C92AAB053900A65D63 /* NFC Message Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Message Card.swift"; sourceTree = "<group>"; };
 		F30A583A2AD315140070B906 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
 		F30AD1C92ADEFB4E0080E879 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		F30DED0A2A615E4F00EAF963 /* Button Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button Create.swift"; sourceTree = "<group>"; };
@@ -220,14 +220,14 @@
 		F3281C5E2AD739440054A45B /* Device VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device VM.swift"; sourceTree = "<group>"; };
 		F32F1EE92ADB420400633B82 /* Wifi VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wifi VM.swift"; sourceTree = "<group>"; };
 		F32F1EEB2ADB43D000633B82 /* Utilitius watchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Utilitius watchOS.entitlements"; sourceTree = "<group>"; };
-		F3308D492ABC4D5900837C8F /* MorseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseView.swift; sourceTree = "<group>"; };
-		F3308D4B2ABC4D7C00837C8F /* MorseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseModel.swift; sourceTree = "<group>"; };
+		F3308D492ABC4D5900837C8F /* Morse View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Morse View.swift"; sourceTree = "<group>"; };
+		F3308D4B2ABC4D7C00837C8F /* Morse VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Morse VM.swift"; sourceTree = "<group>"; };
 		F33C17102B29F22A0040FA63 /* Note Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note Assets.swift"; sourceTree = "<group>"; };
 		F33C17122B2A0A360040FA63 /* Hide Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hide Gesture.swift"; sourceTree = "<group>"; };
 		F33C17142B2A0D330040FA63 /* Quick Look.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quick Look.swift"; sourceTree = "<group>"; };
 		F34185D52A97A4E000F972C2 /* BuildTime Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime Chart.swift"; sourceTree = "<group>"; };
 		F34185D82A98CB9400F972C2 /* AppCard Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCard Image.swift"; sourceTree = "<group>"; };
-		F350840E2AEAA34C00865FF6 /* MorseAlphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseAlphabet.swift; sourceTree = "<group>"; };
+		F350840E2AEAA34C00865FF6 /* Morse Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Morse Alphabet.swift"; sourceTree = "<group>"; };
 		F357BA172ADC6F7F00DB249F /* UWTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWTestView.swift; sourceTree = "<group>"; };
 		F357BA192ADC6FA300DB249F /* Math Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math Utilities.swift"; sourceTree = "<group>"; };
 		F357BA1B2ADC6FBB00DB249F /* Nearby VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nearby VM.swift"; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 		F36859432AD7BFEA0017898B /* Altitude VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Altitude VM.swift"; sourceTree = "<group>"; };
 		F36859452AD7C37A0017898B /* Activity VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity VM.swift"; sourceTree = "<group>"; };
 		F36859482AD7C6A00017898B /* Color Test View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Test View.swift"; sourceTree = "<group>"; };
-		F36B92C72A979E6E000658CE /* BuildTime Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime Model.swift"; sourceTree = "<group>"; };
+		F36B92C72A979E6E000658CE /* BuildTime VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime VM.swift"; sourceTree = "<group>"; };
 		F36B92C92A979F6D000658CE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F36B92CB2A97A0B6000658CE /* BuildTime Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime Card.swift"; sourceTree = "<group>"; };
 		F386B4402AC438D300F6C2BB /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
@@ -279,10 +279,10 @@
 		F3A43DB22AE3B6980072F7FA /* AlertKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertKit.swift; sourceTree = "<group>"; };
 		F3ABCA012ADAA1C100A414AC /* Goida Network View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Network View.swift"; sourceTree = "<group>"; };
 		F3ABCA032ADAA1ED00A414AC /* Network VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network VM.swift"; sourceTree = "<group>"; };
-		F3ACF38F2AA7D447002B4638 /* NFCReaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReaderModel.swift; sourceTree = "<group>"; };
-		F3ACF3912AA7D61D002B4638 /* NFCScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCScanView.swift; sourceTree = "<group>"; };
-		F3ACF3932AA84C85002B4638 /* NFCWriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCWriterView.swift; sourceTree = "<group>"; };
-		F3ACF3952AA85B69002B4638 /* NFCReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReaderView.swift; sourceTree = "<group>"; };
+		F3ACF38F2AA7D447002B4638 /* NFC Reader VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Reader VM.swift"; sourceTree = "<group>"; };
+		F3ACF3912AA7D61D002B4638 /* NFC Scan View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Scan View.swift"; sourceTree = "<group>"; };
+		F3ACF3932AA84C85002B4638 /* NFC Writer View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Writer View.swift"; sourceTree = "<group>"; };
+		F3ACF3952AA85B69002B4638 /* NFC Reader View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Reader View.swift"; sourceTree = "<group>"; };
 		F3AE03DD2AEAE76F00559F5D /* Reminder List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder List.swift"; sourceTree = "<group>"; };
 		F3AE03DF2AEAE78500559F5D /* Reminder Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder Model.swift"; sourceTree = "<group>"; };
 		F3B00BF32A9680B800C20843 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
@@ -300,7 +300,7 @@
 		F3C022C12AD7D323008013A2 /* Memory VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memory VM.swift"; sourceTree = "<group>"; };
 		F3C022C32AD7D88E008013A2 /* Storage VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storage VM.swift"; sourceTree = "<group>"; };
 		F3C5FC8A2AA9D9F9000D9CAD /* NFCMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCMessage.swift; sourceTree = "<group>"; };
-		F3C5FC8C2AA9DBDA000D9CAD /* NFCMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCMessagesView.swift; sourceTree = "<group>"; };
+		F3C5FC8C2AA9DBDA000D9CAD /* NFC Messages View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Messages View.swift"; sourceTree = "<group>"; };
 		F3CAAB9B2A60B9F7000B2495 /* Utilitius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utilitius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Utilitius App.swift"; path = "Navigation/Utilitius App.swift"; sourceTree = "<group>"; };
 		F3CAABA42A60B9FA000B2495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -435,9 +435,9 @@
 		F3308D482ABC4D4400837C8F /* Morse */ = {
 			isa = PBXGroup;
 			children = (
-				F3308D492ABC4D5900837C8F /* MorseView.swift */,
-				F3308D4B2ABC4D7C00837C8F /* MorseModel.swift */,
-				F350840E2AEAA34C00865FF6 /* MorseAlphabet.swift */,
+				F3308D492ABC4D5900837C8F /* Morse View.swift */,
+				F3308D4B2ABC4D7C00837C8F /* Morse VM.swift */,
+				F350840E2AEAA34C00865FF6 /* Morse Alphabet.swift */,
 			);
 			path = Morse;
 			sourceTree = "<group>";
@@ -457,7 +457,7 @@
 				F3B00BFC2A96B54400C20843 /* BuildTime View.swift */,
 				F34185D52A97A4E000F972C2 /* BuildTime Chart.swift */,
 				F36B92CB2A97A0B6000658CE /* BuildTime Card.swift */,
-				F36B92C72A979E6E000658CE /* BuildTime Model.swift */,
+				F36B92C72A979E6E000658CE /* BuildTime VM.swift */,
 			);
 			path = "Build Time";
 			sourceTree = "<group>";
@@ -665,12 +665,12 @@
 		F3ACF38E2AA7D42C002B4638 /* NFC */ = {
 			isa = PBXGroup;
 			children = (
-				F3ACF38F2AA7D447002B4638 /* NFCReaderModel.swift */,
-				F3ACF3912AA7D61D002B4638 /* NFCScanView.swift */,
-				F30627C92AAB053900A65D63 /* NFCMessageCard.swift */,
-				F3C5FC8C2AA9DBDA000D9CAD /* NFCMessagesView.swift */,
-				F3ACF3952AA85B69002B4638 /* NFCReaderView.swift */,
-				F3ACF3932AA84C85002B4638 /* NFCWriterView.swift */,
+				F3ACF38F2AA7D447002B4638 /* NFC Reader VM.swift */,
+				F3ACF3912AA7D61D002B4638 /* NFC Scan View.swift */,
+				F30627C92AAB053900A65D63 /* NFC Message Card.swift */,
+				F3C5FC8C2AA9DBDA000D9CAD /* NFC Messages View.swift */,
+				F3ACF3952AA85B69002B4638 /* NFC Reader View.swift */,
+				F3ACF3932AA84C85002B4638 /* NFC Writer View.swift */,
 			);
 			path = NFC;
 			sourceTree = "<group>";
@@ -767,9 +767,9 @@
 			isa = PBXGroup;
 			children = (
 				F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */,
-				F3ED95DD2B4D43FE00A490FC /* Multiboard */,
-				F30B61D22B2915A800F447B4 /* Bundle */,
 				F3A43DB22AE3B6980072F7FA /* AlertKit.swift */,
+				F30B61D22B2915A800F447B4 /* Bundle */,
+				F3ED95DD2B4D43FE00A490FC /* Multiboard */,
 				F3CAABD22A60BAC3000B2495 /* SwiftData Models */,
 				F3CAABD62A60BAC3000B2495 /* Navigation */,
 				F3CAABD82A60BAC3000B2495 /* Home */,
@@ -1204,9 +1204,9 @@
 				F3ABCA022ADAA1C100A414AC /* Goida Network View.swift in Sources */,
 				F3C022BD2AD7CAF2008013A2 /* OrientationVM.swift in Sources */,
 				F394C5072AD5410900C56527 /* GoidaListLink.swift in Sources */,
-				F3C5FC8D2AA9DBDA000D9CAD /* NFCMessagesView.swift in Sources */,
+				F3C5FC8D2AA9DBDA000D9CAD /* NFC Messages View.swift in Sources */,
 				F317E76C2A90E5E700D5B904 /* Intentory Item.swift in Sources */,
-				F3308D4C2ABC4D7C00837C8F /* MorseModel.swift in Sources */,
+				F3308D4C2ABC4D7C00837C8F /* Morse VM.swift in Sources */,
 				F3DFB7D32AEB169A00191EAC /* Sabscription.swift in Sources */,
 				F3BEF2D12AD033E6005F11D1 /* Bluetooth VM.swift in Sources */,
 				F32F1EEA2ADB420400633B82 /* Wifi VM.swift in Sources */,
@@ -1218,28 +1218,28 @@
 				F3281C5D2AD738F40054A45B /* Goida Device View.swift in Sources */,
 				F38B31FC2AF4EC56002B6B5A /* Reminders Unavailible View.swift in Sources */,
 				F39504E02AC0A3A200B50018 /* Youtube Downloader.swift in Sources */,
-				F30627CA2AAB053900A65D63 /* NFCMessageCard.swift in Sources */,
+				F30627CA2AAB053900A65D63 /* NFC Message Card.swift in Sources */,
 				F359DB502AC6BAFA0064F55C /* TONGameView.swift in Sources */,
 				F357BA182ADC6F7F00DB249F /* UWTestView.swift in Sources */,
 				F36B92CA2A979F6D000658CE /* Logger.swift in Sources */,
 				F394C4FC2AD53D2C00C56527 /* Goida Camera View.swift in Sources */,
 				F3CE3EB22A91413A00218E01 /* AppCard SF.swift in Sources */,
-				F36B92C82A979E6E000658CE /* BuildTime Model.swift in Sources */,
+				F36B92C82A979E6E000658CE /* BuildTime VM.swift in Sources */,
 				F3CAABEA2A60BAC4000B2495 /* Tag Card.swift in Sources */,
 				F3BC1C202ADFEDDA007C314B /* Device Info.swift in Sources */,
 				F3CAABF32A60BAC4000B2495 /* App Container.swift in Sources */,
 				F394C50E2AD55F7B00C56527 /* Display VM.swift in Sources */,
 				F3CAAC122A60BE1E000B2495 /* Note Card.swift in Sources */,
-				F350840F2AEAA34C00865FF6 /* MorseAlphabet.swift in Sources */,
+				F350840F2AEAA34C00865FF6 /* Morse Alphabet.swift in Sources */,
 				F3DFB7CC2AEAF69300191EAC /* Reminder Card.swift in Sources */,
 				F317E76E2A90E63B00D5B904 /* Inventory View.swift in Sources */,
 				F33C17132B2A0A360040FA63 /* Hide Gesture.swift in Sources */,
 				F367D4D22AE26EAC0088DA7A /* OTP Create Code.swift in Sources */,
 				F3CAAC172A60BE1E000B2495 /* Note List.swift in Sources */,
-				F3ACF3922AA7D61D002B4638 /* NFCScanView.swift in Sources */,
+				F3ACF3922AA7D61D002B4638 /* NFC Scan View.swift in Sources */,
 				F3CAABFA2A60BAC4000B2495 /* Countdown View.swift in Sources */,
 				F3CAAC142A60BE1E000B2495 /* System Alerts.swift in Sources */,
-				F3ACF3942AA84C85002B4638 /* NFCWriterView.swift in Sources */,
+				F3ACF3942AA84C85002B4638 /* NFC Writer View.swift in Sources */,
 				F38ACD812A94C28200B29405 /* QuickLook.swift in Sources */,
 				F36223222A991979002F0A8D /* Frameworks View.swift in Sources */,
 				F36859422AD7BE420017898B /* Pressure VM.swift in Sources */,
@@ -1253,7 +1253,7 @@
 				F38ACD7D2A94C0C700B29405 /* Open Safari.swift in Sources */,
 				F38A644D2AE0505400A72651 /* Recorder View.swift in Sources */,
 				F3AE03E02AEAE78500559F5D /* Reminder Model.swift in Sources */,
-				F3ACF3962AA85B69002B4638 /* NFCReaderView.swift in Sources */,
+				F3ACF3962AA85B69002B4638 /* NFC Reader View.swift in Sources */,
 				F3A330E52ABDA28700DEF8FC /* Inventory Card.swift in Sources */,
 				F357BA1E2ADC6FC700DB249F /* MCPSession.swift in Sources */,
 				F38B31FE2AF4ECBE002B6B5A /* Reminder VM.swift in Sources */,
@@ -1296,7 +1296,7 @@
 				F3C5FC8B2AA9D9F9000D9CAD /* NFCMessage.swift in Sources */,
 				F36859492AD7C6A00017898B /* Color Test View.swift in Sources */,
 				F3A1F44C2AD8A0FE00C85355 /* Stopwatch Model.swift in Sources */,
-				F3ACF3902AA7D447002B4638 /* NFCReaderModel.swift in Sources */,
+				F3ACF3902AA7D447002B4638 /* NFC Reader VM.swift in Sources */,
 				F3A1F44A2AD8966800C85355 /* Stopwatch VM.swift in Sources */,
 				F3CAABFC2A60BAC4000B2495 /* Settings.swift in Sources */,
 				F38ACD782A940DAC00B29405 /* Xcodes VM.swift in Sources */,
@@ -1316,7 +1316,7 @@
 				F3CAABF82A60BAC4000B2495 /* Emoji TextField.swift in Sources */,
 				F394C4FE2AD53E7500C56527 /* GoidaBatteryView.swift in Sources */,
 				F35897BF2ACF63E900A70012 /* Goida24View.swift in Sources */,
-				F3308D4A2ABC4D5900837C8F /* MorseView.swift in Sources */,
+				F3308D4A2ABC4D5900837C8F /* Morse View.swift in Sources */,
 				F39504E42AC0A7A200B50018 /* YTDownload VM.swift in Sources */,
 				F3CAABEB2A60BAC4000B2495 /* Tag List.swift in Sources */,
 				F3C022C42AD7D88E008013A2 /* Storage VM.swift in Sources */,

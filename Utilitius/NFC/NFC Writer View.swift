@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct NFCWriterView: View {
-    @Environment(NFCWriterModel.self) private var writerModel
+    @Environment(NFCWriterVM.self) private var writerModel
     
     private let message: String
     
@@ -72,6 +72,6 @@ struct NFCWriterView: View {
     Text("Preview")
         .sheet {
             NFCWriterView()
-                .environment(NFCWriterModel())
+                .environment(NFCWriterVM())
         }
 }

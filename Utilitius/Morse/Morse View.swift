@@ -1,13 +1,13 @@
 import SwiftUI
 
 struct MorseView: View {
-    @Bindable private var model = MorseModel()
+    @Bindable private var vm = MorseVM()
     
     //    @AppStorage("chosenSeparator") private var chosenSeparator: MorseModel.MorseSeparators = .space
     
     var body: some View {
         VStack {
-            TextField("Type Morse code or regular text here", text: $model.textField)
+            TextField("Type Morse code or regular text here", text: $vm.textField)
                 .multilineTextAlignment(.center)
                 .autocorrectionDisabled()
                 .padding(.bottom)
@@ -15,14 +15,14 @@ struct MorseView: View {
             VStack(spacing: 0) {
                 HStack(spacing: 50) {
                     Button {
-                        model.copyToClipboard()
+                        vm.copyToClipboard()
                     } label: {
                         Text("Copy")
                         Image(systemName: "doc.on.doc")
                     }
                     
                     Button {
-                        model.textField = ""
+                        vm.textField = ""
                     } label: {
                         Text("Clear")
                         Image(systemName: "trash")
@@ -31,7 +31,7 @@ struct MorseView: View {
                     
                     Button {
                         if let string = UIPasteboard.general.string {
-                            model.textField = string
+                            vm.textField = string
                         }
                     } label: {
                         Text("Paste")
@@ -44,8 +44,8 @@ struct MorseView: View {
                 Divider()
                 
                 ScrollView {
-                    Text(model.translatedText)
-                        .animation(.default, value: model.translatedText)
+                    Text(vm.translatedText)
+                        .animation(.default, value: vm.translatedText)
                         .multilineTextAlignment(.leading)
                         .monospaced()
                         .padding()

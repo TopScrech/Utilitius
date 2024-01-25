@@ -1,22 +1,20 @@
 import SwiftUI
 
 struct NFCReaderView: View {
-    @Environment(NFCReaderModel.self) private var model
+    @Environment(NFCReaderVM.self) private var vm
     
     @State private var showPayload = false
     
     var body: some View {
-        VStack {
-            if model.content.isEmpty {
-                ContentUnavailableView("NFC tag has no content", systemImage: "airtag.radiowaves.forward", description: Text("Do something"))
-            } else {
-                Text(model.contentMessages.description)
+        NavigationView {
+            if !vm.content.isEmpty {
+                Text(vm.contentMessages.first?.description ?? "")
                     .monospaced()
                     .minimumScaleFactor(0.5)
                     .scaledToFill()
                 
                 if showPayload {
-                    Text(model.content)
+                    Text(vm.content)
                 }
                 
                 Button("Show Payload") {
@@ -26,6 +24,13 @@ struct NFCReaderView: View {
                 }
             }
         }
+        .overlay {
+            if vm.content.isEmpty {
+                ContentUnavailableView("NFC tag has no content",
+                                       systemImage: "airtag.radiowaves.forward",
+                                       description: Text("Do something"))
+            }
+        }
     }
 }
 
@@ -33,6 +38,6 @@ struct NFCReaderView: View {
     Text("Preview")
         .sheet {
             NFCReaderView()
-                .environment(NFCReaderModel())
+                .environment(NFCReaderVM())
         }
 }

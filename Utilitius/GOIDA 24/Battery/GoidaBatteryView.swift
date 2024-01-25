@@ -1,12 +1,12 @@
 import ScrechKit
 
 struct GoidaBatteryView: View {
-    private var model = BatteryVM()
+    private var vm = BatteryVM()
     
     var body: some View {
         List {
-            ListParameter("Battery level", parameter: model.batteryLevel)
-            ListParameter("Battery state", parameter: model.batteryState)
+            ListParameter("Battery level", parameter: vm.batteryLevel)
+            ListParameter("Battery state", parameter: vm.batteryState)
         }
         .navigationTitle("Battery")
     }

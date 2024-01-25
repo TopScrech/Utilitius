@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct FrameworkListView: View {
-    private var model = FrameworkModel()
+    private var vm = FrameworkModel()
     
     var body: some View {
         List {
-            ForEach(model.frameworks, id: \.name) { framework in
+            ForEach(vm.frameworks, id: \.name) { framework in
                 Text(framework.name)
             }
         }
