@@ -1,3 +1,4 @@
+#if canImport(CoreMotion) && !os(xrOS)
 import SwiftUI
 import CoreMotion
 
@@ -60,3 +61,4 @@ final class ActivityVM {
         motionActivityManager.stopActivityUpdates()
     }
 }
+#endif

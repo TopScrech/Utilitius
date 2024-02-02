@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		F30AD1CA2ADEFB4E0080E879 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AD1C92ADEFB4E0080E879 /* Sorting.swift */; };
 		F30AD1CC2ADEFC300080E879 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F30AD1CB2ADEFC300080E879 /* ScrechKit */; };
 		F30DED0B2A615E4F00EAF963 /* Button Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30DED0A2A615E4F00EAF963 /* Button Create.swift */; };
+		F30F208D2B6D076900D95589 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F30F208C2B6D076900D95589 /* RealityKitContent */; };
+		F30F208F2B6D076900D95589 /* visionOS App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30F208E2B6D076900D95589 /* visionOS App.swift */; };
+		F30F20912B6D076900D95589 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30F20902B6D076900D95589 /* Home View.swift */; };
+		F30F20932B6D076A00D95589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30F20922B6D076A00D95589 /* Assets.xcassets */; };
+		F30F209D2B6D087000D95589 /* View Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30F209C2B6D087000D95589 /* View Container.swift */; };
 		F317E76C2A90E5E700D5B904 /* Intentory Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76B2A90E5E700D5B904 /* Intentory Item.swift */; };
 		F317E76E2A90E63B00D5B904 /* Inventory View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76D2A90E63B00D5B904 /* Inventory View.swift */; };
 		F317E7702A90E90A00D5B904 /* InventoryItem View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76F2A90E90A00D5B904 /* InventoryItem View.swift */; };
@@ -212,6 +217,15 @@
 		F30A583A2AD315140070B906 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
 		F30AD1C92ADEFB4E0080E879 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		F30DED0A2A615E4F00EAF963 /* Button Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button Create.swift"; sourceTree = "<group>"; };
+		F30F20882B6D076900D95589 /* Utilitius visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utilitius visionOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30F208B2B6D076900D95589 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		F30F208E2B6D076900D95589 /* visionOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "visionOS App.swift"; sourceTree = "<group>"; };
+		F30F20902B6D076900D95589 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
+		F30F20922B6D076A00D95589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F30F20972B6D076A00D95589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F30F209B2B6D07BA00D95589 /* Utilitius visionOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Utilitius visionOS.entitlements"; sourceTree = "<group>"; };
+		F30F209C2B6D087000D95589 /* View Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "View Container.swift"; path = "../../../View Container.swift"; sourceTree = "<group>"; };
+		F30F209F2B6D089C00D95589 /* View Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Container.swift"; sourceTree = "<group>"; };
 		F317E76B2A90E5E700D5B904 /* Intentory Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intentory Item.swift"; sourceTree = "<group>"; };
 		F317E76D2A90E63B00D5B904 /* Inventory View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inventory View.swift"; sourceTree = "<group>"; };
 		F317E76F2A90E90A00D5B904 /* InventoryItem View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryItem View.swift"; sourceTree = "<group>"; };
@@ -359,6 +373,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F30F20852B6D076900D95589 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30F208D2B6D076900D95589 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3A1F4512AD92D2D00C85355 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,6 +443,36 @@
 				F36B92C92A979F6D000658CE /* Logger.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		F30F20892B6D076900D95589 /* Utilitius visionOS */ = {
+			isa = PBXGroup;
+			children = (
+				F30F209B2B6D07BA00D95589 /* Utilitius visionOS.entitlements */,
+				F30F208E2B6D076900D95589 /* visionOS App.swift */,
+				F30F209E2B6D089C00D95589 /* Navigation */,
+				F30F209C2B6D087000D95589 /* View Container.swift */,
+				F30F20902B6D076900D95589 /* Home View.swift */,
+				F30F20922B6D076A00D95589 /* Assets.xcassets */,
+				F30F20972B6D076A00D95589 /* Info.plist */,
+			);
+			path = "Utilitius visionOS";
+			sourceTree = "<group>";
+		};
+		F30F208A2B6D076900D95589 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				F30F208B2B6D076900D95589 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		F30F209E2B6D089C00D95589 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F30F209F2B6D089C00D95589 /* View Container.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		F3281C5B2AD738E50054A45B /* Device */ = {
@@ -747,6 +799,8 @@
 				F3A1F4582AD92D2D00C85355 /* Utilitius watchOS */,
 				F3CAABB22A60B9FA000B2495 /* Unit Tests */,
 				F3CAABBC2A60B9FA000B2495 /* UI Tests */,
+				F30F20892B6D076900D95589 /* Utilitius visionOS */,
+				F30F208A2B6D076900D95589 /* Packages */,
 				F3CAAB9C2A60B9F7000B2495 /* Products */,
 				F3A1F46B2AD92E2500C85355 /* Frameworks */,
 			);
@@ -759,6 +813,7 @@
 				F3CAABAF2A60B9FA000B2495 /* UtilitiusTests.xctest */,
 				F3CAABB92A60B9FA000B2495 /* UtilitiusUITests.xctest */,
 				F3A1F4542AD92D2D00C85355 /* Utilitius watchOS.app */,
+				F30F20882B6D076900D95589 /* Utilitius visionOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -983,6 +1038,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F30F20872B6D076900D95589 /* Utilitius visionOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30F20982B6D076A00D95589 /* Build configuration list for PBXNativeTarget "Utilitius visionOS" */;
+			buildPhases = (
+				F30F20842B6D076900D95589 /* Sources */,
+				F30F20852B6D076900D95589 /* Frameworks */,
+				F30F20862B6D076900D95589 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Utilitius visionOS";
+			packageProductDependencies = (
+				F30F208C2B6D076900D95589 /* RealityKitContent */,
+			);
+			productName = "Utilitius visionOS";
+			productReference = F30F20882B6D076900D95589 /* Utilitius visionOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F3A1F4532AD92D2D00C85355 /* Utilitius watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3A1F4622AD92D2F00C85355 /* Build configuration list for PBXNativeTarget "Utilitius watchOS" */;
@@ -1077,9 +1152,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					F30F20872B6D076900D95589 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					F3A1F4532AD92D2D00C85355 = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -1098,7 +1176,7 @@
 				};
 			};
 			buildConfigurationList = F3CAAB962A60B9F7000B2495 /* Build configuration list for PBXProject "Utilitius" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1124,11 +1202,20 @@
 				F3A1F4532AD92D2D00C85355 /* Utilitius watchOS */,
 				F3CAABAE2A60B9FA000B2495 /* UtilitiusTests */,
 				F3CAABB82A60B9FA000B2495 /* UtilitiusUITests */,
+				F30F20872B6D076900D95589 /* Utilitius visionOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F30F20862B6D076900D95589 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30F20932B6D076A00D95589 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3A1F4522AD92D2D00C85355 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1164,6 +1251,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F30F20842B6D076900D95589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30F20912B6D076900D95589 /* Home View.swift in Sources */,
+				F30F209D2B6D087000D95589 /* View Container.swift in Sources */,
+				F30F208F2B6D076900D95589 /* visionOS App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3A1F4502AD92D2D00C85355 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1361,6 +1458,67 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F30F20992B6D076A00D95589 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Utilitius visionOS/Utilitius visionOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Utilitius;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-visionOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		F30F209A2B6D076A00D95589 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Utilitius visionOS/Utilitius visionOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Utilitius;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-visionOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		F3A1F4632AD92D2F00C85355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1591,16 +1749,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Utilitius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,3,7";
+				TARGETED_DEVICE_FAMILY = "1,3";
 			};
 			name = Debug;
 		};
@@ -1641,15 +1799,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Utilitius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,3,7";
+				TARGETED_DEVICE_FAMILY = "1,3";
 			};
 			name = Release;
 		};
@@ -1750,6 +1908,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F30F20982B6D076A00D95589 /* Build configuration list for PBXNativeTarget "Utilitius visionOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30F20992B6D076A00D95589 /* Debug */,
+				F30F209A2B6D076A00D95589 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3A1F4622AD92D2F00C85355 /* Build configuration list for PBXNativeTarget "Utilitius watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1861,6 +2028,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F34D5BB22ADC4C8700EA8EA9 /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
+		};
+		F30F208C2B6D076900D95589 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
 		};
 		F34D5BB32ADC4C8700EA8EA9 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;

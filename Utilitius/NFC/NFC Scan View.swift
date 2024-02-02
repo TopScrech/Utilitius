@@ -1,11 +1,11 @@
-#if !os(macOS)
+#if canImport(CoreNFC)
 import SwiftUI
 import CoreNFC
 
 struct NFCScanView: View {
     @Environment(NavState.self) private var navState
-    @Bindable var readerModel = NFCReaderVM()
-    @Bindable var writerModel = NFCWriterVM()
+    @Bindable private var readerModel = NFCReaderVM()
+    @Bindable private var writerModel = NFCWriterVM()
     
     @State private var sheetTagWriter = false
     

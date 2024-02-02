@@ -1,3 +1,4 @@
+#if canImport(NearbyInteraction)
 import SwiftUI
 import NearbyInteraction
 import MultipeerConnectivity
@@ -387,3 +388,5 @@ class NearbyVM: NSObject, NISessionDelegate {
         }
     }
 }
+
+#endif

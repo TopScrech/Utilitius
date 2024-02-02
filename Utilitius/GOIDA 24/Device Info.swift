@@ -1,3 +1,4 @@
+#if canImport(NearbyInteraction)
 import NearbyInteraction
 
 final class DeviceInfo {
@@ -9,3 +10,5 @@ final class DeviceInfo {
         }
     }
 }
+
+#endif

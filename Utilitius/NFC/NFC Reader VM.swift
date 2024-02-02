@@ -1,4 +1,4 @@
-#if !os(macOS)
+#if canImport(CoreNFC)
 import SwiftUI
 import CoreNFC
 import os
@@ -80,19 +80,19 @@ final class NFCWriterVM: NSObject, NFCNDEFReaderSessionDelegate {
     var alertMessage: String?
     var alertError = false
     var textField = ""
-//    var selectedNfcMessageType = 0
-//    
-//    var message: String {
-//        nfcMessageTypes[selectedNfcMessageType].prefix + textField
-//    }
-//    
-//    var prefix: String {
-//        nfcMessageTypes[selectedNfcMessageType].prefix
-//    }
-//    
-//    var placeholder: String {
-//        nfcMessageTypes[selectedNfcMessageType].placeholder
-//    }
+    //    var selectedNfcMessageType = 0
+    //
+    //    var message: String {
+    //        nfcMessageTypes[selectedNfcMessageType].prefix + textField
+    //    }
+    //
+    //    var prefix: String {
+    //        nfcMessageTypes[selectedNfcMessageType].prefix
+    //    }
+    //
+    //    var placeholder: String {
+    //        nfcMessageTypes[selectedNfcMessageType].placeholder
+    //    }
     
     func writeTag() {
         guard NFCNDEFReaderSession.readingAvailable else {

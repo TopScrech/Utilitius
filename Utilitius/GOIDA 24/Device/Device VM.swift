@@ -1,4 +1,4 @@
-#if !os(macOS)
+#if canImport(CoreNFC)
 import ScrechKit
 import CoreNFC
 import NearbyInteraction
