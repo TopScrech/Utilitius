@@ -1,11 +1,15 @@
 import ScrechKit
 
-struct AppList: View {
+struct HomeView: View {
     @Environment(NavState.self) private var navState
     
     var body: some View {
         List {
             Section("Productivity") {
+                MenuButton("Notes", icon: "note.text") {
+                    navState.navigate(.toNotes)
+                }
+                
                 MenuButton("Stopwatch", icon: "stopwatch") {
                     navState.navigate(.toStopwatch)
                 }
@@ -21,7 +25,7 @@ struct AppList: View {
 
 #Preview {
     NavigationView {
-        AppList()
+        HomeView()
             .environment(NavState())
     }
 }

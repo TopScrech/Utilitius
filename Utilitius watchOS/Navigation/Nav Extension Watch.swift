@@ -6,6 +6,7 @@ extension View {
             switch destination {
             case .toStopwatch: StopwatchView()
             case .toReminder: ReminderList()
+            case .toNotes: NoteList()
             }
         }
     }

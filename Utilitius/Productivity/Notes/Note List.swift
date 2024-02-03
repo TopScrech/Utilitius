@@ -58,9 +58,9 @@ struct NoteList: View {
                         }
                         .onDelete(perform: deleteItems)
                     }
-//                    } header: {
-//                        Label("Pinned", systemImage: "bookmark")
-//                    }
+                    //                    } header: {
+                    //                        Label("Pinned", systemImage: "bookmark")
+                    //                    }
                     .searchable(text: $searchField)
                 }
                 
@@ -91,21 +91,21 @@ struct NoteList: View {
         }
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarLeading) {
-                if let manager = undoManager {
+                if let undoManager {
                     SFButton("arrow.uturn.backward") {
-                        manager.undo()
+                        undoManager.undo()
                     }
-                    .disabled(!manager.canUndo)
+                    .disabled(!undoManager.canUndo)
                     
                     SFButton("arrow.uturn.forward") {
-                        manager.redo()
+                        undoManager.redo()
                     }
-                    .disabled(!manager.canRedo)
+                    .disabled(!undoManager.canRedo)
                 }
             }
 #if os(iOS)
             ToolbarItem(placement: .navigationBarTrailing) {
-//                EditButton()
+                //                EditButton()
             }
 #endif
         }

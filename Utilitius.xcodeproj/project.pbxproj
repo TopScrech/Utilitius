@@ -52,6 +52,9 @@
 		F36B92CA2A979F6D000658CE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92C92A979F6D000658CE /* Logger.swift */; };
 		F36B92CC2A97A0B6000658CE /* BuildTime Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92CB2A97A0B6000658CE /* BuildTime Card.swift */; };
 		F386B4412AC438D300F6C2BB /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386B4402AC438D300F6C2BB /* CalculatorView.swift */; };
+		F38890062B6D5ECD008597DF /* Utilitius-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38890052B6D5ECD008597DF /* Utilitius-watchOS-Info.plist */; };
+		F388900D2B6D624D008597DF /* Note List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388900C2B6D624D008597DF /* Note List.swift */; };
+		F388900E2B6D624D008597DF /* Note Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388900B2B6D624D008597DF /* Note Card.swift */; };
 		F38A644D2AE0505400A72651 /* Recorder View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A644C2AE0505400A72651 /* Recorder View.swift */; };
 		F38A644F2AE051F200A72651 /* Recorder VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A644E2AE051F200A72651 /* Recorder VM.swift */; };
 		F38A64512AE05FD400A72651 /* Audio File Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A64502AE05FD400A72651 /* Audio File Model.swift */; };
@@ -88,7 +91,7 @@
 		F3A1F4732AD92E5300C85355 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABDC2A60BAC3000B2495 /* App Container.swift */; };
 		F3A1F4742AD92E6300C85355 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABDB2A60BAC3000B2495 /* Nav State.swift */; };
 		F3A1F47A2AD92EEC00C85355 /* Stopwatch View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F4792AD92EEC00C85355 /* Stopwatch View.swift */; };
-		F3A1F47C2AD92F0400C85355 /* App List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F47B2AD92F0400C85355 /* App List.swift */; };
+		F3A1F47C2AD92F0400C85355 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F47B2AD92F0400C85355 /* Home View.swift */; };
 		F3A1F47D2AD92F4F00C85355 /* Stopwatch Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F44B2AD8A0FE00C85355 /* Stopwatch Model.swift */; };
 		F3A1F47E2AD92F5300C85355 /* Stopwatch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F4492AD8966800C85355 /* Stopwatch VM.swift */; };
 		F3A1F4802AD9304600C85355 /* Stopwatch Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F47F2AD9304600C85355 /* Stopwatch Button.swift */; };
@@ -136,7 +139,6 @@
 		F3CAABEF2A60BAC4000B2495 /* Nav Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABD72A60BAC3000B2495 /* Nav Destinations.swift */; };
 		F3CAABF02A60BAC4000B2495 /* Home Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABD92A60BAC3000B2495 /* Home Model.swift */; };
 		F3CAABF22A60BAC4000B2495 /* Nav State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABDB2A60BAC3000B2495 /* Nav State.swift */; };
-		F3CAABF32A60BAC4000B2495 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABDC2A60BAC3000B2495 /* App Container.swift */; };
 		F3CAABF42A60BAC4000B2495 /* Nav Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABDD2A60BAC3000B2495 /* Nav Extension.swift */; };
 		F3CAABF52A60BAC4000B2495 /* Timer Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABDF2A60BAC4000B2495 /* Timer Card.swift */; };
 		F3CAABF62A60BAC4000B2495 /* Timer List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABE02A60BAC4000B2495 /* Timer List.swift */; };
@@ -260,6 +262,9 @@
 		F36B92C92A979F6D000658CE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F36B92CB2A97A0B6000658CE /* BuildTime Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime Card.swift"; sourceTree = "<group>"; };
 		F386B4402AC438D300F6C2BB /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		F38890052B6D5ECD008597DF /* Utilitius-watchOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Utilitius-watchOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F388900B2B6D624D008597DF /* Note Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note Card.swift"; sourceTree = "<group>"; };
+		F388900C2B6D624D008597DF /* Note List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note List.swift"; sourceTree = "<group>"; };
 		F38A644C2AE0505400A72651 /* Recorder View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recorder View.swift"; sourceTree = "<group>"; };
 		F38A644E2AE051F200A72651 /* Recorder VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recorder VM.swift"; sourceTree = "<group>"; };
 		F38A64502AE05FD400A72651 /* Audio File Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Audio File Model.swift"; sourceTree = "<group>"; };
@@ -285,7 +290,7 @@
 		F3A1F44B2AD8A0FE00C85355 /* Stopwatch Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch Model.swift"; sourceTree = "<group>"; };
 		F3A1F4542AD92D2D00C85355 /* Utilitius watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utilitius watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A1F4792AD92EEC00C85355 /* Stopwatch View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch View.swift"; sourceTree = "<group>"; };
-		F3A1F47B2AD92F0400C85355 /* App List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App List.swift"; sourceTree = "<group>"; };
+		F3A1F47B2AD92F0400C85355 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3A1F47F2AD9304600C85355 /* Stopwatch Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch Button.swift"; sourceTree = "<group>"; };
 		F3A1F4862AD934C200C85355 /* Nav Destinations Watch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nav Destinations Watch.swift"; sourceTree = "<group>"; };
 		F3A1F4872AD934C200C85355 /* Nav Extension Watch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nav Extension Watch.swift"; sourceTree = "<group>"; };
@@ -353,7 +358,6 @@
 		F3CE3EB12A91413A00218E01 /* AppCard SF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCard SF.swift"; sourceTree = "<group>"; };
 		F3D296152AF3C6A600ED43A0 /* Reminder List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder List.swift"; sourceTree = "<group>"; };
 		F3D296172AF3C70400ED43A0 /* Reminder Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder Card.swift"; sourceTree = "<group>"; };
-		F3D296192AF3CA9700ED43A0 /* Utilitius-watchOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Utilitius-watchOS-Info.plist"; path = "Utilitius watchOS/Utilitius-watchOS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F3D510032A628E0D006F6D10 /* Timer Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer Create.swift"; sourceTree = "<group>"; };
 		F3DAB30E2AD96D5F00B8462C /* Stopwatch Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch Parent.swift"; sourceTree = "<group>"; };
 		F3DAB3102AD96E4600B8462C /* Stopwatch Laps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch Laps.swift"; sourceTree = "<group>"; };
@@ -497,7 +501,6 @@
 		F340104E2B2A5C82002B0675 /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
-				F3D296192AF3CA9700ED43A0 /* Utilitius-watchOS-Info.plist */,
 				F32F1EEB2ADB43D000633B82 /* Utilitius watchOS.entitlements */,
 			);
 			name = Bundle;
@@ -589,6 +592,15 @@
 			path = Calculator;
 			sourceTree = "<group>";
 		};
+		F388900F2B6D6252008597DF /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				F388900C2B6D624D008597DF /* Note List.swift */,
+				F388900B2B6D624D008597DF /* Note Card.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 		F38A644B2AE0503000A72651 /* Voice Memos */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,9 +672,11 @@
 		F3A1F4582AD92D2D00C85355 /* Utilitius watchOS */ = {
 			isa = PBXGroup;
 			children = (
+				F38890052B6D5ECD008597DF /* Utilitius-watchOS-Info.plist */,
 				F340104E2B2A5C82002B0675 /* Bundle */,
 				F3A1F4832AD9346B00C85355 /* Navigation */,
 				F3A1F4822AD9346600C85355 /* Home */,
+				F388900F2B6D6252008597DF /* Notes */,
 				F3A1F4812AD9345900C85355 /* Stopwatch */,
 				F3D296142AF3C69900ED43A0 /* Reminder */,
 			);
@@ -690,7 +704,7 @@
 		F3A1F4822AD9346600C85355 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F3A1F47B2AD92F0400C85355 /* App List.swift */,
+				F3A1F47B2AD92F0400C85355 /* Home View.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1221,6 +1235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D2961A2AF3FB7600ED43A0 /* Assets.xcassets in Resources */,
+				F38890062B6D5ECD008597DF /* Utilitius-watchOS-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1269,7 +1284,8 @@
 				F3A1F46F2AD92E3900C85355 /* Tag.swift in Sources */,
 				F3A1F4742AD92E6300C85355 /* Nav State.swift in Sources */,
 				F3A1F47E2AD92F5300C85355 /* Stopwatch VM.swift in Sources */,
-				F3A1F47C2AD92F0400C85355 /* App List.swift in Sources */,
+				F3A1F47C2AD92F0400C85355 /* Home View.swift in Sources */,
+				F388900D2B6D624D008597DF /* Note List.swift in Sources */,
 				F3A1F4732AD92E5300C85355 /* App Container.swift in Sources */,
 				F3DAB30F2AD96D5F00B8462C /* Stopwatch Parent.swift in Sources */,
 				F3A1F4882AD934C200C85355 /* Nav Destinations Watch.swift in Sources */,
@@ -1280,6 +1296,7 @@
 				F3A1F46E2AD92E3500C85355 /* Intentory Item.swift in Sources */,
 				F3DAB3112AD96E4600B8462C /* Stopwatch Laps.swift in Sources */,
 				F3A1F47A2AD92EEC00C85355 /* Stopwatch View.swift in Sources */,
+				F388900E2B6D624D008597DF /* Note Card.swift in Sources */,
 				F3A1F4802AD9304600C85355 /* Stopwatch Button.swift in Sources */,
 				F3D296132AF3C39600ED43A0 /* Sabscription.swift in Sources */,
 				F3A1F47D2AD92F4F00C85355 /* Stopwatch Model.swift in Sources */,
@@ -1324,7 +1341,6 @@
 				F36B92C82A979E6E000658CE /* BuildTime VM.swift in Sources */,
 				F3CAABEA2A60BAC4000B2495 /* Tag Card.swift in Sources */,
 				F3BC1C202ADFEDDA007C314B /* Device Info.swift in Sources */,
-				F3CAABF32A60BAC4000B2495 /* App Container.swift in Sources */,
 				F394C50E2AD55F7B00C56527 /* Display VM.swift in Sources */,
 				F3CAAC122A60BE1E000B2495 /* Note Card.swift in Sources */,
 				F350840F2AEAA34C00865FF6 /* Morse Alphabet.swift in Sources */,

@@ -5,7 +5,7 @@ struct AppContainer: View {
     
     var body: some View {
         NavigationStack(path: $navState.path) {
-            AppList()
+            HomeView()
                 .withNavDestinations()
         }
         .environment(navState)

@@ -1,4 +1,5 @@
 enum NavDestinations: Hashable {
-    case toStopwatch
-    case toReminder
+    case toStopwatch,
+         toReminder,
+         toNotes
 }
