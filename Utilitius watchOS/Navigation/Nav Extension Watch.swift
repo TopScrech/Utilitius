@@ -7,6 +7,7 @@ extension View {
             case .toStopwatch: StopwatchView()
             case .toReminder: ReminderList()
             case .toNotes: NoteList()
+            case .toHttpStatusCodes: HttpCodesList()
             }
         }
     }

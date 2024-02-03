@@ -109,13 +109,17 @@
 		F3ACF3962AA85B69002B4638 /* NFC Reader View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ACF3952AA85B69002B4638 /* NFC Reader View.swift */; };
 		F3AE03DE2AEAE76F00559F5D /* Reminder List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE03DD2AEAE76F00559F5D /* Reminder List.swift */; };
 		F3AE03E02AEAE78500559F5D /* Reminder Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE03DF2AEAE78500559F5D /* Reminder Model.swift */; };
-		F3B00BF42A9680B800C20843 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF32A9680B800C20843 /* HTTPStatusCode.swift */; };
-		F3B00BF62A96820300C20843 /* HTTPStatusCodes Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF52A96820300C20843 /* HTTPStatusCodes Array.swift */; };
-		F3B00BF82A96873B00C20843 /* StatusCodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF72A96873B00C20843 /* StatusCodesView.swift */; };
-		F3B00BFA2A96875700C20843 /* StatusCodeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF92A96875700C20843 /* StatusCodeCard.swift */; };
+		F3B00BF42A9680B800C20843 /* HTTP Status Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF32A9680B800C20843 /* HTTP Status Code.swift */; };
+		F3B00BF62A96820300C20843 /* HTTP Status Codes Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF52A96820300C20843 /* HTTP Status Codes Array.swift */; };
+		F3B00BF82A96873B00C20843 /* Status Codes View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF72A96873B00C20843 /* Status Codes View.swift */; };
+		F3B00BFA2A96875700C20843 /* Status Code Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF92A96875700C20843 /* Status Code Card.swift */; };
 		F3B00BFD2A96B54400C20843 /* BuildTime View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BFC2A96B54400C20843 /* BuildTime View.swift */; };
 		F3B00C022A96BA0700C20843 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = F3B00C012A96BA0700C20843 /* SwiftSoup */; };
 		F3B49AE22A92AF510065B5EC /* Framework Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B49AE12A92AF510065B5EC /* Framework Model.swift */; };
+		F3B9BCCD2B6E59EE00527038 /* HTTP Status Codes Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF52A96820300C20843 /* HTTP Status Codes Array.swift */; };
+		F3B9BCCF2B6E5A1300527038 /* Http Code Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B9BCCE2B6E5A1300527038 /* Http Code Card.swift */; };
+		F3B9BCD02B6E5A5000527038 /* HTTP Status Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF32A9680B800C20843 /* HTTP Status Code.swift */; };
+		F3B9BCD12B6E5AEB00527038 /* Http Codes List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B9BCCC2B6E59AC00527038 /* Http Codes List.swift */; };
 		F3BC1C202ADFEDDA007C314B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BC1C1F2ADFEDDA007C314B /* Device Info.swift */; };
 		F3BEF2D12AD033E6005F11D1 /* Bluetooth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BEF2D02AD033E6005F11D1 /* Bluetooth VM.swift */; };
 		F3BEF2D52AD03B38005F11D1 /* Camera VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BEF2D42AD03B38005F11D1 /* Camera VM.swift */; };
@@ -304,12 +308,14 @@
 		F3ACF3952AA85B69002B4638 /* NFC Reader View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Reader View.swift"; sourceTree = "<group>"; };
 		F3AE03DD2AEAE76F00559F5D /* Reminder List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder List.swift"; sourceTree = "<group>"; };
 		F3AE03DF2AEAE78500559F5D /* Reminder Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder Model.swift"; sourceTree = "<group>"; };
-		F3B00BF32A9680B800C20843 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
-		F3B00BF52A96820300C20843 /* HTTPStatusCodes Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPStatusCodes Array.swift"; sourceTree = "<group>"; };
-		F3B00BF72A96873B00C20843 /* StatusCodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCodesView.swift; sourceTree = "<group>"; };
-		F3B00BF92A96875700C20843 /* StatusCodeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCodeCard.swift; sourceTree = "<group>"; };
+		F3B00BF32A9680B800C20843 /* HTTP Status Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTP Status Code.swift"; sourceTree = "<group>"; };
+		F3B00BF52A96820300C20843 /* HTTP Status Codes Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTP Status Codes Array.swift"; sourceTree = "<group>"; };
+		F3B00BF72A96873B00C20843 /* Status Codes View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Status Codes View.swift"; sourceTree = "<group>"; };
+		F3B00BF92A96875700C20843 /* Status Code Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Status Code Card.swift"; sourceTree = "<group>"; };
 		F3B00BFC2A96B54400C20843 /* BuildTime View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime View.swift"; sourceTree = "<group>"; };
 		F3B49AE12A92AF510065B5EC /* Framework Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Framework Model.swift"; sourceTree = "<group>"; };
+		F3B9BCCC2B6E59AC00527038 /* Http Codes List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Http Codes List.swift"; sourceTree = "<group>"; };
+		F3B9BCCE2B6E5A1300527038 /* Http Code Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Http Code Card.swift"; path = "../../../../Http Code Card.swift"; sourceTree = "<group>"; };
 		F3BC1C1F2ADFEDDA007C314B /* Device Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Info.swift"; sourceTree = "<group>"; };
 		F3BEF2D02AD033E6005F11D1 /* Bluetooth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bluetooth VM.swift"; sourceTree = "<group>"; };
 		F3BEF2D42AD03B38005F11D1 /* Camera VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera VM.swift"; sourceTree = "<group>"; };
@@ -678,6 +684,7 @@
 				F3A1F4822AD9346600C85355 /* Home */,
 				F388900F2B6D6252008597DF /* Notes */,
 				F3A1F4812AD9345900C85355 /* Stopwatch */,
+				F3B9BCCB2B6E59AC00527038 /* HTTP Codes */,
 				F3D296142AF3C69900ED43A0 /* Reminder */,
 			);
 			path = "Utilitius watchOS";
@@ -757,10 +764,10 @@
 		F3B00BFB2A96B52300C20843 /* Status Codes */ = {
 			isa = PBXGroup;
 			children = (
-				F3B00BF72A96873B00C20843 /* StatusCodesView.swift */,
-				F3B00BF92A96875700C20843 /* StatusCodeCard.swift */,
-				F3B00BF32A9680B800C20843 /* HTTPStatusCode.swift */,
-				F3B00BF52A96820300C20843 /* HTTPStatusCodes Array.swift */,
+				F3B00BF72A96873B00C20843 /* Status Codes View.swift */,
+				F3B00BF92A96875700C20843 /* Status Code Card.swift */,
+				F3B00BF32A9680B800C20843 /* HTTP Status Code.swift */,
+				F3B00BF52A96820300C20843 /* HTTP Status Codes Array.swift */,
 			);
 			path = "Status Codes";
 			sourceTree = "<group>";
@@ -786,6 +793,15 @@
 				F3B00BFB2A96B52300C20843 /* Status Codes */,
 			);
 			path = "Developer Utilities";
+			sourceTree = "<group>";
+		};
+		F3B9BCCB2B6E59AC00527038 /* HTTP Codes */ = {
+			isa = PBXGroup;
+			children = (
+				F3B9BCCC2B6E59AC00527038 /* Http Codes List.swift */,
+				F3B9BCCE2B6E5A1300527038 /* Http Code Card.swift */,
+			);
+			path = "HTTP Codes";
 			sourceTree = "<group>";
 		};
 		F3BC1C1E2ADFE8F7007C314B /* Color Tests */ = {
@@ -1288,9 +1304,12 @@
 				F388900D2B6D624D008597DF /* Note List.swift in Sources */,
 				F3A1F4732AD92E5300C85355 /* App Container.swift in Sources */,
 				F3DAB30F2AD96D5F00B8462C /* Stopwatch Parent.swift in Sources */,
+				F3B9BCD12B6E5AEB00527038 /* Http Codes List.swift in Sources */,
 				F3A1F4882AD934C200C85355 /* Nav Destinations Watch.swift in Sources */,
 				F3D296182AF3C70400ED43A0 /* Reminder Card.swift in Sources */,
 				F3ABCA052ADAA30A00A414AC /* Network VM.swift in Sources */,
+				F3B9BCD02B6E5A5000527038 /* HTTP Status Code.swift in Sources */,
+				F3B9BCCD2B6E59EE00527038 /* HTTP Status Codes Array.swift in Sources */,
 				F3A1F4892AD934C200C85355 /* Nav Extension Watch.swift in Sources */,
 				F3ED95E02B4D440F00A490FC /* Multiboard Item.swift in Sources */,
 				F3A1F46E2AD92E3500C85355 /* Intentory Item.swift in Sources */,
@@ -1302,6 +1321,7 @@
 				F3A1F47D2AD92F4F00C85355 /* Stopwatch Model.swift in Sources */,
 				F3D296162AF3C6A600ED43A0 /* Reminder List.swift in Sources */,
 				F3A1F4722AD92E4D00C85355 /* NFCMessage.swift in Sources */,
+				F3B9BCCF2B6E5A1300527038 /* Http Code Card.swift in Sources */,
 				F3A1F4692AD92E0100C85355 /* Utilitius App.swift in Sources */,
 				F3D296122AF3C38800ED43A0 /* Reminder Model.swift in Sources */,
 				F3A1F4712AD92E4100C85355 /* Timer.swift in Sources */,
@@ -1384,10 +1404,10 @@
 				F394C5052AD53EFF00C56527 /* Battery VM.swift in Sources */,
 				F3FDFED32AE1DAF800BCF2B8 /* OTP Extension.swift in Sources */,
 				F3FDFED52AE2678E00BCF2B8 /* OTP List.swift in Sources */,
-				F3B00BFA2A96875700C20843 /* StatusCodeCard.swift in Sources */,
+				F3B00BFA2A96875700C20843 /* Status Code Card.swift in Sources */,
 				F30A583B2AD315140070B906 /* MathView.swift in Sources */,
 				F33C17152B2A0D330040FA63 /* Quick Look.swift in Sources */,
-				F3B00BF42A9680B800C20843 /* HTTPStatusCode.swift in Sources */,
+				F3B00BF42A9680B800C20843 /* HTTP Status Code.swift in Sources */,
 				F3DFB7CE2AEB03BF00191EAC /* Torch VM.swift in Sources */,
 				F386B4412AC438D300F6C2BB /* CalculatorView.swift in Sources */,
 				F3FDFECF2AE1D9E400BCF2B8 /* OTP VM.swift in Sources */,
@@ -1404,7 +1424,7 @@
 				F30DED0B2A615E4F00EAF963 /* Button Create.swift in Sources */,
 				F394C50B2AD55F4100C56527 /* Goida Display View.swift in Sources */,
 				F3CAABF62A60BAC4000B2495 /* Timer List.swift in Sources */,
-				F3B00BF62A96820300C20843 /* HTTPStatusCodes Array.swift in Sources */,
+				F3B00BF62A96820300C20843 /* HTTP Status Codes Array.swift in Sources */,
 				F36859462AD7C37A0017898B /* Activity VM.swift in Sources */,
 				F3C5FC8B2AA9D9F9000D9CAD /* NFCMessage.swift in Sources */,
 				F36859492AD7C6A00017898B /* Color Test View.swift in Sources */,
@@ -1417,7 +1437,7 @@
 				F3A43DB32AE3B6980072F7FA /* AlertKit.swift in Sources */,
 				F3CAAC192A60BE1E000B2495 /* Note View.swift in Sources */,
 				F3CAABFB2A60BAC4000B2495 /* Settings Parent.swift in Sources */,
-				F3B00BF82A96873B00C20843 /* StatusCodesView.swift in Sources */,
+				F3B00BF82A96873B00C20843 /* Status Codes View.swift in Sources */,
 				F3B49AE22A92AF510065B5EC /* Framework Model.swift in Sources */,
 				F38ACD762A94091800B29405 /* Xcodes.swift in Sources */,
 				F34185D92A98CB9400F972C2 /* AppCard Image.swift in Sources */,

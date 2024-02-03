@@ -10,12 +10,18 @@ struct HomeView: View {
                     navState.navigate(.toNotes)
                 }
                 
+                MenuButton("Reminders", icon: "checklist") {
+                    navState.navigate(.toReminder)
+                }
+                
                 MenuButton("Stopwatch", icon: "stopwatch") {
                     navState.navigate(.toStopwatch)
                 }
-                
-                MenuButton("Reminder", icon: "checklist") {
-                    navState.navigate(.toReminder)
+            }
+            
+            Section {
+                MenuButton("HTTP Codes", icon: "hammer") {
+                    navState.navigate(.toHttpStatusCodes)
                 }
             }
         }
