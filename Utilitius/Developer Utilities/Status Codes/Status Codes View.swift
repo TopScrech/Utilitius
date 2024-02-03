@@ -46,6 +46,7 @@ struct StatusCodesView: View {
             }
         }
         .navigationTitle("HTTP Status Codes")
+        .scrollIndicators(.never)
         .searchable(text: $searchField, isPresented: $showSearchField)
         .onChange(of: searchField) { oldValue, newValue in
             withAnimation {
