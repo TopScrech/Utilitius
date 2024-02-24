@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F30450B52A9135C1006C6037 /* App List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30450B42A9135C1006C6037 /* App List.swift */; };
+		F30450B52A9135C1006C6037 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30450B42A9135C1006C6037 /* Home View.swift */; };
 		F30627CA2AAB053900A65D63 /* NFC Message Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30627C92AAB053900A65D63 /* NFC Message Card.swift */; };
 		F30A583B2AD315140070B906 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A583A2AD315140070B906 /* MathView.swift */; };
 		F30AD1CA2ADEFB4E0080E879 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AD1C92ADEFB4E0080E879 /* Sorting.swift */; };
@@ -21,7 +21,7 @@
 		F317E76C2A90E5E700D5B904 /* Intentory Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76B2A90E5E700D5B904 /* Intentory Item.swift */; };
 		F317E76E2A90E63B00D5B904 /* Inventory View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76D2A90E63B00D5B904 /* Inventory View.swift */; };
 		F317E7702A90E90A00D5B904 /* InventoryItem View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76F2A90E90A00D5B904 /* InventoryItem View.swift */; };
-		F321D1F92AE6569C005ABC51 /* AppListIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321D1F82AE6569C005ABC51 /* AppListIcon.swift */; };
+		F321D1F92AE6569C005ABC51 /* App List Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321D1F82AE6569C005ABC51 /* App List Icon.swift */; };
 		F3281C5D2AD738F40054A45B /* Goida Device View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3281C5C2AD738F40054A45B /* Goida Device View.swift */; };
 		F3281C5F2AD739440054A45B /* Device VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3281C5E2AD739440054A45B /* Device VM.swift */; };
 		F32F1EEA2ADB420400633B82 /* Wifi VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F1EE92ADB420400633B82 /* Wifi VM.swift */; };
@@ -31,7 +31,7 @@
 		F33C17132B2A0A360040FA63 /* Hide Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C17122B2A0A360040FA63 /* Hide Gesture.swift */; };
 		F33C17152B2A0D330040FA63 /* Quick Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C17142B2A0D330040FA63 /* Quick Look.swift */; };
 		F34185D62A97A4E000F972C2 /* BuildTime Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34185D52A97A4E000F972C2 /* BuildTime Chart.swift */; };
-		F34185D92A98CB9400F972C2 /* AppCard Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34185D82A98CB9400F972C2 /* AppCard Image.swift */; };
+		F34185D92A98CB9400F972C2 /* App Card Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34185D82A98CB9400F972C2 /* App Card Image.swift */; };
 		F34D5BB42ADC4C8700EA8EA9 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F34D5BB32ADC4C8700EA8EA9 /* ScrechKit */; };
 		F350840F2AEAA34C00865FF6 /* Morse Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350840E2AEAA34C00865FF6 /* Morse Alphabet.swift */; };
 		F357BA182ADC6F7F00DB249F /* UWTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA172ADC6F7F00DB249F /* UWTestView.swift */; };
@@ -39,8 +39,8 @@
 		F357BA1C2ADC6FBB00DB249F /* Nearby VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA1B2ADC6FBB00DB249F /* Nearby VM.swift */; };
 		F357BA1E2ADC6FC700DB249F /* MCPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA1D2ADC6FC700DB249F /* MCPSession.swift */; };
 		F35897BF2ACF63E900A70012 /* Goida24View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35897BE2ACF63E900A70012 /* Goida24View.swift */; };
-		F359DB492AC6B26E0064F55C /* AppList Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359DB482AC6B26E0064F55C /* AppList Section.swift */; };
-		F359DB4D2AC6B7250064F55C /* AppList Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359DB4C2AC6B7250064F55C /* AppList Card.swift */; };
+		F359DB492AC6B26E0064F55C /* App List Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359DB482AC6B26E0064F55C /* App List Section.swift */; };
+		F359DB4D2AC6B7250064F55C /* App List Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359DB4C2AC6B7250064F55C /* App List Card.swift */; };
 		F359DB502AC6BAFA0064F55C /* TONGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359DB4F2AC6BAFA0064F55C /* TONGameView.swift */; };
 		F36223222A991979002F0A8D /* Frameworks View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36223212A991979002F0A8D /* Frameworks View.swift */; };
 		F367D4D22AE26EAC0088DA7A /* OTP Create Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367D4D12AE26EAC0088DA7A /* OTP Create Code.swift */; };
@@ -120,6 +120,13 @@
 		F3B9BCCF2B6E5A1300527038 /* Http Code Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B9BCCE2B6E5A1300527038 /* Http Code Card.swift */; };
 		F3B9BCD02B6E5A5000527038 /* HTTP Status Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B00BF32A9680B800C20843 /* HTTP Status Code.swift */; };
 		F3B9BCD12B6E5AEB00527038 /* Http Codes List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B9BCCC2B6E59AC00527038 /* Http Codes List.swift */; };
+		F3B9BCD22B6E5C9D00527038 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABDC2A60BAC3000B2495 /* App Container.swift */; };
+		F3BA70022B7B8AB700015711 /* Note List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA70012B7B8AB700015711 /* Note List.swift */; };
+		F3BA70032B7B8AEB00015711 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAC0C2A60BE1E000B2495 /* Note.swift */; };
+		F3BA70042B7B8AF600015711 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABD52A60BAC3000B2495 /* Tag.swift */; };
+		F3BA70052B7B8AF900015711 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABD32A60BAC3000B2495 /* Timer.swift */; };
+		F3BA70062B7B8AFE00015711 /* Intentory Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76B2A90E5E700D5B904 /* Intentory Item.swift */; };
+		F3BA70082B7B8B1B00015711 /* Note Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA70072B7B8B1B00015711 /* Note Card.swift */; };
 		F3BC1C202ADFEDDA007C314B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BC1C1F2ADFEDDA007C314B /* Device Info.swift */; };
 		F3BEF2D12AD033E6005F11D1 /* Bluetooth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BEF2D02AD033E6005F11D1 /* Bluetooth VM.swift */; };
 		F3BEF2D52AD03B38005F11D1 /* Camera VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BEF2D42AD03B38005F11D1 /* Camera VM.swift */; };
@@ -160,7 +167,7 @@
 		F3CAAC162A60BE1E000B2495 /* Button Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAC0D2A60BE1E000B2495 /* Button Pin.swift */; };
 		F3CAAC172A60BE1E000B2495 /* Note List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAC0E2A60BE1E000B2495 /* Note List.swift */; };
 		F3CAAC192A60BE1E000B2495 /* Note View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAC112A60BE1E000B2495 /* Note View.swift */; };
-		F3CE3EB22A91413A00218E01 /* AppCard SF.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE3EB12A91413A00218E01 /* AppCard SF.swift */; };
+		F3CE3EB22A91413A00218E01 /* App Card SF.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CE3EB12A91413A00218E01 /* App Card SF.swift */; };
 		F3D296122AF3C38800ED43A0 /* Reminder Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AE03DF2AEAE78500559F5D /* Reminder Model.swift */; };
 		F3D296132AF3C39600ED43A0 /* Sabscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DFB7D22AEB169A00191EAC /* Sabscription.swift */; };
 		F3D296162AF3C6A600ED43A0 /* Reminder List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D296152AF3C6A600ED43A0 /* Reminder List.swift */; };
@@ -218,7 +225,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F30450B42A9135C1006C6037 /* App List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App List.swift"; sourceTree = "<group>"; };
+		F30450B42A9135C1006C6037 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F30627C92AAB053900A65D63 /* NFC Message Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Message Card.swift"; sourceTree = "<group>"; };
 		F30A583A2AD315140070B906 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
 		F30AD1C92ADEFB4E0080E879 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
@@ -235,7 +242,7 @@
 		F317E76B2A90E5E700D5B904 /* Intentory Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Intentory Item.swift"; sourceTree = "<group>"; };
 		F317E76D2A90E63B00D5B904 /* Inventory View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inventory View.swift"; sourceTree = "<group>"; };
 		F317E76F2A90E90A00D5B904 /* InventoryItem View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InventoryItem View.swift"; sourceTree = "<group>"; };
-		F321D1F82AE6569C005ABC51 /* AppListIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListIcon.swift; sourceTree = "<group>"; };
+		F321D1F82AE6569C005ABC51 /* App List Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App List Icon.swift"; sourceTree = "<group>"; };
 		F3281C5C2AD738F40054A45B /* Goida Device View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Device View.swift"; sourceTree = "<group>"; };
 		F3281C5E2AD739440054A45B /* Device VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device VM.swift"; sourceTree = "<group>"; };
 		F32F1EE92ADB420400633B82 /* Wifi VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Wifi VM.swift"; sourceTree = "<group>"; };
@@ -246,15 +253,15 @@
 		F33C17122B2A0A360040FA63 /* Hide Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hide Gesture.swift"; sourceTree = "<group>"; };
 		F33C17142B2A0D330040FA63 /* Quick Look.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quick Look.swift"; sourceTree = "<group>"; };
 		F34185D52A97A4E000F972C2 /* BuildTime Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime Chart.swift"; sourceTree = "<group>"; };
-		F34185D82A98CB9400F972C2 /* AppCard Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCard Image.swift"; sourceTree = "<group>"; };
+		F34185D82A98CB9400F972C2 /* App Card Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Card Image.swift"; sourceTree = "<group>"; };
 		F350840E2AEAA34C00865FF6 /* Morse Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Morse Alphabet.swift"; sourceTree = "<group>"; };
 		F357BA172ADC6F7F00DB249F /* UWTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWTestView.swift; sourceTree = "<group>"; };
 		F357BA192ADC6FA300DB249F /* Math Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math Utilities.swift"; sourceTree = "<group>"; };
 		F357BA1B2ADC6FBB00DB249F /* Nearby VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nearby VM.swift"; sourceTree = "<group>"; };
 		F357BA1D2ADC6FC700DB249F /* MCPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCPSession.swift; sourceTree = "<group>"; };
 		F35897BE2ACF63E900A70012 /* Goida24View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goida24View.swift; sourceTree = "<group>"; };
-		F359DB482AC6B26E0064F55C /* AppList Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppList Section.swift"; sourceTree = "<group>"; };
-		F359DB4C2AC6B7250064F55C /* AppList Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppList Card.swift"; sourceTree = "<group>"; };
+		F359DB482AC6B26E0064F55C /* App List Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App List Section.swift"; sourceTree = "<group>"; };
+		F359DB4C2AC6B7250064F55C /* App List Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App List Card.swift"; sourceTree = "<group>"; };
 		F359DB4F2AC6BAFA0064F55C /* TONGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TONGameView.swift; sourceTree = "<group>"; };
 		F36223212A991979002F0A8D /* Frameworks View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Frameworks View.swift"; sourceTree = "<group>"; };
 		F367D4D12AE26EAC0088DA7A /* OTP Create Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Create Code.swift"; sourceTree = "<group>"; };
@@ -316,6 +323,8 @@
 		F3B49AE12A92AF510065B5EC /* Framework Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Framework Model.swift"; sourceTree = "<group>"; };
 		F3B9BCCC2B6E59AC00527038 /* Http Codes List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Http Codes List.swift"; sourceTree = "<group>"; };
 		F3B9BCCE2B6E5A1300527038 /* Http Code Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Http Code Card.swift"; path = "../../../../Http Code Card.swift"; sourceTree = "<group>"; };
+		F3BA70012B7B8AB700015711 /* Note List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note List.swift"; path = "../../../Note List.swift"; sourceTree = "<group>"; };
+		F3BA70072B7B8B1B00015711 /* Note Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note Card.swift"; path = "../../../Note Card.swift"; sourceTree = "<group>"; };
 		F3BC1C1F2ADFEDDA007C314B /* Device Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Info.swift"; sourceTree = "<group>"; };
 		F3BEF2D02AD033E6005F11D1 /* Bluetooth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bluetooth VM.swift"; sourceTree = "<group>"; };
 		F3BEF2D42AD03B38005F11D1 /* Camera VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera VM.swift"; sourceTree = "<group>"; };
@@ -361,7 +370,7 @@
 		F3CAAC0D2A60BE1E000B2495 /* Button Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button Pin.swift"; sourceTree = "<group>"; };
 		F3CAAC0E2A60BE1E000B2495 /* Note List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note List.swift"; sourceTree = "<group>"; };
 		F3CAAC112A60BE1E000B2495 /* Note View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note View.swift"; sourceTree = "<group>"; };
-		F3CE3EB12A91413A00218E01 /* AppCard SF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCard SF.swift"; sourceTree = "<group>"; };
+		F3CE3EB12A91413A00218E01 /* App Card SF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Card SF.swift"; sourceTree = "<group>"; };
 		F3D296152AF3C6A600ED43A0 /* Reminder List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder List.swift"; sourceTree = "<group>"; };
 		F3D296172AF3C70400ED43A0 /* Reminder Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder Card.swift"; sourceTree = "<group>"; };
 		F3D510032A628E0D006F6D10 /* Timer Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer Create.swift"; sourceTree = "<group>"; };
@@ -461,8 +470,10 @@
 				F30F209B2B6D07BA00D95589 /* Utilitius visionOS.entitlements */,
 				F30F208E2B6D076900D95589 /* visionOS App.swift */,
 				F30F209E2B6D089C00D95589 /* Navigation */,
-				F30F209C2B6D087000D95589 /* View Container.swift */,
 				F30F20902B6D076900D95589 /* Home View.swift */,
+				F30F209C2B6D087000D95589 /* View Container.swift */,
+				F3BA70012B7B8AB700015711 /* Note List.swift */,
+				F3BA70072B7B8B1B00015711 /* Note Card.swift */,
 				F30F20922B6D076A00D95589 /* Assets.xcassets */,
 				F30F20972B6D076A00D95589 /* Info.plist */,
 			);
@@ -827,9 +838,9 @@
 			children = (
 				F3CAAB9D2A60B9F7000B2495 /* Utilitius */,
 				F3A1F4582AD92D2D00C85355 /* Utilitius watchOS */,
+				F30F20892B6D076900D95589 /* Utilitius visionOS */,
 				F3CAABB22A60B9FA000B2495 /* Unit Tests */,
 				F3CAABBC2A60B9FA000B2495 /* UI Tests */,
-				F30F20892B6D076900D95589 /* Utilitius visionOS */,
 				F30F208A2B6D076900D95589 /* Packages */,
 				F3CAAB9C2A60B9F7000B2495 /* Products */,
 				F3A1F46B2AD92E2500C85355 /* Frameworks */,
@@ -930,14 +941,14 @@
 		F3CAABD82A60BAC3000B2495 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F30450B42A9135C1006C6037 /* App List.swift */,
-				F321D1F82AE6569C005ABC51 /* AppListIcon.swift */,
-				F359DB4C2AC6B7250064F55C /* AppList Card.swift */,
-				F3CE3EB12A91413A00218E01 /* AppCard SF.swift */,
-				F34185D82A98CB9400F972C2 /* AppCard Image.swift */,
+				F30450B42A9135C1006C6037 /* Home View.swift */,
+				F321D1F82AE6569C005ABC51 /* App List Icon.swift */,
+				F359DB4C2AC6B7250064F55C /* App List Card.swift */,
+				F3CE3EB12A91413A00218E01 /* App Card SF.swift */,
+				F34185D82A98CB9400F972C2 /* App Card Image.swift */,
 				F3CAABD92A60BAC3000B2495 /* Home Model.swift */,
 				F30DED0A2A615E4F00EAF963 /* Button Create.swift */,
-				F359DB482AC6B26E0064F55C /* AppList Section.swift */,
+				F359DB482AC6B26E0064F55C /* App List Section.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1286,6 +1297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BA70042B7B8AF600015711 /* Tag.swift in Sources */,
+				F3BA70032B7B8AEB00015711 /* Note.swift in Sources */,
+				F3BA70062B7B8AFE00015711 /* Intentory Item.swift in Sources */,
+				F3BA70052B7B8AF900015711 /* Timer.swift in Sources */,
+				F3BA70022B7B8AB700015711 /* Note List.swift in Sources */,
+				F3BA70082B7B8B1B00015711 /* Note Card.swift in Sources */,
 				F30F20912B6D076900D95589 /* Home View.swift in Sources */,
 				F30F209D2B6D087000D95589 /* View Container.swift in Sources */,
 				F30F208F2B6D076900D95589 /* visionOS App.swift in Sources */,
@@ -1332,7 +1349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F321D1F92AE6569C005ABC51 /* AppListIcon.swift in Sources */,
+				F321D1F92AE6569C005ABC51 /* App List Icon.swift in Sources */,
 				F357BA1A2ADC6FA300DB249F /* Math Utilities.swift in Sources */,
 				F3C022C02AD7D2FB008013A2 /* Goida Memory View.swift in Sources */,
 				F3ABCA022ADAA1C100A414AC /* Goida Network View.swift in Sources */,
@@ -1357,7 +1374,7 @@
 				F357BA182ADC6F7F00DB249F /* UWTestView.swift in Sources */,
 				F36B92CA2A979F6D000658CE /* Logger.swift in Sources */,
 				F394C4FC2AD53D2C00C56527 /* Goida Camera View.swift in Sources */,
-				F3CE3EB22A91413A00218E01 /* AppCard SF.swift in Sources */,
+				F3CE3EB22A91413A00218E01 /* App Card SF.swift in Sources */,
 				F36B92C82A979E6E000658CE /* BuildTime VM.swift in Sources */,
 				F3CAABEA2A60BAC4000B2495 /* Tag Card.swift in Sources */,
 				F3BC1C202ADFEDDA007C314B /* Device Info.swift in Sources */,
@@ -1416,7 +1433,7 @@
 				F3CAABF92A60BAC4000B2495 /* Emoji Extension.swift in Sources */,
 				F3CAABED2A60BAC4000B2495 /* Preview Data.swift in Sources */,
 				F3ED95E22B4D442900A490FC /* Multiboard List.swift in Sources */,
-				F359DB4D2AC6B7250064F55C /* AppList Card.swift in Sources */,
+				F359DB4D2AC6B7250064F55C /* App List Card.swift in Sources */,
 				F3CAABF52A60BAC4000B2495 /* Timer Card.swift in Sources */,
 				F3CAABF42A60BAC4000B2495 /* Nav Extension.swift in Sources */,
 				F3BFF89D2B2524F100BE23BF /* Xcodes Model.swift in Sources */,
@@ -1437,11 +1454,12 @@
 				F3A43DB32AE3B6980072F7FA /* AlertKit.swift in Sources */,
 				F3CAAC192A60BE1E000B2495 /* Note View.swift in Sources */,
 				F3CAABFB2A60BAC4000B2495 /* Settings Parent.swift in Sources */,
+				F3B9BCD22B6E5C9D00527038 /* App Container.swift in Sources */,
 				F3B00BF82A96873B00C20843 /* Status Codes View.swift in Sources */,
 				F3B49AE22A92AF510065B5EC /* Framework Model.swift in Sources */,
 				F38ACD762A94091800B29405 /* Xcodes.swift in Sources */,
-				F34185D92A98CB9400F972C2 /* AppCard Image.swift in Sources */,
-				F30450B52A9135C1006C6037 /* App List.swift in Sources */,
+				F34185D92A98CB9400F972C2 /* App Card Image.swift in Sources */,
+				F30450B52A9135C1006C6037 /* Home View.swift in Sources */,
 				F3CAAC162A60BE1E000B2495 /* Button Pin.swift in Sources */,
 				F3E23AC52AD7EEA2004EB064 /* Goida Test List.swift in Sources */,
 				F3C022C22AD7D323008013A2 /* Memory VM.swift in Sources */,
@@ -1453,7 +1471,7 @@
 				F39504E42AC0A7A200B50018 /* YTDownload VM.swift in Sources */,
 				F3CAABEB2A60BAC4000B2495 /* Tag List.swift in Sources */,
 				F3C022C42AD7D88E008013A2 /* Storage VM.swift in Sources */,
-				F359DB492AC6B26E0064F55C /* AppList Section.swift in Sources */,
+				F359DB492AC6B26E0064F55C /* App List Section.swift in Sources */,
 				F3CAABEC2A60BAC4000B2495 /* Timer.swift in Sources */,
 				F38A64512AE05FD400A72651 /* Audio File Model.swift in Sources */,
 			);

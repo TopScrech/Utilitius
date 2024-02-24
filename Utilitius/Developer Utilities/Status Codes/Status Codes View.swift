@@ -26,17 +26,8 @@ struct StatusCodesView: View {
     
     var body: some View {
         List {
-            if filteredHttpStatusCodes.isEmpty {
-                ContentUnavailableView(
-                    "Test",
-                    systemImage: "pc",
-                    description: Text("Test")
-                )
-                .symbolEffect(.pulse)
-            } else {
-                ForEach(filteredHttpStatusCodes, id: \.code) { code in
-                    StatusCodeCard(code)
-                }
+            ForEach(filteredHttpStatusCodes, id: \.code) { code in
+                StatusCodeCard(code)
             }
             
             if searchRule.isEmpty {
@@ -51,6 +42,16 @@ struct StatusCodesView: View {
         .onChange(of: searchField) { oldValue, newValue in
             withAnimation {
                 searchRule = searchField
+            }
+        }
+        .overlay {
+            if filteredHttpStatusCodes.isEmpty {
+                ContentUnavailableView(
+                    "Test",
+                    systemImage: "pc",
+                    description: Text("Test")
+                )
+                .symbolEffect(.pulse)
             }
         }
         .toolbar {

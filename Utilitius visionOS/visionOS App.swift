@@ -6,5 +6,9 @@ struct visionOSApp: App {
         WindowGroup {
             ViewContainer()
         }
+        
+        WindowGroup(id: "test") {
+            Text("Test")
+        }
     }
 }

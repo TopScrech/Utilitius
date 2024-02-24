@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct AppList: View {
+struct HomeView: View {
     @Environment(NavState.self) private var navState
     
     private var torch = TorchManager()
@@ -124,7 +124,7 @@ struct AppList: View {
 
 #Preview {
     NavigationView {
-        AppList()
+        HomeView()
     }
     .environment(NavState())
 }
