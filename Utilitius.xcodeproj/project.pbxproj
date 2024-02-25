@@ -873,7 +873,7 @@
 				F386B43F2AC438C200F6C2BB /* Calculator */,
 				F3DFB7CF2AEB165D00191EAC /* Subscriptions */,
 				F359DB4E2AC6BADF0064F55C /* True or Not */,
-				F3FDFECD2AE1D9B400BCF2B8 /* OTP */,
+				F3FDFECD2AE1D9B400BCF2B8 /* TOTP */,
 				F35897BD2ACF634100A70012 /* GOIDA 24 */,
 				F367D4D32AE26F8C0088DA7A /* YouTube Downloader */,
 				F3AE03DC2AEAE75D00559F5D /* Reminder */,
@@ -1064,7 +1064,7 @@
 			path = Multiboard;
 			sourceTree = "<group>";
 		};
-		F3FDFECD2AE1D9B400BCF2B8 /* OTP */ = {
+		F3FDFECD2AE1D9B400BCF2B8 /* TOTP */ = {
 			isa = PBXGroup;
 			children = (
 				F3FDFED42AE2678E00BCF2B8 /* OTP List.swift */,
@@ -1073,7 +1073,7 @@
 				F3FDFED02AE1DA2700BCF2B8 /* OTP Code View.swift */,
 				F3FDFECE2AE1D9E400BCF2B8 /* OTP VM.swift */,
 			);
-			path = OTP;
+			path = TOTP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

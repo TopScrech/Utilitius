@@ -6,7 +6,7 @@ struct OTPList: View {
     var body: some View {
         List {
             NavigationLink("Test code") {
-                OTPCodeView("")
+                OTPCodeView("DRIG5PU6CTAH2MYENGIVF542GZ72PFVJ")
             }
             
             Section {

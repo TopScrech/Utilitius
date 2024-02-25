@@ -120,6 +120,12 @@
         }
       }
     },
+    "%@ seconds left" : {
+
+    },
+    "%lf seconds left" : {
+
+    },
     "%lld" : {
 
     },
@@ -134,6 +140,9 @@
       }
     },
     "%lld laps" : {
+
+    },
+    "%lld seconds left" : {
 
     },
     "%u %@" : {
