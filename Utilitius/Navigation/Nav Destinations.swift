@@ -8,7 +8,7 @@ enum NavDestinations: Hashable {
     case toInventory
     case toNotes
     case toNFCScan
-    case toOTP
+    case toPasswords
     case toTimer
     case toReminder
     case toSavedNfcMessages

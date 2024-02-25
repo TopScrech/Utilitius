@@ -17,7 +17,7 @@ extension View {
             case .toFrameworkList: FrameworkListView()
             case .toTimer: TimerList()
             case .toReminder: ReminderParent()
-            case .toOTP: PasswordList()
+            case .toPasswords: PasswordList()
             case .toNotes: NoteList()
             case .toInventory: InventoryView()
             case .toNFCScan: NFCScanView()

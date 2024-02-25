@@ -43,7 +43,7 @@
 		F359DB4D2AC6B7250064F55C /* App List Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359DB4C2AC6B7250064F55C /* App List Card.swift */; };
 		F359DB502AC6BAFA0064F55C /* TONGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F359DB4F2AC6BAFA0064F55C /* TONGameView.swift */; };
 		F36223222A991979002F0A8D /* Frameworks View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36223212A991979002F0A8D /* Frameworks View.swift */; };
-		F367D4D22AE26EAC0088DA7A /* OTP Create Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367D4D12AE26EAC0088DA7A /* OTP Create Code.swift */; };
+		F367D4D22AE26EAC0088DA7A /* Create Totp View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367D4D12AE26EAC0088DA7A /* Create Totp View.swift */; };
 		F36859422AD7BE420017898B /* Pressure VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36859412AD7BE420017898B /* Pressure VM.swift */; };
 		F36859442AD7BFEA0017898B /* Altitude VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36859432AD7BFEA0017898B /* Altitude VM.swift */; };
 		F36859462AD7C37A0017898B /* Activity VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36859452AD7C37A0017898B /* Activity VM.swift */; };
@@ -100,6 +100,8 @@
 		F3A330E52ABDA28700DEF8FC /* Inventory Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A330E42ABDA28700DEF8FC /* Inventory Card.swift */; };
 		F3A43DB12AE3B64F0072F7FA /* AlertKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3A43DB02AE3B64F0072F7FA /* AlertKit */; };
 		F3A43DB32AE3B6980072F7FA /* AlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A43DB22AE3B6980072F7FA /* AlertKit.swift */; };
+		F3A843402B8BF1580068AC2A /* Otp View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8433F2B8BF1580068AC2A /* Otp View.swift */; };
+		F3A843422B8BF1DA0068AC2A /* Password Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843412B8BF1DA0068AC2A /* Password Card.swift */; };
 		F3ABCA022ADAA1C100A414AC /* Goida Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABCA012ADAA1C100A414AC /* Goida Network View.swift */; };
 		F3ABCA042ADAA1ED00A414AC /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABCA032ADAA1ED00A414AC /* Network VM.swift */; };
 		F3ABCA052ADAA30A00A414AC /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABCA032ADAA1ED00A414AC /* Network VM.swift */; };
@@ -129,7 +131,6 @@
 		F3BA70082B7B8B1B00015711 /* Note Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA70072B7B8B1B00015711 /* Note Card.swift */; };
 		F3BB646B2B8B6638008DB640 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB646A2B8B6638008DB640 /* Password.swift */; };
 		F3BB646D2B8B674F008DB640 /* New Password View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB646C2B8B674F008DB640 /* New Password View.swift */; };
-		F3BB646F2B8B696C008DB640 /* Otp View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB646E2B8B696C008DB640 /* Otp View.swift */; };
 		F3BC1C202ADFEDDA007C314B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BC1C1F2ADFEDDA007C314B /* Device Info.swift */; };
 		F3BEF2D12AD033E6005F11D1 /* Bluetooth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BEF2D02AD033E6005F11D1 /* Bluetooth VM.swift */; };
 		F3BEF2D52AD03B38005F11D1 /* Camera VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BEF2D42AD03B38005F11D1 /* Camera VM.swift */; };
@@ -191,9 +192,9 @@
 		F3ED95E02B4D440F00A490FC /* Multiboard Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED95DE2B4D440A00A490FC /* Multiboard Item.swift */; };
 		F3ED95E22B4D442900A490FC /* Multiboard List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED95E12B4D442900A490FC /* Multiboard List.swift */; };
 		F3ED95E42B4D444C00A490FC /* Multiboard Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED95E32B4D444C00A490FC /* Multiboard Card.swift */; };
-		F3FDFECF2AE1D9E400BCF2B8 /* OTP VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFECE2AE1D9E400BCF2B8 /* OTP VM.swift */; };
-		F3FDFED12AE1DA2700BCF2B8 /* OTP Code View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED02AE1DA2700BCF2B8 /* OTP Code View.swift */; };
-		F3FDFED32AE1DAF800BCF2B8 /* OTP Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED22AE1DAF800BCF2B8 /* OTP Extension.swift */; };
+		F3FDFECF2AE1D9E400BCF2B8 /* Totp VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFECE2AE1D9E400BCF2B8 /* Totp VM.swift */; };
+		F3FDFED12AE1DA2700BCF2B8 /* Password View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED02AE1DA2700BCF2B8 /* Password View.swift */; };
+		F3FDFED32AE1DAF800BCF2B8 /* Password Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED22AE1DAF800BCF2B8 /* Password Extension.swift */; };
 		F3FDFED52AE2678E00BCF2B8 /* Password List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED42AE2678E00BCF2B8 /* Password List.swift */; };
 /* End PBXBuildFile section */
 
@@ -267,7 +268,7 @@
 		F359DB4C2AC6B7250064F55C /* App List Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App List Card.swift"; sourceTree = "<group>"; };
 		F359DB4F2AC6BAFA0064F55C /* TONGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TONGameView.swift; sourceTree = "<group>"; };
 		F36223212A991979002F0A8D /* Frameworks View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Frameworks View.swift"; sourceTree = "<group>"; };
-		F367D4D12AE26EAC0088DA7A /* OTP Create Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Create Code.swift"; sourceTree = "<group>"; };
+		F367D4D12AE26EAC0088DA7A /* Create Totp View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Create Totp View.swift"; sourceTree = "<group>"; };
 		F36859412AD7BE420017898B /* Pressure VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pressure VM.swift"; sourceTree = "<group>"; };
 		F36859432AD7BFEA0017898B /* Altitude VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Altitude VM.swift"; sourceTree = "<group>"; };
 		F36859452AD7C37A0017898B /* Activity VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity VM.swift"; sourceTree = "<group>"; };
@@ -310,6 +311,8 @@
 		F3A1F4872AD934C200C85355 /* Nav Extension Watch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nav Extension Watch.swift"; sourceTree = "<group>"; };
 		F3A330E42ABDA28700DEF8FC /* Inventory Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inventory Card.swift"; sourceTree = "<group>"; };
 		F3A43DB22AE3B6980072F7FA /* AlertKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertKit.swift; sourceTree = "<group>"; };
+		F3A8433F2B8BF1580068AC2A /* Otp View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Otp View.swift"; sourceTree = "<group>"; };
+		F3A843412B8BF1DA0068AC2A /* Password Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Password Card.swift"; path = "../../../../Password Card.swift"; sourceTree = "<group>"; };
 		F3ABCA012ADAA1C100A414AC /* Goida Network View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Network View.swift"; sourceTree = "<group>"; };
 		F3ABCA032ADAA1ED00A414AC /* Network VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network VM.swift"; sourceTree = "<group>"; };
 		F3ACF38F2AA7D447002B4638 /* NFC Reader VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Reader VM.swift"; sourceTree = "<group>"; };
@@ -330,7 +333,6 @@
 		F3BA70072B7B8B1B00015711 /* Note Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note Card.swift"; path = "../../../Note Card.swift"; sourceTree = "<group>"; };
 		F3BB646A2B8B6638008DB640 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Password.swift; path = ../../../../Password.swift; sourceTree = "<group>"; };
 		F3BB646C2B8B674F008DB640 /* New Password View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "New Password View.swift"; path = "../../../../New Password View.swift"; sourceTree = "<group>"; };
-		F3BB646E2B8B696C008DB640 /* Otp View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Otp View.swift"; path = "../../../../Otp View.swift"; sourceTree = "<group>"; };
 		F3BC1C1F2ADFEDDA007C314B /* Device Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Info.swift"; sourceTree = "<group>"; };
 		F3BEF2D02AD033E6005F11D1 /* Bluetooth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bluetooth VM.swift"; sourceTree = "<group>"; };
 		F3BEF2D42AD03B38005F11D1 /* Camera VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera VM.swift"; sourceTree = "<group>"; };
@@ -391,9 +393,9 @@
 		F3ED95DE2B4D440A00A490FC /* Multiboard Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiboard Item.swift"; sourceTree = "<group>"; };
 		F3ED95E12B4D442900A490FC /* Multiboard List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiboard List.swift"; sourceTree = "<group>"; };
 		F3ED95E32B4D444C00A490FC /* Multiboard Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multiboard Card.swift"; sourceTree = "<group>"; };
-		F3FDFECE2AE1D9E400BCF2B8 /* OTP VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP VM.swift"; sourceTree = "<group>"; };
-		F3FDFED02AE1DA2700BCF2B8 /* OTP Code View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Code View.swift"; sourceTree = "<group>"; };
-		F3FDFED22AE1DAF800BCF2B8 /* OTP Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Extension.swift"; sourceTree = "<group>"; };
+		F3FDFECE2AE1D9E400BCF2B8 /* Totp VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Totp VM.swift"; sourceTree = "<group>"; };
+		F3FDFED02AE1DA2700BCF2B8 /* Password View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Password View.swift"; sourceTree = "<group>"; };
+		F3FDFED22AE1DAF800BCF2B8 /* Password Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Password Extension.swift"; sourceTree = "<group>"; };
 		F3FDFED42AE2678E00BCF2B8 /* Password List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Password List.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -742,6 +744,16 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		F3A8433E2B8BF1500068AC2A /* Totp */ = {
+			isa = PBXGroup;
+			children = (
+				F3A8433F2B8BF1580068AC2A /* Otp View.swift */,
+				F3FDFECE2AE1D9E400BCF2B8 /* Totp VM.swift */,
+				F367D4D12AE26EAC0088DA7A /* Create Totp View.swift */,
+			);
+			path = Totp;
+			sourceTree = "<group>";
+		};
 		F3ABCA002ADAA1A400A414AC /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -1075,12 +1087,11 @@
 			isa = PBXGroup;
 			children = (
 				F3FDFED42AE2678E00BCF2B8 /* Password List.swift */,
+				F3A843412B8BF1DA0068AC2A /* Password Card.swift */,
+				F3FDFED02AE1DA2700BCF2B8 /* Password View.swift */,
 				F3BB646C2B8B674F008DB640 /* New Password View.swift */,
-				F367D4D12AE26EAC0088DA7A /* OTP Create Code.swift */,
-				F3FDFED22AE1DAF800BCF2B8 /* OTP Extension.swift */,
-				F3FDFED02AE1DA2700BCF2B8 /* OTP Code View.swift */,
-				F3BB646E2B8B696C008DB640 /* Otp View.swift */,
-				F3FDFECE2AE1D9E400BCF2B8 /* OTP VM.swift */,
+				F3FDFED22AE1DAF800BCF2B8 /* Password Extension.swift */,
+				F3A8433E2B8BF1500068AC2A /* Totp */,
 			);
 			path = Passwords;
 			sourceTree = "<group>";
@@ -1394,7 +1405,7 @@
 				F3BB646D2B8B674F008DB640 /* New Password View.swift in Sources */,
 				F317E76E2A90E63B00D5B904 /* Inventory View.swift in Sources */,
 				F33C17132B2A0A360040FA63 /* Hide Gesture.swift in Sources */,
-				F367D4D22AE26EAC0088DA7A /* OTP Create Code.swift in Sources */,
+				F367D4D22AE26EAC0088DA7A /* Create Totp View.swift in Sources */,
 				F3CAAC172A60BE1E000B2495 /* Note List.swift in Sources */,
 				F3ACF3922AA7D61D002B4638 /* NFC Scan View.swift in Sources */,
 				F3CAABFA2A60BAC4000B2495 /* Countdown View.swift in Sources */,
@@ -1404,6 +1415,7 @@
 				F36223222A991979002F0A8D /* Frameworks View.swift in Sources */,
 				F36859422AD7BE420017898B /* Pressure VM.swift in Sources */,
 				F3A1F4482AD8964600C85355 /* Stopwatch View.swift in Sources */,
+				F3A843422B8BF1DA0068AC2A /* Password Card.swift in Sources */,
 				F317E7702A90E90A00D5B904 /* InventoryItem View.swift in Sources */,
 				F3CAABEF2A60BAC4000B2495 /* Nav Destinations.swift in Sources */,
 				F3B00BFD2A96B54400C20843 /* BuildTime View.swift in Sources */,
@@ -1427,9 +1439,9 @@
 				F33C17112B29F22A0040FA63 /* Note Assets.swift in Sources */,
 				F394C5092AD55D7000C56527 /* Goida Sensors View.swift in Sources */,
 				F357BA1C2ADC6FBB00DB249F /* Nearby VM.swift in Sources */,
-				F3FDFED12AE1DA2700BCF2B8 /* OTP Code View.swift in Sources */,
+				F3FDFED12AE1DA2700BCF2B8 /* Password View.swift in Sources */,
 				F394C5052AD53EFF00C56527 /* Battery VM.swift in Sources */,
-				F3FDFED32AE1DAF800BCF2B8 /* OTP Extension.swift in Sources */,
+				F3FDFED32AE1DAF800BCF2B8 /* Password Extension.swift in Sources */,
 				F3FDFED52AE2678E00BCF2B8 /* Password List.swift in Sources */,
 				F3B00BFA2A96875700C20843 /* Status Code Card.swift in Sources */,
 				F30A583B2AD315140070B906 /* MathView.swift in Sources */,
@@ -1437,7 +1449,7 @@
 				F3B00BF42A9680B800C20843 /* HTTP Status Code.swift in Sources */,
 				F3DFB7CE2AEB03BF00191EAC /* Torch VM.swift in Sources */,
 				F386B4412AC438D300F6C2BB /* CalculatorView.swift in Sources */,
-				F3FDFECF2AE1D9E400BCF2B8 /* OTP VM.swift in Sources */,
+				F3FDFECF2AE1D9E400BCF2B8 /* Totp VM.swift in Sources */,
 				F38A644F2AE051F200A72651 /* Recorder VM.swift in Sources */,
 				F3ABCA042ADAA1ED00A414AC /* Network VM.swift in Sources */,
 				F3CAABF92A60BAC4000B2495 /* Emoji Extension.swift in Sources */,
@@ -1445,7 +1457,6 @@
 				F3ED95E22B4D442900A490FC /* Multiboard List.swift in Sources */,
 				F359DB4D2AC6B7250064F55C /* App List Card.swift in Sources */,
 				F3CAABF52A60BAC4000B2495 /* Timer Card.swift in Sources */,
-				F3BB646F2B8B696C008DB640 /* Otp View.swift in Sources */,
 				F3CAABF42A60BAC4000B2495 /* Nav Extension.swift in Sources */,
 				F3BFF89D2B2524F100BE23BF /* Xcodes Model.swift in Sources */,
 				F38B31FA2AF4EBF2002B6B5A /* Reminder Parent View.swift in Sources */,
@@ -1476,6 +1487,7 @@
 				F3E23AC52AD7EEA2004EB064 /* Goida Test List.swift in Sources */,
 				F3C022C22AD7D323008013A2 /* Memory VM.swift in Sources */,
 				F3CAABF02A60BAC4000B2495 /* Home Model.swift in Sources */,
+				F3A843402B8BF1580068AC2A /* Otp View.swift in Sources */,
 				F3CAABF82A60BAC4000B2495 /* Emoji TextField.swift in Sources */,
 				F394C4FE2AD53E7500C56527 /* GoidaBatteryView.swift in Sources */,
 				F35897BF2ACF63E900A70012 /* Goida24View.swift in Sources */,

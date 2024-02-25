@@ -10,12 +10,9 @@ struct PasswordList: View {
     var body: some View {
         List {
             ForEach(passwords) { password in
-                OTPCodeView(password)
+                PasswordCard(password)
             }
-            
-//            NavigationLink("Test code") {
-//                OTPCodeView("DRIG5PU6CTAH2MYENGIVF542GZ72PFVJ")
-//            }
+            .onDelete(perform: deletePassword)
             
             Section {
                 Button {
@@ -29,8 +26,16 @@ struct PasswordList: View {
             NewPasswordView()
         }
     }
+    
+    private func deletePassword(offsets: IndexSet) {
+        for index in offsets {
+            let password = passwords[index]
+            modelContext.delete(password)
+        }
+    }
 }
 
 #Preview {
     PasswordList()
+        .modelContainer(for: Password.self, inMemory: true)
 }

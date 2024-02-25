@@ -63,8 +63,8 @@ struct HomeView: View {
             //#endif
             
             ApplistSection("Other", icon: "command") {
-                ApplistCard("OTP", description: "-") {
-                    navState.navigate(.toOTP)
+                ApplistCard("Passwords", description: "-") {
+                    navState.navigate(.toPasswords)
                 }
 #if !DEBUG
                 .disabled(true)

@@ -26,10 +26,10 @@ final class TotpVM {
         secondTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             self?.timeRemaining = self?.calculateTimeRemaining() ?? 30
         }
-        // Add the timer to the current run loop
+        
         if let timer = secondTimer {
             RunLoop.current.add(timer, forMode: .common)
-            timer.fire()  // Start the timer immediately
+            timer.fire()
         }
     }
     
@@ -48,13 +48,13 @@ final class TotpVM {
             print("Error decoding secret")
         }
     }
-        
+    
     private func calculateTimeRemaining() -> Double {
         let interval: Double = 30
         let timeSinceEpoch = Date().timeIntervalSince1970
         return interval - fmod(timeSinceEpoch, interval)
     }
-        
+    
     private func startTimer() {
         let timeToNextInterval = timeRemaining
         

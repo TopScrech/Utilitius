@@ -563,9 +563,6 @@
     "New name" : {
 
     },
-    "New Password" : {
-
-    },
     "New Reminder" : {
 
     },
@@ -655,13 +652,13 @@
         }
       }
     },
-    "OTP" : {
-
-    },
     "OTP Secret" : {
 
     },
     "Password" : {
+
+    },
+    "Passwords" : {
 
     },
     "Paste" : {
@@ -771,7 +768,7 @@
         }
       }
     },
-    "Setup" : {
+    "Setup TOTP" : {
 
     },
     "Show assets" : {
