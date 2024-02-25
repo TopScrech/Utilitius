@@ -14,7 +14,8 @@ struct UtilitiusApp: App {
             Reminder.self,
             Countdown.self,
             Subscription.self,
-            NFCMessage.self
+            NFCMessage.self,
+            Password.self
         ])
         
         do {

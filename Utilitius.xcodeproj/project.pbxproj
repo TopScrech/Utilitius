@@ -127,6 +127,9 @@
 		F3BA70052B7B8AF900015711 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABD32A60BAC3000B2495 /* Timer.swift */; };
 		F3BA70062B7B8AFE00015711 /* Intentory Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76B2A90E5E700D5B904 /* Intentory Item.swift */; };
 		F3BA70082B7B8B1B00015711 /* Note Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BA70072B7B8B1B00015711 /* Note Card.swift */; };
+		F3BB646B2B8B6638008DB640 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB646A2B8B6638008DB640 /* Password.swift */; };
+		F3BB646D2B8B674F008DB640 /* New Password View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB646C2B8B674F008DB640 /* New Password View.swift */; };
+		F3BB646F2B8B696C008DB640 /* Otp View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BB646E2B8B696C008DB640 /* Otp View.swift */; };
 		F3BC1C202ADFEDDA007C314B /* Device Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BC1C1F2ADFEDDA007C314B /* Device Info.swift */; };
 		F3BEF2D12AD033E6005F11D1 /* Bluetooth VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BEF2D02AD033E6005F11D1 /* Bluetooth VM.swift */; };
 		F3BEF2D52AD03B38005F11D1 /* Camera VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BEF2D42AD03B38005F11D1 /* Camera VM.swift */; };
@@ -191,7 +194,7 @@
 		F3FDFECF2AE1D9E400BCF2B8 /* OTP VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFECE2AE1D9E400BCF2B8 /* OTP VM.swift */; };
 		F3FDFED12AE1DA2700BCF2B8 /* OTP Code View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED02AE1DA2700BCF2B8 /* OTP Code View.swift */; };
 		F3FDFED32AE1DAF800BCF2B8 /* OTP Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED22AE1DAF800BCF2B8 /* OTP Extension.swift */; };
-		F3FDFED52AE2678E00BCF2B8 /* OTP List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED42AE2678E00BCF2B8 /* OTP List.swift */; };
+		F3FDFED52AE2678E00BCF2B8 /* Password List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDFED42AE2678E00BCF2B8 /* Password List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -325,6 +328,9 @@
 		F3B9BCCE2B6E5A1300527038 /* Http Code Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Http Code Card.swift"; path = "../../../../Http Code Card.swift"; sourceTree = "<group>"; };
 		F3BA70012B7B8AB700015711 /* Note List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note List.swift"; path = "../../../Note List.swift"; sourceTree = "<group>"; };
 		F3BA70072B7B8B1B00015711 /* Note Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Note Card.swift"; path = "../../../Note Card.swift"; sourceTree = "<group>"; };
+		F3BB646A2B8B6638008DB640 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Password.swift; path = ../../../../Password.swift; sourceTree = "<group>"; };
+		F3BB646C2B8B674F008DB640 /* New Password View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "New Password View.swift"; path = "../../../../New Password View.swift"; sourceTree = "<group>"; };
+		F3BB646E2B8B696C008DB640 /* Otp View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Otp View.swift"; path = "../../../../Otp View.swift"; sourceTree = "<group>"; };
 		F3BC1C1F2ADFEDDA007C314B /* Device Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device Info.swift"; sourceTree = "<group>"; };
 		F3BEF2D02AD033E6005F11D1 /* Bluetooth VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bluetooth VM.swift"; sourceTree = "<group>"; };
 		F3BEF2D42AD03B38005F11D1 /* Camera VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Camera VM.swift"; sourceTree = "<group>"; };
@@ -388,7 +394,7 @@
 		F3FDFECE2AE1D9E400BCF2B8 /* OTP VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP VM.swift"; sourceTree = "<group>"; };
 		F3FDFED02AE1DA2700BCF2B8 /* OTP Code View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Code View.swift"; sourceTree = "<group>"; };
 		F3FDFED22AE1DAF800BCF2B8 /* OTP Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Extension.swift"; sourceTree = "<group>"; };
-		F3FDFED42AE2678E00BCF2B8 /* OTP List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP List.swift"; sourceTree = "<group>"; };
+		F3FDFED42AE2678E00BCF2B8 /* Password List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Password List.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -873,7 +879,7 @@
 				F386B43F2AC438C200F6C2BB /* Calculator */,
 				F3DFB7CF2AEB165D00191EAC /* Subscriptions */,
 				F359DB4E2AC6BADF0064F55C /* True or Not */,
-				F3FDFECD2AE1D9B400BCF2B8 /* TOTP */,
+				F3FDFECD2AE1D9B400BCF2B8 /* Passwords */,
 				F35897BD2ACF634100A70012 /* GOIDA 24 */,
 				F367D4D32AE26F8C0088DA7A /* YouTube Downloader */,
 				F3AE03DC2AEAE75D00559F5D /* Reminder */,
@@ -923,6 +929,7 @@
 				F3CAAC0C2A60BE1E000B2495 /* Note.swift */,
 				F3CAABD32A60BAC3000B2495 /* Timer.swift */,
 				F317E76B2A90E5E700D5B904 /* Intentory Item.swift */,
+				F3BB646A2B8B6638008DB640 /* Password.swift */,
 			);
 			path = "SwiftData Models";
 			sourceTree = "<group>";
@@ -1064,16 +1071,18 @@
 			path = Multiboard;
 			sourceTree = "<group>";
 		};
-		F3FDFECD2AE1D9B400BCF2B8 /* TOTP */ = {
+		F3FDFECD2AE1D9B400BCF2B8 /* Passwords */ = {
 			isa = PBXGroup;
 			children = (
-				F3FDFED42AE2678E00BCF2B8 /* OTP List.swift */,
+				F3FDFED42AE2678E00BCF2B8 /* Password List.swift */,
+				F3BB646C2B8B674F008DB640 /* New Password View.swift */,
 				F367D4D12AE26EAC0088DA7A /* OTP Create Code.swift */,
 				F3FDFED22AE1DAF800BCF2B8 /* OTP Extension.swift */,
 				F3FDFED02AE1DA2700BCF2B8 /* OTP Code View.swift */,
+				F3BB646E2B8B696C008DB640 /* Otp View.swift */,
 				F3FDFECE2AE1D9E400BCF2B8 /* OTP VM.swift */,
 			);
-			path = TOTP;
+			path = Passwords;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1382,6 +1391,7 @@
 				F3CAAC122A60BE1E000B2495 /* Note Card.swift in Sources */,
 				F350840F2AEAA34C00865FF6 /* Morse Alphabet.swift in Sources */,
 				F3DFB7CC2AEAF69300191EAC /* Reminder Card.swift in Sources */,
+				F3BB646D2B8B674F008DB640 /* New Password View.swift in Sources */,
 				F317E76E2A90E63B00D5B904 /* Inventory View.swift in Sources */,
 				F33C17132B2A0A360040FA63 /* Hide Gesture.swift in Sources */,
 				F367D4D22AE26EAC0088DA7A /* OTP Create Code.swift in Sources */,
@@ -1420,7 +1430,7 @@
 				F3FDFED12AE1DA2700BCF2B8 /* OTP Code View.swift in Sources */,
 				F394C5052AD53EFF00C56527 /* Battery VM.swift in Sources */,
 				F3FDFED32AE1DAF800BCF2B8 /* OTP Extension.swift in Sources */,
-				F3FDFED52AE2678E00BCF2B8 /* OTP List.swift in Sources */,
+				F3FDFED52AE2678E00BCF2B8 /* Password List.swift in Sources */,
 				F3B00BFA2A96875700C20843 /* Status Code Card.swift in Sources */,
 				F30A583B2AD315140070B906 /* MathView.swift in Sources */,
 				F33C17152B2A0D330040FA63 /* Quick Look.swift in Sources */,
@@ -1435,6 +1445,7 @@
 				F3ED95E22B4D442900A490FC /* Multiboard List.swift in Sources */,
 				F359DB4D2AC6B7250064F55C /* App List Card.swift in Sources */,
 				F3CAABF52A60BAC4000B2495 /* Timer Card.swift in Sources */,
+				F3BB646F2B8B696C008DB640 /* Otp View.swift in Sources */,
 				F3CAABF42A60BAC4000B2495 /* Nav Extension.swift in Sources */,
 				F3BFF89D2B2524F100BE23BF /* Xcodes Model.swift in Sources */,
 				F38B31FA2AF4EBF2002B6B5A /* Reminder Parent View.swift in Sources */,
@@ -1457,6 +1468,7 @@
 				F3B9BCD22B6E5C9D00527038 /* App Container.swift in Sources */,
 				F3B00BF82A96873B00C20843 /* Status Codes View.swift in Sources */,
 				F3B49AE22A92AF510065B5EC /* Framework Model.swift in Sources */,
+				F3BB646B2B8B6638008DB640 /* Password.swift in Sources */,
 				F38ACD762A94091800B29405 /* Xcodes.swift in Sources */,
 				F34185D92A98CB9400F972C2 /* App Card Image.swift in Sources */,
 				F30450B52A9135C1006C6037 /* Home View.swift in Sources */,

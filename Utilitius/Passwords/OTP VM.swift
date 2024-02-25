@@ -20,19 +20,26 @@ final class TotpVM {
     
     deinit {
         stopTimer()
-        stopSecondTimer()
+    }
+    
+    private func startSecondTimer() {
+        secondTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
+            self?.timeRemaining = self?.calculateTimeRemaining() ?? 30
+        }
+        // Add the timer to the current run loop
+        if let timer = secondTimer {
+            RunLoop.current.add(timer, forMode: .common)
+            timer.fire()  // Start the timer immediately
+        }
     }
     
     func generate() {
         if let data = base32DecodeToData(secret),
            let totp = TOTP(secret: data) {
             let otpString = totp.generate(time: Date())
-            
             if otpString != nil {
-                code = otpString ?? "Error"
-                
-                if otpTimer == nil {
-                    startTimer()
+                DispatchQueue.main.async {
+                    self.code = otpString ?? "Error"
                 }
             } else {
                 print("Error generating OTP")
@@ -41,13 +48,7 @@ final class TotpVM {
             print("Error decoding secret")
         }
     }
-    
-    private func startSecondTimer() {
-        secondTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
-            self?.timeRemaining = self?.calculateTimeRemaining() ?? 30
-        }
-    }
-    
+        
     private func calculateTimeRemaining() -> Double {
         let interval: Double = 30
         let timeSinceEpoch = Date().timeIntervalSince1970
@@ -65,11 +66,6 @@ final class TotpVM {
     private func stopTimer() {
         otpTimer?.invalidate()
         otpTimer = nil
-    }
-
-    private func stopSecondTimer() {
-        secondTimer?.invalidate()
-        secondTimer = nil
     }
     
     @objc private func updateOTP() {

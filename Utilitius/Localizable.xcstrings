@@ -563,6 +563,9 @@
     "New name" : {
 
     },
+    "New Password" : {
+
+    },
     "New Reminder" : {
 
     },
@@ -653,6 +656,12 @@
       }
     },
     "OTP" : {
+
+    },
+    "OTP Secret" : {
+
+    },
+    "Password" : {
 
     },
     "Paste" : {
@@ -762,6 +771,9 @@
         }
       }
     },
+    "Setup" : {
+
+    },
     "Show assets" : {
 
     },
@@ -834,9 +846,6 @@
         }
       }
     },
-    "Test code" : {
-
-    },
     "Test Flight" : {
 
     },
@@ -858,6 +867,9 @@
       }
     },
     "Timers" : {
+
+    },
+    "Title" : {
 
     },
     "Tomorrow" : {
@@ -949,9 +961,6 @@
       }
     },
     "XcodesJSON.txt" : {
-
-    },
-    "Your OTP is: " : {
 
     },
     "YouTube" : {
