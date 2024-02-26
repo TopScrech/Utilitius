@@ -12,13 +12,39 @@ struct MenuBarExtraView: View {
     @Query private var items: [PasteboardItem]
     
     @State private var document = TextFile()
+    @State private var search = ""
+    
+    var founditems: [PasteboardItem] {
+        if search.isEmpty {
+            items
+        } else {
+            items.filter {
+                $0.content.contains(search)
+            }
+        }
+    }
     
     var body: some View {
         VStack {
-            List(items.reversed()) { item in
-                PasteboardCard(item)
+            List {
+                TextField("Search", text: $search)
+                    .autocorrectionDisabled()
+                    .textFieldStyle(.roundedBorder)
+                
+                if founditems.isEmpty {
+                    ContentUnavailableView.search(text: search)
+                } else {
+                    ForEach(founditems.reversed()) { item in
+                        PasteboardCard(item)
+                    }
+                }
             }
             .scrollIndicators(.never)
+            //            .overlay {
+            //                if founditems.isEmpty {
+            //                    ContentUnavailableView.search(text: search)
+            //                }
+            //            }
             
             Toggle("Show time", isOn: $settings.showTime)
             

@@ -62,19 +62,19 @@ struct MyApp: App {
     @StateObject private var settings = SettingsStorage()
     
     var body: some Scene {
-        WindowGroup("Pasteboard", id: "pasteboard") {
-            PasteboardList()
-                .modelContainer(container)
-                .environment(pasteboardObserver)
-                .environmentObject(settings)
-                .task {
-                    do {
-                        try SMAppService.mainApp.register()
-                    } catch {
-                        print("Fuf")
-                    }                    
-                }
-        }
+//        WindowGroup("Pasteboard", id: "pasteboard") {
+//            PasteboardList()
+//                .modelContainer(container)
+//                .environment(pasteboardObserver)
+//                .environmentObject(settings)
+//                .task {
+//                    do {
+//                        try SMAppService.mainApp.register()
+//                    } catch {
+//                        print("Fuf")
+//                    }                    
+//                }
+//        }
         
         MenuBarExtra("Test", systemImage: "hammer") {
             MenuBarExtraView()
