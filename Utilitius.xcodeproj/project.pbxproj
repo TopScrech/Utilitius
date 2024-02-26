@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F302453D2B8C8C2500DBFD2D /* Debug View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F302453C2B8C8C2500DBFD2D /* Debug View.swift */; };
 		F302453F2B8C8F8F00DBFD2D /* Text File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F302453E2B8C8F8F00DBFD2D /* Text File.swift */; };
+		F30245412B8C930300DBFD2D /* Pasteboard Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30245402B8C930300DBFD2D /* Pasteboard Card.swift */; };
+		F30245432B8C938A00DBFD2D /* Settings Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30245422B8C938A00DBFD2D /* Settings Storage.swift */; };
 		F30450B52A9135C1006C6037 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30450B42A9135C1006C6037 /* Home View.swift */; };
 		F30627CA2AAB053900A65D63 /* NFC Message Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30627C92AAB053900A65D63 /* NFC Message Card.swift */; };
 		F30A583B2AD315140070B906 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A583A2AD315140070B906 /* MathView.swift */; };
@@ -107,14 +109,13 @@
 		F3A843752B8C0BB40068AC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A843742B8C0BB40068AC2A /* Assets.xcassets */; };
 		F3A843842B8C0BF60068AC2A /* Menu Bar Extra View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8437E2B8C0BF60068AC2A /* Menu Bar Extra View.swift */; };
 		F3A843852B8C0BF60068AC2A /* Pasteboard List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8437F2B8C0BF60068AC2A /* Pasteboard List.swift */; };
-		F3A843862B8C0BF60068AC2A /* MenuTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843802B8C0BF60068AC2A /* MenuTestApp.swift */; };
+		F3A843862B8C0BF60068AC2A /* Menu App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843802B8C0BF60068AC2A /* Menu App.swift */; };
 		F3A843872B8C0BF60068AC2A /* App Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843812B8C0BF60068AC2A /* App Delegate.swift */; };
 		F3A843882B8C0BF60068AC2A /* Pasteboard VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843822B8C0BF60068AC2A /* Pasteboard VM.swift */; };
 		F3A843892B8C0BF60068AC2A /* Pasteboard Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843832B8C0BF60068AC2A /* Pasteboard Item.swift */; };
 		F3A8438E2B8C0C650068AC2A /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8438D2B8C0C5B0068AC2A /* App Container.swift */; };
 		F3A843922B8C14C90068AC2A /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3A843912B8C14C90068AC2A /* ScrechKit */; };
 		F3A8439A2B8C17C10068AC2A /* Utilitius_LauncherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843992B8C17C10068AC2A /* Utilitius_LauncherApp.swift */; };
-		F3A8439C2B8C17C10068AC2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8439B2B8C17C10068AC2A /* ContentView.swift */; };
 		F3A8439E2B8C17C20068AC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A8439D2B8C17C20068AC2A /* Assets.xcassets */; };
 		F3A843A92B8C18830068AC2A /* Utilitius Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3A843972B8C17C10068AC2A /* Utilitius Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3A843AB2B8C18B80068AC2A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A843AA2B8C18B80068AC2A /* ServiceManagement.framework */; };
@@ -257,6 +258,8 @@
 /* Begin PBXFileReference section */
 		F302453C2B8C8C2500DBFD2D /* Debug View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Debug View.swift"; path = "../../../Debug View.swift"; sourceTree = "<group>"; };
 		F302453E2B8C8F8F00DBFD2D /* Text File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Text File.swift"; path = "../../../../Text File.swift"; sourceTree = "<group>"; };
+		F30245402B8C930300DBFD2D /* Pasteboard Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Pasteboard Card.swift"; path = "../../../../Pasteboard Card.swift"; sourceTree = "<group>"; };
+		F30245422B8C938A00DBFD2D /* Settings Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Settings Storage.swift"; path = "../../../Settings Storage.swift"; sourceTree = "<group>"; };
 		F30450B42A9135C1006C6037 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F30627C92AAB053900A65D63 /* NFC Message Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Message Card.swift"; sourceTree = "<group>"; };
 		F30A583A2AD315140070B906 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
@@ -346,14 +349,13 @@
 		F3A843792B8C0BB40068AC2A /* Utilitius_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Utilitius_macOS.entitlements; sourceTree = "<group>"; };
 		F3A8437E2B8C0BF60068AC2A /* Menu Bar Extra View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu Bar Extra View.swift"; sourceTree = "<group>"; };
 		F3A8437F2B8C0BF60068AC2A /* Pasteboard List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard List.swift"; sourceTree = "<group>"; };
-		F3A843802B8C0BF60068AC2A /* MenuTestApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTestApp.swift; sourceTree = "<group>"; };
+		F3A843802B8C0BF60068AC2A /* Menu App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu App.swift"; sourceTree = "<group>"; };
 		F3A843812B8C0BF60068AC2A /* App Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App Delegate.swift"; sourceTree = "<group>"; };
 		F3A843822B8C0BF60068AC2A /* Pasteboard VM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard VM.swift"; sourceTree = "<group>"; };
 		F3A843832B8C0BF60068AC2A /* Pasteboard Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard Item.swift"; sourceTree = "<group>"; };
 		F3A8438D2B8C0C5B0068AC2A /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F3A843972B8C17C10068AC2A /* Utilitius Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utilitius Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A843992B8C17C10068AC2A /* Utilitius_LauncherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilitius_LauncherApp.swift; sourceTree = "<group>"; };
-		F3A8439B2B8C17C10068AC2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F3A8439D2B8C17C20068AC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A843A22B8C17C20068AC2A /* Utilitius_Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Utilitius_Launcher.entitlements; sourceTree = "<group>"; };
 		F3A843A62B8C17E10068AC2A /* Utilitius-Launcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Utilitius-Launcher-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -819,14 +821,15 @@
 		F3A8436D2B8C0BB30068AC2A /* Utilitius macOS */ = {
 			isa = PBXGroup;
 			children = (
-				F3A843802B8C0BF60068AC2A /* MenuTestApp.swift */,
+				F3A843802B8C0BF60068AC2A /* Menu App.swift */,
+				F3A843742B8C0BB40068AC2A /* Assets.xcassets */,
+				F3A843792B8C0BB40068AC2A /* Utilitius_macOS.entitlements */,
+				F30245422B8C938A00DBFD2D /* Settings Storage.swift */,
 				F302453C2B8C8C2500DBFD2D /* Debug View.swift */,
 				F3A843832B8C0BF60068AC2A /* Pasteboard Item.swift */,
 				F3A8438C2B8C0C5B0068AC2A /* Navigation */,
 				F3A843902B8C0C7B0068AC2A /* Menu Bar Extra */,
 				F3A8438F2B8C0C6F0068AC2A /* Pasteboard */,
-				F3A843742B8C0BB40068AC2A /* Assets.xcassets */,
-				F3A843792B8C0BB40068AC2A /* Utilitius_macOS.entitlements */,
 			);
 			path = "Utilitius macOS";
 			sourceTree = "<group>";
@@ -853,6 +856,7 @@
 			isa = PBXGroup;
 			children = (
 				F3A8437E2B8C0BF60068AC2A /* Menu Bar Extra View.swift */,
+				F30245402B8C930300DBFD2D /* Pasteboard Card.swift */,
 				F302453E2B8C8F8F00DBFD2D /* Text File.swift */,
 			);
 			path = "Menu Bar Extra";
@@ -863,7 +867,6 @@
 			children = (
 				F3A843A62B8C17E10068AC2A /* Utilitius-Launcher-Info.plist */,
 				F3A843992B8C17C10068AC2A /* Utilitius_LauncherApp.swift */,
-				F3A8439B2B8C17C10068AC2A /* ContentView.swift */,
 				F3A8439D2B8C17C20068AC2A /* Assets.xcassets */,
 				F3A843A22B8C17C20068AC2A /* Utilitius_Launcher.entitlements */,
 			);
@@ -1557,10 +1560,12 @@
 				F3A843882B8C0BF60068AC2A /* Pasteboard VM.swift in Sources */,
 				F3A843842B8C0BF60068AC2A /* Menu Bar Extra View.swift in Sources */,
 				F3A843892B8C0BF60068AC2A /* Pasteboard Item.swift in Sources */,
+				F30245412B8C930300DBFD2D /* Pasteboard Card.swift in Sources */,
+				F30245432B8C938A00DBFD2D /* Settings Storage.swift in Sources */,
 				F3A843872B8C0BF60068AC2A /* App Delegate.swift in Sources */,
 				F302453D2B8C8C2500DBFD2D /* Debug View.swift in Sources */,
 				F3A843852B8C0BF60068AC2A /* Pasteboard List.swift in Sources */,
-				F3A843862B8C0BF60068AC2A /* MenuTestApp.swift in Sources */,
+				F3A843862B8C0BF60068AC2A /* Menu App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1568,7 +1573,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3A8439C2B8C17C10068AC2A /* ContentView.swift in Sources */,
 				F3A8439A2B8C17C10068AC2A /* Utilitius_LauncherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

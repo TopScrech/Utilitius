@@ -22,6 +22,7 @@ struct PasteboardList: View {
             
             //            Section {
             //                Button {
+            //            NSPasteboard.general.clearContents()
             //                    NSPasteboard.general.setString("qefewfew", forType: .string)
             //                } label: {
             //                    Text("Clear")

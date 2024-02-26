@@ -3,61 +3,52 @@ import SwiftData
 
 struct MenuBarExtraView: View {
     @StateObject private var exporter = TextFileExporter()
+    @EnvironmentObject private var settings: SettingsStorage
     @Environment(PasteboardVM.self) private var pasteboardObserver
     @Environment(\.openWindow) var openWindow
+    @Environment(\.dismissWindow) var dismissWindow
     
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [PasteboardItem]
     
     @State private var document = TextFile()
-    @State private var showTime = false
     
     var body: some View {
         VStack {
             List(items.reversed()) { item in
-                Button {
-                    NSPasteboard.general.clearContents()
-                    NSPasteboard.general.setString(item.content, forType: .string)
-                } label: {
-                    Text(item.content)
-                        .lineLimit(1)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    
-                    if showTime {
-                        Text(item.date, style: .time)
-                            .footnote()
-                            .foregroundStyle(.secondary)
-                    }
-                }
-                .buttonStyle(.accessoryBar)
+                PasteboardCard(item)
             }
             .scrollIndicators(.never)
             
-            Toggle("Show time", isOn: $showTime)
-            
-            Button("Export") {
-                let array = items.map {
-                    $0.content
-                }
-                
-                exporter.exportToFile(array)
-            }
-            .buttonStyle(.plain)
+            Toggle("Show time", isOn: $settings.showTime)
             
             HStack {
                 Button("Clear All") {
                     clearAll()
                 }
                 
-                Button("Quit") {
-                    NSApplication.shared.terminate(nil)
+                Button("Export") {
+                    let array = items.map {
+                        $0.content
+                    }
+                    
+                    exporter.exportToFile(array)
                 }
                 
-                Button("Open the app") {
-                    openWindow(id: "pasteboard")
+                Button("Quit", role: .destructive) {
+                    NSApplication.shared.terminate(nil)
                 }
             }
-            .buttonStyle(.plain)
+            
+            HStack {
+                Button("Open window") {
+                    openWindow(id: "pasteboard")
+                }
+                
+                Button("Dismiss window") {
+                    dismissWindow(id: "pasteboard")
+                }
+            }
             .padding(.bottom)
         }
     }
@@ -103,4 +94,6 @@ final class TextFileExporter: ObservableObject {
 
 #Preview {
     MenuBarExtraView()
+        .environment(PasteboardVM())
+        .environmentObject(SettingsStorage())
 }
