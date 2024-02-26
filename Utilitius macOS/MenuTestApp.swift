@@ -1,7 +1,5 @@
 import ScrechKit
 import SwiftData
-
-//import Cocoa
 import ServiceManagement
 
 //extension Notification.Name {
@@ -11,19 +9,18 @@ import ServiceManagement
 //@NSApplicationMain
 //class AppDelegate: NSObject {}
 
-
 //extension AppDelegate: NSApplicationDelegate {
 //    func applicationDidFinishLaunching(_ aNotification: Notification) {
-//        
+//
 //        let launcherAppId = "com.tiborbodecs.LauncherApplication"
 //        let runningApps = NSWorkspace.shared.runningApplications
-//        
+//
 //        let isRunning = !runningApps.filter {
 //            $0.bundleIdentifier == launcherAppId
 //        }.isEmpty
-//        
+//
 //        SMLoginItemSetEnabled(launcherAppId as CFString, true)
-//        
+//
 //        if isRunning {
 //            DistributedNotificationCenter.default().post(
 //                name: .killLauncher,
@@ -63,10 +60,17 @@ struct MyApp: App {
     }
     
     var body: some Scene {
-        WindowGroup {
+        WindowGroup("Pasteboard", id: "pasteboard") {
             PasteboardList()
                 .modelContainer(container)
                 .environment(pasteboardObserver)
+                .task {
+                    do {
+                        try SMAppService.mainApp.register()
+                    } catch {
+                        print("Fuf")
+                    }                    
+                }
         }
         
         MenuBarExtra("Test", systemImage: "hammer") {

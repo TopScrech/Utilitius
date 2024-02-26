@@ -2,10 +2,10 @@ import SwiftUI
 import SwiftData
 
 struct PasteboardList: View {
+    @Environment(PasteboardVM.self) private var pasteboardObserver
+    
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [PasteboardItem]
-    
-    @Environment(PasteboardVM.self) private var pasteboardObserver
     
     var body: some View {
         List {
@@ -38,6 +38,12 @@ struct PasteboardList: View {
     private func appendNewItems(_ newItems: [String]) {
         for item in newItems {
             modelContext.insert(PasteboardItem(content: item, date: Date()))
+        }
+    }
+    
+    private func clearAll() {
+        for item in items {
+            modelContext.delete(item)
         }
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F302453D2B8C8C2500DBFD2D /* Debug View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F302453C2B8C8C2500DBFD2D /* Debug View.swift */; };
+		F302453F2B8C8F8F00DBFD2D /* Text File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F302453E2B8C8F8F00DBFD2D /* Text File.swift */; };
 		F30450B52A9135C1006C6037 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30450B42A9135C1006C6037 /* Home View.swift */; };
 		F30627CA2AAB053900A65D63 /* NFC Message Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30627C92AAB053900A65D63 /* NFC Message Card.swift */; };
 		F30A583B2AD315140070B906 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A583A2AD315140070B906 /* MathView.swift */; };
@@ -103,8 +105,7 @@
 		F3A843402B8BF1580068AC2A /* Otp View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8433F2B8BF1580068AC2A /* Otp View.swift */; };
 		F3A843422B8BF1DA0068AC2A /* Password Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843412B8BF1DA0068AC2A /* Password Card.swift */; };
 		F3A843752B8C0BB40068AC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A843742B8C0BB40068AC2A /* Assets.xcassets */; };
-		F3A843782B8C0BB40068AC2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A843772B8C0BB40068AC2A /* Preview Assets.xcassets */; };
-		F3A843842B8C0BF60068AC2A /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8437E2B8C0BF60068AC2A /* MenuBarExtraView.swift */; };
+		F3A843842B8C0BF60068AC2A /* Menu Bar Extra View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8437E2B8C0BF60068AC2A /* Menu Bar Extra View.swift */; };
 		F3A843852B8C0BF60068AC2A /* Pasteboard List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8437F2B8C0BF60068AC2A /* Pasteboard List.swift */; };
 		F3A843862B8C0BF60068AC2A /* MenuTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843802B8C0BF60068AC2A /* MenuTestApp.swift */; };
 		F3A843872B8C0BF60068AC2A /* App Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843812B8C0BF60068AC2A /* App Delegate.swift */; };
@@ -254,6 +255,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F302453C2B8C8C2500DBFD2D /* Debug View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Debug View.swift"; path = "../../../Debug View.swift"; sourceTree = "<group>"; };
+		F302453E2B8C8F8F00DBFD2D /* Text File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Text File.swift"; path = "../../../../Text File.swift"; sourceTree = "<group>"; };
 		F30450B42A9135C1006C6037 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F30627C92AAB053900A65D63 /* NFC Message Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Message Card.swift"; sourceTree = "<group>"; };
 		F30A583A2AD315140070B906 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
@@ -340,9 +343,8 @@
 		F3A843412B8BF1DA0068AC2A /* Password Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Password Card.swift"; path = "../../../../Password Card.swift"; sourceTree = "<group>"; };
 		F3A8436C2B8C0BB30068AC2A /* Utilitius macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utilitius macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A843742B8C0BB40068AC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3A843772B8C0BB40068AC2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3A843792B8C0BB40068AC2A /* Utilitius_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Utilitius_macOS.entitlements; sourceTree = "<group>"; };
-		F3A8437E2B8C0BF60068AC2A /* MenuBarExtraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarExtraView.swift; sourceTree = "<group>"; };
+		F3A8437E2B8C0BF60068AC2A /* Menu Bar Extra View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu Bar Extra View.swift"; sourceTree = "<group>"; };
 		F3A8437F2B8C0BF60068AC2A /* Pasteboard List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard List.swift"; sourceTree = "<group>"; };
 		F3A843802B8C0BF60068AC2A /* MenuTestApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTestApp.swift; sourceTree = "<group>"; };
 		F3A843812B8C0BF60068AC2A /* App Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App Delegate.swift"; sourceTree = "<group>"; };
@@ -818,23 +820,15 @@
 			isa = PBXGroup;
 			children = (
 				F3A843802B8C0BF60068AC2A /* MenuTestApp.swift */,
+				F302453C2B8C8C2500DBFD2D /* Debug View.swift */,
 				F3A843832B8C0BF60068AC2A /* Pasteboard Item.swift */,
 				F3A8438C2B8C0C5B0068AC2A /* Navigation */,
 				F3A843902B8C0C7B0068AC2A /* Menu Bar Extra */,
 				F3A8438F2B8C0C6F0068AC2A /* Pasteboard */,
 				F3A843742B8C0BB40068AC2A /* Assets.xcassets */,
 				F3A843792B8C0BB40068AC2A /* Utilitius_macOS.entitlements */,
-				F3A843762B8C0BB40068AC2A /* Preview Content */,
 			);
 			path = "Utilitius macOS";
-			sourceTree = "<group>";
-		};
-		F3A843762B8C0BB40068AC2A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F3A843772B8C0BB40068AC2A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		F3A8438C2B8C0C5B0068AC2A /* Navigation */ = {
@@ -858,7 +852,8 @@
 		F3A843902B8C0C7B0068AC2A /* Menu Bar Extra */ = {
 			isa = PBXGroup;
 			children = (
-				F3A8437E2B8C0BF60068AC2A /* MenuBarExtraView.swift */,
+				F3A8437E2B8C0BF60068AC2A /* Menu Bar Extra View.swift */,
+				F302453E2B8C8F8F00DBFD2D /* Text File.swift */,
 			);
 			path = "Menu Bar Extra";
 			sourceTree = "<group>";
@@ -1462,7 +1457,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3A843782B8C0BB40068AC2A /* Preview Assets.xcassets in Resources */,
 				F3A843752B8C0BB40068AC2A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1558,11 +1552,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F302453F2B8C8F8F00DBFD2D /* Text File.swift in Sources */,
 				F3A8438E2B8C0C650068AC2A /* App Container.swift in Sources */,
 				F3A843882B8C0BF60068AC2A /* Pasteboard VM.swift in Sources */,
-				F3A843842B8C0BF60068AC2A /* MenuBarExtraView.swift in Sources */,
+				F3A843842B8C0BF60068AC2A /* Menu Bar Extra View.swift in Sources */,
 				F3A843892B8C0BF60068AC2A /* Pasteboard Item.swift in Sources */,
 				F3A843872B8C0BF60068AC2A /* App Delegate.swift in Sources */,
+				F302453D2B8C8C2500DBFD2D /* Debug View.swift in Sources */,
 				F3A843852B8C0BF60068AC2A /* Pasteboard List.swift in Sources */,
 				F3A843862B8C0BF60068AC2A /* MenuTestApp.swift in Sources */,
 			);
@@ -1884,7 +1880,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Utilitius macOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -1915,7 +1911,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Utilitius macOS/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
