@@ -102,6 +102,21 @@
 		F3A43DB32AE3B6980072F7FA /* AlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A43DB22AE3B6980072F7FA /* AlertKit.swift */; };
 		F3A843402B8BF1580068AC2A /* Otp View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8433F2B8BF1580068AC2A /* Otp View.swift */; };
 		F3A843422B8BF1DA0068AC2A /* Password Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843412B8BF1DA0068AC2A /* Password Card.swift */; };
+		F3A843752B8C0BB40068AC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A843742B8C0BB40068AC2A /* Assets.xcassets */; };
+		F3A843782B8C0BB40068AC2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A843772B8C0BB40068AC2A /* Preview Assets.xcassets */; };
+		F3A843842B8C0BF60068AC2A /* MenuBarExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8437E2B8C0BF60068AC2A /* MenuBarExtraView.swift */; };
+		F3A843852B8C0BF60068AC2A /* Pasteboard List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8437F2B8C0BF60068AC2A /* Pasteboard List.swift */; };
+		F3A843862B8C0BF60068AC2A /* MenuTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843802B8C0BF60068AC2A /* MenuTestApp.swift */; };
+		F3A843872B8C0BF60068AC2A /* App Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843812B8C0BF60068AC2A /* App Delegate.swift */; };
+		F3A843882B8C0BF60068AC2A /* Pasteboard VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843822B8C0BF60068AC2A /* Pasteboard VM.swift */; };
+		F3A843892B8C0BF60068AC2A /* Pasteboard Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843832B8C0BF60068AC2A /* Pasteboard Item.swift */; };
+		F3A8438E2B8C0C650068AC2A /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8438D2B8C0C5B0068AC2A /* App Container.swift */; };
+		F3A843922B8C14C90068AC2A /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3A843912B8C14C90068AC2A /* ScrechKit */; };
+		F3A8439A2B8C17C10068AC2A /* Utilitius_LauncherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A843992B8C17C10068AC2A /* Utilitius_LauncherApp.swift */; };
+		F3A8439C2B8C17C10068AC2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A8439B2B8C17C10068AC2A /* ContentView.swift */; };
+		F3A8439E2B8C17C20068AC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3A8439D2B8C17C20068AC2A /* Assets.xcassets */; };
+		F3A843A92B8C18830068AC2A /* Utilitius Launcher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3A843972B8C17C10068AC2A /* Utilitius Launcher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3A843AB2B8C18B80068AC2A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A843AA2B8C18B80068AC2A /* ServiceManagement.framework */; };
 		F3ABCA022ADAA1C100A414AC /* Goida Network View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABCA012ADAA1C100A414AC /* Goida Network View.swift */; };
 		F3ABCA042ADAA1ED00A414AC /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABCA032ADAA1ED00A414AC /* Network VM.swift */; };
 		F3ABCA052ADAA30A00A414AC /* Network VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABCA032ADAA1ED00A414AC /* Network VM.swift */; };
@@ -226,6 +241,16 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3A843A82B8C18730068AC2A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				F3A843A92B8C18830068AC2A /* Utilitius Launcher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -313,6 +338,24 @@
 		F3A43DB22AE3B6980072F7FA /* AlertKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertKit.swift; sourceTree = "<group>"; };
 		F3A8433F2B8BF1580068AC2A /* Otp View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Otp View.swift"; sourceTree = "<group>"; };
 		F3A843412B8BF1DA0068AC2A /* Password Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Password Card.swift"; path = "../../../../Password Card.swift"; sourceTree = "<group>"; };
+		F3A8436C2B8C0BB30068AC2A /* Utilitius macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utilitius macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A843742B8C0BB40068AC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3A843772B8C0BB40068AC2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3A843792B8C0BB40068AC2A /* Utilitius_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Utilitius_macOS.entitlements; sourceTree = "<group>"; };
+		F3A8437E2B8C0BF60068AC2A /* MenuBarExtraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarExtraView.swift; sourceTree = "<group>"; };
+		F3A8437F2B8C0BF60068AC2A /* Pasteboard List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard List.swift"; sourceTree = "<group>"; };
+		F3A843802B8C0BF60068AC2A /* MenuTestApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTestApp.swift; sourceTree = "<group>"; };
+		F3A843812B8C0BF60068AC2A /* App Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App Delegate.swift"; sourceTree = "<group>"; };
+		F3A843822B8C0BF60068AC2A /* Pasteboard VM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard VM.swift"; sourceTree = "<group>"; };
+		F3A843832B8C0BF60068AC2A /* Pasteboard Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard Item.swift"; sourceTree = "<group>"; };
+		F3A8438D2B8C0C5B0068AC2A /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
+		F3A843972B8C17C10068AC2A /* Utilitius Launcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utilitius Launcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A843992B8C17C10068AC2A /* Utilitius_LauncherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilitius_LauncherApp.swift; sourceTree = "<group>"; };
+		F3A8439B2B8C17C10068AC2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3A8439D2B8C17C20068AC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3A843A22B8C17C20068AC2A /* Utilitius_Launcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Utilitius_Launcher.entitlements; sourceTree = "<group>"; };
+		F3A843A62B8C17E10068AC2A /* Utilitius-Launcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Utilitius-Launcher-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F3A843AA2B8C18B80068AC2A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		F3ABCA012ADAA1C100A414AC /* Goida Network View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Network View.swift"; sourceTree = "<group>"; };
 		F3ABCA032ADAA1ED00A414AC /* Network VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network VM.swift"; sourceTree = "<group>"; };
 		F3ACF38F2AA7D447002B4638 /* NFC Reader VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Reader VM.swift"; sourceTree = "<group>"; };
@@ -413,6 +456,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3E1BDF22AEAC81200E78037 /* ScrechKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A843692B8C0BB30068AC2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A843922B8C14C90068AC2A /* ScrechKit in Frameworks */,
+				F3A843AB2B8C18B80068AC2A /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A843942B8C17C10068AC2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +771,7 @@
 		F3A1F46B2AD92E2500C85355 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3A843AA2B8C18B80068AC2A /* ServiceManagement.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -752,6 +812,67 @@
 				F367D4D12AE26EAC0088DA7A /* Create Totp View.swift */,
 			);
 			path = Totp;
+			sourceTree = "<group>";
+		};
+		F3A8436D2B8C0BB30068AC2A /* Utilitius macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F3A843802B8C0BF60068AC2A /* MenuTestApp.swift */,
+				F3A843832B8C0BF60068AC2A /* Pasteboard Item.swift */,
+				F3A8438C2B8C0C5B0068AC2A /* Navigation */,
+				F3A843902B8C0C7B0068AC2A /* Menu Bar Extra */,
+				F3A8438F2B8C0C6F0068AC2A /* Pasteboard */,
+				F3A843742B8C0BB40068AC2A /* Assets.xcassets */,
+				F3A843792B8C0BB40068AC2A /* Utilitius_macOS.entitlements */,
+				F3A843762B8C0BB40068AC2A /* Preview Content */,
+			);
+			path = "Utilitius macOS";
+			sourceTree = "<group>";
+		};
+		F3A843762B8C0BB40068AC2A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F3A843772B8C0BB40068AC2A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3A8438C2B8C0C5B0068AC2A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				F3A8438D2B8C0C5B0068AC2A /* App Container.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		F3A8438F2B8C0C6F0068AC2A /* Pasteboard */ = {
+			isa = PBXGroup;
+			children = (
+				F3A8437F2B8C0BF60068AC2A /* Pasteboard List.swift */,
+				F3A843822B8C0BF60068AC2A /* Pasteboard VM.swift */,
+				F3A843812B8C0BF60068AC2A /* App Delegate.swift */,
+			);
+			path = Pasteboard;
+			sourceTree = "<group>";
+		};
+		F3A843902B8C0C7B0068AC2A /* Menu Bar Extra */ = {
+			isa = PBXGroup;
+			children = (
+				F3A8437E2B8C0BF60068AC2A /* MenuBarExtraView.swift */,
+			);
+			path = "Menu Bar Extra";
+			sourceTree = "<group>";
+		};
+		F3A843982B8C17C10068AC2A /* Utilitius Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				F3A843A62B8C17E10068AC2A /* Utilitius-Launcher-Info.plist */,
+				F3A843992B8C17C10068AC2A /* Utilitius_LauncherApp.swift */,
+				F3A8439B2B8C17C10068AC2A /* ContentView.swift */,
+				F3A8439D2B8C17C20068AC2A /* Assets.xcassets */,
+				F3A843A22B8C17C20068AC2A /* Utilitius_Launcher.entitlements */,
+			);
+			path = "Utilitius Launcher";
 			sourceTree = "<group>";
 		};
 		F3ABCA002ADAA1A400A414AC /* Network */ = {
@@ -856,10 +977,12 @@
 			children = (
 				F3CAAB9D2A60B9F7000B2495 /* Utilitius */,
 				F3A1F4582AD92D2D00C85355 /* Utilitius watchOS */,
+				F3A8436D2B8C0BB30068AC2A /* Utilitius macOS */,
 				F30F20892B6D076900D95589 /* Utilitius visionOS */,
 				F3CAABB22A60B9FA000B2495 /* Unit Tests */,
 				F3CAABBC2A60B9FA000B2495 /* UI Tests */,
 				F30F208A2B6D076900D95589 /* Packages */,
+				F3A843982B8C17C10068AC2A /* Utilitius Launcher */,
 				F3CAAB9C2A60B9F7000B2495 /* Products */,
 				F3A1F46B2AD92E2500C85355 /* Frameworks */,
 			);
@@ -873,6 +996,8 @@
 				F3CAABB92A60B9FA000B2495 /* UtilitiusUITests.xctest */,
 				F3A1F4542AD92D2D00C85355 /* Utilitius watchOS.app */,
 				F30F20882B6D076900D95589 /* Utilitius visionOS.app */,
+				F3A8436C2B8C0BB30068AC2A /* Utilitius macOS.app */,
+				F3A843972B8C17C10068AC2A /* Utilitius Launcher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1139,6 +1264,44 @@
 			productReference = F3A1F4542AD92D2D00C85355 /* Utilitius watchOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F3A8436B2B8C0BB30068AC2A /* Utilitius macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3A8437A2B8C0BB40068AC2A /* Build configuration list for PBXNativeTarget "Utilitius macOS" */;
+			buildPhases = (
+				F3A843682B8C0BB30068AC2A /* Sources */,
+				F3A843692B8C0BB30068AC2A /* Frameworks */,
+				F3A8436A2B8C0BB30068AC2A /* Resources */,
+				F3A843A82B8C18730068AC2A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Utilitius macOS";
+			packageProductDependencies = (
+				F3A843912B8C14C90068AC2A /* ScrechKit */,
+			);
+			productName = "Utilitius macOS";
+			productReference = F3A8436C2B8C0BB30068AC2A /* Utilitius macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3A843962B8C17C10068AC2A /* Utilitius Launcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3A843A32B8C17C20068AC2A /* Build configuration list for PBXNativeTarget "Utilitius Launcher" */;
+			buildPhases = (
+				F3A843932B8C17C10068AC2A /* Sources */,
+				F3A843942B8C17C10068AC2A /* Frameworks */,
+				F3A843952B8C17C10068AC2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Utilitius Launcher";
+			productName = "Utilitius Launcher";
+			productReference = F3A843972B8C17C10068AC2A /* Utilitius Launcher.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F3CAAB9A2A60B9F7000B2495 /* Utilitius */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3CAABC32A60B9FA000B2495 /* Build configuration list for PBXNativeTarget "Utilitius" */;
@@ -1222,6 +1385,13 @@
 					F3A1F4532AD92D2D00C85355 = {
 						CreatedOnToolsVersion = 15.1;
 					};
+					F3A8436B2B8C0BB30068AC2A = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					F3A843962B8C17C10068AC2A = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					F3CAAB9A2A60B9F7000B2495 = {
 						CreatedOnToolsVersion = 15.0;
 						LastSwiftMigration = 1510;
@@ -1264,6 +1434,8 @@
 				F3CAABAE2A60B9FA000B2495 /* UtilitiusTests */,
 				F3CAABB82A60B9FA000B2495 /* UtilitiusUITests */,
 				F30F20872B6D076900D95589 /* Utilitius visionOS */,
+				F3A8436B2B8C0BB30068AC2A /* Utilitius macOS */,
+				F3A843962B8C17C10068AC2A /* Utilitius Launcher */,
 			);
 		};
 /* End PBXProject section */
@@ -1283,6 +1455,23 @@
 			files = (
 				F3D2961A2AF3FB7600ED43A0 /* Assets.xcassets in Resources */,
 				F38890062B6D5ECD008597DF /* Utilitius-watchOS-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A8436A2B8C0BB30068AC2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A843782B8C0BB40068AC2A /* Preview Assets.xcassets in Resources */,
+				F3A843752B8C0BB40068AC2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A843952B8C17C10068AC2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A8439E2B8C17C20068AC2A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1362,6 +1551,29 @@
 				F3A1F4692AD92E0100C85355 /* Utilitius App.swift in Sources */,
 				F3D296122AF3C38800ED43A0 /* Reminder Model.swift in Sources */,
 				F3A1F4712AD92E4100C85355 /* Timer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A843682B8C0BB30068AC2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A8438E2B8C0C650068AC2A /* App Container.swift in Sources */,
+				F3A843882B8C0BF60068AC2A /* Pasteboard VM.swift in Sources */,
+				F3A843842B8C0BF60068AC2A /* MenuBarExtraView.swift in Sources */,
+				F3A843892B8C0BF60068AC2A /* Pasteboard Item.swift in Sources */,
+				F3A843872B8C0BF60068AC2A /* App Delegate.swift in Sources */,
+				F3A843852B8C0BF60068AC2A /* Pasteboard List.swift in Sources */,
+				F3A843862B8C0BF60068AC2A /* MenuTestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3A843932B8C17C10068AC2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A8439C2B8C17C10068AC2A /* ContentView.swift in Sources */,
+				F3A8439A2B8C17C10068AC2A /* Utilitius_LauncherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1659,6 +1871,129 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		F3A8437B2B8C0BB40068AC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Utilitius macOS/Utilitius_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Utilitius macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F3A8437C2B8C0BB40068AC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Utilitius macOS/Utilitius_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Utilitius macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F3A843A42B8C17C20068AC2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Utilitius Launcher/Utilitius_Launcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Utilitius-Launcher-Info.plist";
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-Launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F3A843A52B8C17C20068AC2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Utilitius Launcher/Utilitius_Launcher.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Utilitius-Launcher-Info.plist";
+				INFOPLIST_KEY_LSBackgroundOnly = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-Launcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -2004,6 +2339,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		F3A8437A2B8C0BB40068AC2A /* Build configuration list for PBXNativeTarget "Utilitius macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A8437B2B8C0BB40068AC2A /* Debug */,
+				F3A8437C2B8C0BB40068AC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3A843A32B8C17C20068AC2A /* Build configuration list for PBXNativeTarget "Utilitius Launcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A843A42B8C17C20068AC2A /* Debug */,
+				F3A843A52B8C17C20068AC2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3CAAB962A60B9F7000B2495 /* Build configuration list for PBXProject "Utilitius" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2134,6 +2487,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3A43DAF2AE3B64F0072F7FA /* XCRemoteSwiftPackageReference "AlertKit" */;
 			productName = AlertKit;
+		};
+		F3A843912B8C14C90068AC2A /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F34D5BB22ADC4C8700EA8EA9 /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
 		};
 		F3B00C012A96BA0700C20843 /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;

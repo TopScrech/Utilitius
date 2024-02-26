@@ -29,6 +29,6 @@ struct UtilitiusApp: App {
         WindowGroup {
             AppContainer()
         }
-        .modelContainer(container)
+        .modelContainer(container)        
     }
 }
