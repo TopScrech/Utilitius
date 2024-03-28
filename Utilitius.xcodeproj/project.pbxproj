@@ -347,7 +347,7 @@
 		F3A8436C2B8C0BB30068AC2A /* Utilitius macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utilitius macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A843742B8C0BB40068AC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A843792B8C0BB40068AC2A /* Utilitius_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Utilitius_macOS.entitlements; sourceTree = "<group>"; };
-		F3A8437E2B8C0BF60068AC2A /* Menu Bar Extra View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu Bar Extra View.swift"; sourceTree = "<group>"; };
+		F3A8437E2B8C0BF60068AC2A /* Menu Bar Extra View.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Menu Bar Extra View.swift"; sourceTree = "<group>"; tabWidth = 4; };
 		F3A8437F2B8C0BF60068AC2A /* Pasteboard List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pasteboard List.swift"; sourceTree = "<group>"; };
 		F3A843802B8C0BF60068AC2A /* Menu App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Menu App.swift"; sourceTree = "<group>"; };
 		F3A843812B8C0BF60068AC2A /* App Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "App Delegate.swift"; sourceTree = "<group>"; };

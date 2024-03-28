@@ -41,10 +41,7 @@ struct BuildTimeView: View {
         }
         .navigationTitle("Review Time")
         .scrollIndicators(.never)
-        .refreshable {
-            vm.fetch()
-        }
-        .task {
+        .refreshableTask {
             vm.fetch()
         }
     }

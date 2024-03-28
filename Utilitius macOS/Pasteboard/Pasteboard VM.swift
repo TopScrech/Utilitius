@@ -8,7 +8,7 @@ final class PasteboardVM {
     var lastCopiedItem: [String] = []
     
     init() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
+        timer = Timer.scheduledTimer(withTimeInterval: SettingsStorage().detectionSpeed, repeats: true) { [weak self] _ in
             guard let self else { return }
             
             let currentItems = self.pasteboard.pasteboardItems?.compactMap {
@@ -16,6 +16,8 @@ final class PasteboardVM {
             } ?? []
             
             if !currentItems.isEmpty {
+                guard let bundleID = Bundle.main.bundleIdentifier else { return }
+                print(bundleID)
                 lastCopiedItem = currentItems
             }
         }

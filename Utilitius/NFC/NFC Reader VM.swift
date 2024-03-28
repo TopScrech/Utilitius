@@ -46,22 +46,99 @@ final class NFCReaderVM: NSObject, NFCNDEFReaderSessionDelegate {
         session.begin()
     }
     
-    func readerSessionDidBecomeActive(_ session: NFCNDEFReaderSession) {}
+    func readerSessionDidBecomeActive(_ session: NFCNDEFReaderSession) {
+        
+    }
     
     // Called when the reader session becomes invalid due to an error
     func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
         print("Session invalidated: \(error.localizedDescription)")
     }
     
+    func decodeTextPayload(_ payload: Data) -> String? {
+        guard payload.count > 1 else { return nil }
+        
+        let statusByte = payload[0]
+        let encoding = (statusByte & 0x80) == 0 ? String.Encoding.utf8 : String.Encoding.utf16
+        let languageCodeLength = Int(statusByte & 0x3F)
+        
+        guard payload.count > 1 + languageCodeLength else { return nil }
+        
+        let textData = payload.subdata(in: (1 + languageCodeLength)..<payload.count)
+        
+        return String(data: textData, encoding: encoding)
+    }
+    
+    func printHexadecimalString(_ data: Data) -> String {
+        let hexString = data.map {
+            String(format: "%02hhx", $0)
+        }.joined()
+        
+        print("Payload Hex: \(hexString)")
+        
+        return hexString
+    }
+    
+    func hexStringToData(_ hex: String) -> Data {
+        var data = Data()
+        var hexIndex = hex.startIndex
+        
+        while hexIndex < hex.endIndex {
+            let nextIndex = hex.index(hexIndex, offsetBy: 2)
+            if nextIndex <= hex.endIndex {
+                let byteString = hex[hexIndex..<nextIndex]
+                if let byte = UInt8(byteString, radix: 16) {
+                    data.append(byte)
+                }
+            }
+            hexIndex = nextIndex
+        }
+        
+        return data
+    }
+
     // Called when the reader session detects NDEF messages and Process it
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
         for message in messages {
             for record in message.records {
-                if let payloadString = String(data: record.payload, encoding: .utf8) {
-                    contentMessages = [payloadString]
+                print("Type name format: \(record.typeNameFormat)")
+                print("Payload: \(record.payload.count) bytes")
+                print("Type: \(record.type.count) bytes")
+                print("Identifier: \(record.identifier.count) bytes")
+                
+                // Attempt to decode payload as a UTF-8 string
+                if let payloadString = String(data: record.payload.advanced(by: 1), encoding: .utf8) {
                     print("NDEF message detected: \(payloadString)")
+                } else {
+                    print("Could not decode payload as UTF-8 string")
+                }
+                
+                if let payloadString = decodeTextPayload(record.payload) {
+                    print(payloadString)
+                } else {
+                    print("decodeTextPayload unsucceeded")
+                }
+                
+                let hexString = printHexadecimalString(record.payload)
+                
+                let payloadData = hexStringToData(hexString)
+                
+                for byte in payloadData {
+                    print(byte)
                 }
             }
+            
+            // 00e2000032800000000001002a507900268000000080008000000000000000008000000008001465004010cb23400a0001010000000000
+            // 00e2000032800000000001002a507900268000000080008000000000000000008000000008001465004010cb23400a0001010000000000
+            
+            // 00e2000032800000000001002a507900268000000080008000000000000000008000000008001465004010cb23400a0001010000000000
+            
+            //            for record in message.records {
+//            if let payloadString = String(data: record.payload, encoding: .utf8) {
+//                contentMessages = [payloadString]
+//                print("NDEF message detected: \(payloadString)")
+//            }
+            //            }
         }
         
         content = messages.description
@@ -126,6 +203,7 @@ final class NFCWriterVM: NSObject, NFCNDEFReaderSessionDelegate {
     
     // MARK: - NFCNDEFReaderSessionDelegate
     func readerSessionDidBecomeActive(_ session: NFCNDEFReaderSession) {
+        
         let textPayload = NFCNDEFPayload.wellKnownTypeTextPayload(
             string: "Bisquit.Host",
             locale: Locale(identifier: "En")

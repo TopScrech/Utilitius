@@ -186,6 +186,7 @@ This is not an official Apple service.
                                     sheetBackup = false
                                 }
                             }
+                            
                             ToolbarItem(placement: .topBarTrailing) {
                                 Button("Download") {
                                     vm.download()
@@ -195,10 +196,7 @@ This is not an official Apple service.
                 }
             }
         }
-        .task {
-            vm.fetch()
-        }
-        .refreshable {
+        .refreshableTask {
             vm.fetch()
         }
     }

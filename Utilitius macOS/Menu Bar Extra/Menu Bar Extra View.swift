@@ -48,6 +48,18 @@ struct MenuBarExtraView: View {
             
             Toggle("Show time", isOn: $settings.showTime)
             
+            Picker("Detection speed", selection: $settings.detectionSpeed) {
+                Text("Slow")
+                    .tag(5.0)
+                
+                Text("Fast")
+                    .tag(1.0)
+                
+                Text("Very fast")
+                    .tag(0.1)
+            }
+            .padding(.horizontal)
+            
             HStack {
                 Button("Clear All") {
                     clearAll()
