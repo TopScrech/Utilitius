@@ -55,6 +55,7 @@
 		F36B92C82A979E6E000658CE /* BuildTime VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92C72A979E6E000658CE /* BuildTime VM.swift */; };
 		F36B92CA2A979F6D000658CE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92C92A979F6D000658CE /* Logger.swift */; };
 		F36B92CC2A97A0B6000658CE /* BuildTime Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92CB2A97A0B6000658CE /* BuildTime Card.swift */; };
+		F3865BEC2BBA2473005E82D4 /* PHD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3865BEB2BBA2473005E82D4 /* PHD.swift */; };
 		F386B4412AC438D300F6C2BB /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386B4402AC438D300F6C2BB /* CalculatorView.swift */; };
 		F38890062B6D5ECD008597DF /* Utilitius-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38890052B6D5ECD008597DF /* Utilitius-watchOS-Info.plist */; };
 		F388900D2B6D624D008597DF /* Note List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388900C2B6D624D008597DF /* Note List.swift */; };
@@ -307,6 +308,7 @@
 		F36B92C72A979E6E000658CE /* BuildTime VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime VM.swift"; sourceTree = "<group>"; };
 		F36B92C92A979F6D000658CE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F36B92CB2A97A0B6000658CE /* BuildTime Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime Card.swift"; sourceTree = "<group>"; };
+		F3865BEB2BBA2473005E82D4 /* PHD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHD.swift; sourceTree = "<group>"; };
 		F386B4402AC438D300F6C2BB /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		F38890052B6D5ECD008597DF /* Utilitius-watchOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Utilitius-watchOS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F388900B2B6D624D008597DF /* Note Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note Card.swift"; sourceTree = "<group>"; };
@@ -887,6 +889,7 @@
 			isa = PBXGroup;
 			children = (
 				F3ACF38F2AA7D447002B4638 /* NFC Reader VM.swift */,
+				F3865BEB2BBA2473005E82D4 /* PHD.swift */,
 				F3ACF3912AA7D61D002B4638 /* NFC Scan View.swift */,
 				F30627C92AAB053900A65D63 /* NFC Message Card.swift */,
 				F3C5FC8C2AA9DBDA000D9CAD /* NFC Messages View.swift */,
@@ -1647,6 +1650,7 @@
 				F3D510042A628E0D006F6D10 /* Timer Create.swift in Sources */,
 				F36859442AD7BFEA0017898B /* Altitude VM.swift in Sources */,
 				F36B92CC2A97A0B6000658CE /* BuildTime Card.swift in Sources */,
+				F3865BEC2BBA2473005E82D4 /* PHD.swift in Sources */,
 				F3ED95E42B4D444C00A490FC /* Multiboard Card.swift in Sources */,
 				F33C17112B29F22A0040FA63 /* Note Assets.swift in Sources */,
 				F394C5092AD55D7000C56527 /* Goida Sensors View.swift in Sources */,

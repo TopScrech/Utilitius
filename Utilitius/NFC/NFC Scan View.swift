@@ -9,8 +9,14 @@ struct NFCScanView: View {
     
     @State private var sheetTagWriter = false
     
+    @StateObject private var nfcReaderVM = NFCReaderViewModel()
+    
     var body: some View {
         VStack {
+            Button("Start NFC Session") {
+                nfcReaderVM.beginSession()
+            }
+            
             Spacer()
             
             Button {
