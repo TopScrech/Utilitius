@@ -51,28 +51,69 @@ class NFCReaderViewModel: NSObject, NFCTagReaderSessionDelegate, ObservableObjec
     func tagReaderSessionDidBecomeActive(_ session: NFCTagReaderSession) {
         os_log("The NFC tag reader session is active.")
     }
-    
+  
     func tagReaderSession(_ session: NFCTagReaderSession, didDetect tags: [NFCTag]) {
-        if let firstTag = tags.first {
-            session.connect(to: firstTag) { (error: Error?) in
-                if let error = error {
-                    session.invalidate(errorMessage: "Connection failed: \(error.localizedDescription)")
+        print(#function)
+        
+        guard let firstTag = tags.first else { return }
+        
+        session.connect(to: firstTag) { (error) in
+            if let error = error {
+                print("Failed to connect to NFC tag: \(error.localizedDescription)")
+                session.invalidate()
+                return
+            }
+            
+            guard case let .iso7816(tag) = firstTag else {
+                print("Unsupported tag type")
+                session.invalidate()
+                return
+            }
+            
+            // Assuming you know the command to send; this will need to be specific to your device.
+            let command = NFCISO7816APDU(instructionClass: 0x00, instructionCode: 0xA4, p1Parameter: 0x04, p2Parameter: 0x00, data: Data(), expectedResponseLength: 256)
+            
+            tag.sendCommand(apdu: command) { (response, sw1, sw2, error) in
+                print("Sending")
+                
+                if let error {
+                    print("Command failed: \(error.localizedDescription)")
+                    session.invalidate()
                     return
                 }
                 
-                switch firstTag {
-                case let .iso7816(tag):
-                    // Handle ISO 7816 tag
-                    // You can perform APDU commands here
-                    break
-                default:
-                    session.invalidate(errorMessage: "Tag type not supported.")
-                    break
-                }
+                // Here you would parse the response into your ApduMessage and PHDData structures
+                // For example:
+                // let apduMessage = ApduMessage(payload: response)
+                // let phdData = decodePHDPayload(response)
+                
+                session.invalidate()
             }
         }
     }
+
     
+//    func tagReaderSession(_ session: NFCTagReaderSession, didDetect tags: [NFCTag]) {
+//        if let firstTag = tags.first {
+//            session.connect(to: firstTag) { (error: Error?) in
+//                if let error = error {
+//                    session.invalidate(errorMessage: "Connection failed: \(error.localizedDescription)")
+//                    return
+//                }
+//                
+//                switch firstTag {
+//                case let .iso7816(tag):
+//                    // Handle ISO 7816 tag
+//                    // You can perform APDU commands here
+//                    break
+//                default:
+//                    session.invalidate(errorMessage: "Tag type not supported.")
+//                    break
+//                }
+//            }
+//        }
+//    }
+//    
     func tagReaderSession(_ session: NFCTagReaderSession, didInvalidateWithError error: Error) {
         os_log("The NFC tag reader session is invalidated due to error: %@", type: .error, error.localizedDescription)
     }
@@ -203,6 +244,7 @@ final class NFCReaderVM: NSObject, NFCNDEFReaderSessionDelegate {
         if let customString = String(data: payload.subdata(in: 1..<payload.count), encoding: .ascii) {
             return customString
         }
+        
         return nil
     }
 
@@ -283,7 +325,10 @@ final class NFCReaderVM: NSObject, NFCNDEFReaderSessionDelegate {
 //            self.sheetNFCReader = true
 //        }
 //    }
+        
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
+        
+        
 //    func readerSession(_ session: NFCTagReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
         for message in messages {
             for record in message.records {

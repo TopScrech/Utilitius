@@ -56,6 +56,7 @@
 		F36B92CA2A979F6D000658CE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92C92A979F6D000658CE /* Logger.swift */; };
 		F36B92CC2A97A0B6000658CE /* BuildTime Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B92CB2A97A0B6000658CE /* BuildTime Card.swift */; };
 		F3865BEC2BBA2473005E82D4 /* PHD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3865BEB2BBA2473005E82D4 /* PHD.swift */; };
+		F3865BEE2BBA2A31005E82D4 /* APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3865BED2BBA2A31005E82D4 /* APDU.swift */; };
 		F386B4412AC438D300F6C2BB /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386B4402AC438D300F6C2BB /* CalculatorView.swift */; };
 		F38890062B6D5ECD008597DF /* Utilitius-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38890052B6D5ECD008597DF /* Utilitius-watchOS-Info.plist */; };
 		F388900D2B6D624D008597DF /* Note List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388900C2B6D624D008597DF /* Note List.swift */; };
@@ -309,6 +310,7 @@
 		F36B92C92A979F6D000658CE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F36B92CB2A97A0B6000658CE /* BuildTime Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime Card.swift"; sourceTree = "<group>"; };
 		F3865BEB2BBA2473005E82D4 /* PHD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHD.swift; sourceTree = "<group>"; };
+		F3865BED2BBA2A31005E82D4 /* APDU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDU.swift; sourceTree = "<group>"; };
 		F386B4402AC438D300F6C2BB /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		F38890052B6D5ECD008597DF /* Utilitius-watchOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Utilitius-watchOS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F388900B2B6D624D008597DF /* Note Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note Card.swift"; sourceTree = "<group>"; };
@@ -976,6 +978,7 @@
 		F3CAAB922A60B9F7000B2495 = {
 			isa = PBXGroup;
 			children = (
+				F3865BED2BBA2A31005E82D4 /* APDU.swift */,
 				F3CAAB9D2A60B9F7000B2495 /* Utilitius */,
 				F3A1F4582AD92D2D00C85355 /* Utilitius watchOS */,
 				F3A8436D2B8C0BB30068AC2A /* Utilitius macOS */,
@@ -1662,6 +1665,7 @@
 				F3B00BFA2A96875700C20843 /* Status Code Card.swift in Sources */,
 				F30A583B2AD315140070B906 /* MathView.swift in Sources */,
 				F33C17152B2A0D330040FA63 /* Quick Look.swift in Sources */,
+				F3865BEE2BBA2A31005E82D4 /* APDU.swift in Sources */,
 				F3B00BF42A9680B800C20843 /* HTTP Status Code.swift in Sources */,
 				F3DFB7CE2AEB03BF00191EAC /* Torch VM.swift in Sources */,
 				F386B4412AC438D300F6C2BB /* CalculatorView.swift in Sources */,
