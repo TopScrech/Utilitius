@@ -22,6 +22,7 @@ struct GoidaDeviceView: View {
                 ListParameter("System language", parameter: Locale.current.identifier)
                 ListParameter("System region", parameter: Locale.current.region?.identifier ?? "-")
                 ListParameter("System uptime", parameter: vm.fetchSystemUptime())
+                ListParameter("System uptime", parameter: vm.thermalState)
             }
             
             Section("Capabilities") {

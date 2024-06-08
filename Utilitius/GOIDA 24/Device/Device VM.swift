@@ -18,10 +18,20 @@ final class DeviceVM {
     let isNfcAvailable = NFCNDEFReaderSession.readingAvailable ? "Yes" : "No"
     var isForceTouchAvailable = ""
     var isUltraWidebandAvailable: String {
-        if #available(iOS 16.0, watchOS 9.0, *) {
+        if #available(iOS 16, watchOS 9, *) {
             NISession.deviceCapabilities.supportsPreciseDistanceMeasurement ? "Yes" : "No"
         } else {
             NISession.isSupported ? "Yes" : "No"
+        }
+    }
+    
+    var thermalState: String {
+        switch ProcessInfo.processInfo.thermalState {
+        case .nominal: "Nominal"
+        case .fair: "Fair"
+        case .serious: "Serious"
+        case .critical: "Critical"
+        @unknown default: "Unknown"
         }
     }
     
