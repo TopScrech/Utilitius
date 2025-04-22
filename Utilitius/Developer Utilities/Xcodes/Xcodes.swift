@@ -1,4 +1,5 @@
 import ScrechKit
+import QuickLooking
 
 struct XcodesView: View {
     @Bindable private var vm = XcodesVM()
