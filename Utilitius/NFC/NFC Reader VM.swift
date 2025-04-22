@@ -51,14 +51,14 @@ class NFCReaderViewModel: NSObject, NFCTagReaderSessionDelegate, ObservableObjec
     func tagReaderSessionDidBecomeActive(_ session: NFCTagReaderSession) {
         os_log("The NFC tag reader session is active.")
     }
-  
+    
     func tagReaderSession(_ session: NFCTagReaderSession, didDetect tags: [NFCTag]) {
         print(#function)
         
         guard let firstTag = tags.first else { return }
         
         session.connect(to: firstTag) { (error) in
-            if let error = error {
+            if let error {
                 print("Failed to connect to NFC tag: \(error.localizedDescription)")
                 session.invalidate()
                 return
@@ -73,11 +73,12 @@ class NFCReaderViewModel: NSObject, NFCTagReaderSessionDelegate, ObservableObjec
             // Assuming you know the command to send; this will need to be specific to your device.
             let command = NFCISO7816APDU(instructionClass: 0x00, instructionCode: 0xA4, p1Parameter: 0x04, p2Parameter: 0x00, data: Data(), expectedResponseLength: 256)
             
-            tag.sendCommand(apdu: command) { (response, sw1, sw2, error) in
+            tag.sendCommand(apdu: command) { response, sw1, sw2, error in
                 print("Sending")
                 
                 if let error {
-                    print("Command failed: \(error.localizedDescription)")
+                    print("Command failed:", error.localizedDescription)
+                    
                     session.invalidate()
                     return
                 }
@@ -91,29 +92,28 @@ class NFCReaderViewModel: NSObject, NFCTagReaderSessionDelegate, ObservableObjec
             }
         }
     }
-
     
-//    func tagReaderSession(_ session: NFCTagReaderSession, didDetect tags: [NFCTag]) {
-//        if let firstTag = tags.first {
-//            session.connect(to: firstTag) { (error: Error?) in
-//                if let error = error {
-//                    session.invalidate(errorMessage: "Connection failed: \(error.localizedDescription)")
-//                    return
-//                }
-//                
-//                switch firstTag {
-//                case let .iso7816(tag):
-//                    // Handle ISO 7816 tag
-//                    // You can perform APDU commands here
-//                    break
-//                default:
-//                    session.invalidate(errorMessage: "Tag type not supported.")
-//                    break
-//                }
-//            }
-//        }
-//    }
-//    
+    //    func tagReaderSession(_ session: NFCTagReaderSession, didDetect tags: [NFCTag]) {
+    //        if let firstTag = tags.first {
+    //            session.connect(to: firstTag) { (error: Error?) in
+    //                if let error = error {
+    //                    session.invalidate(errorMessage: "Connection failed: \(error.localizedDescription)")
+    //                    return
+    //                }
+    //
+    //                switch firstTag {
+    //                case let .iso7816(tag):
+    //                    // Handle ISO 7816 tag
+    //                    // You can perform APDU commands here
+    //                    break
+    //                default:
+    //                    session.invalidate(errorMessage: "Tag type not supported.")
+    //                    break
+    //                }
+    //            }
+    //        }
+    //    }
+    //
     func tagReaderSession(_ session: NFCTagReaderSession, didInvalidateWithError error: Error) {
         os_log("The NFC tag reader session is invalidated due to error: %@", type: .error, error.localizedDescription)
     }
@@ -173,6 +173,7 @@ final class NFCReaderVM: NSObject, NFCNDEFReaderSessionDelegate {
         
         while hexIndex < hex.endIndex {
             let nextIndex = hex.index(hexIndex, offsetBy: 2)
+            
             if nextIndex <= hex.endIndex {
                 let byteString = hex[hexIndex..<nextIndex]
                 if let byte = UInt8(byteString, radix: 16) {
@@ -185,7 +186,8 @@ final class NFCReaderVM: NSObject, NFCNDEFReaderSessionDelegate {
         return data
     }
     
-    let uriPrefixes: [UInt8: String] = [
+    let uriPrefixes = [
+//    let uriPrefixes: [UInt8: String] = [
         0x00: "",
         0x01: "http://www.",
         0x02: "https://www.",
@@ -195,48 +197,49 @@ final class NFCReaderVM: NSObject, NFCNDEFReaderSessionDelegate {
         0x06: "mailto:",
         // Add more prefixes as needed based on the NFC Forum URI RTD
     ]
-
-//    func processNDEFRecord(_ record: NFCNDEFPayload) {
-//        switch record.typeNameFormat {
-//        case .nfcWellKnown:
-//            if let text = decodeTextPayload(record.payload) {
-//                print("Decoded text: \(text)")
-//            } else if let uri = decodeURIPayload(record.payload) {
-//                print("Decoded URI: \(uri)")
-//            }
-//        // Add more cases as needed
-//        default:
-//            print("Unsupported type name format")
-//        }
-//    }
+    
+    //    func processNDEFRecord(_ record: NFCNDEFPayload) {
+    //        switch record.typeNameFormat {
+    //        case .nfcWellKnown:
+    //            if let text = decodeTextPayload(record.payload) {
+    //                print("Decoded text: \(text)")
+    //            } else if let uri = decodeURIPayload(record.payload) {
+    //                print("Decoded URI: \(uri)")
+    //            }
+    //        // Add more cases as needed
+    //        default:
+    //            print("Unsupported type name format")
+    //        }
+    //    }
+    
     func processNDEFRecord(_ record: NFCNDEFPayload) {
         // Example: Assuming PHD data might be in a record with a specific type
         // You might need to adjust this logic based on how PHD data is actually stored in the NDEF record
         if record.typeNameFormat == .nfcWellKnown {
             // Attempt to decode the payload as PHD data
             if let phdData = decodePHDPayload(record.payload) {
-                print("Decoded PHD Data: \(phdData)")
+                print("Decoded PHD Data:", phdData)
                 // Handle the decoded PHD data as needed
             } else {
                 print("Failed to decode PHD data from payload")
             }
         }
     }
-
-//    func processNDEFRecord(_ record: NFCNDEFPayload) {
-//        // Check if the record's type name format indicates a well-known type
-//        if record.typeNameFormat == .nfcWellKnown {
-//            // Try decoding as a URI
-//            print("well known")
-//            
-//            if let uri = decodeCustomPayload(record.payload) {
-//                print("Decoded URI: \(uri)")
-//            } else {
-//                print("uri nil")
-//            }
-//        }
-//        // Handle other type name formats as needed
-//    }
+    
+    //    func processNDEFRecord(_ record: NFCNDEFPayload) {
+    //        // Check if the record's type name format indicates a well-known type
+    //        if record.typeNameFormat == .nfcWellKnown {
+    //            // Try decoding as a URI
+    //            print("well known")
+    //
+    //            if let uri = decodeCustomPayload(record.payload) {
+    //                print("Decoded URI: \(uri)")
+    //            } else {
+    //                print("uri nil")
+    //            }
+    //        }
+    //        // Handle other type name formats as needed
+    //    }
     
     func decodeCustomPayload(_ payload: Data) -> String? {
         // Implement custom decoding logic based on the payload structure
@@ -247,89 +250,87 @@ final class NFCReaderVM: NSObject, NFCNDEFReaderSessionDelegate {
         
         return nil
     }
-
-//    func decodeURIPayload(_ payload: Data) -> String? {
-//        guard payload.count > 1 else { return nil }
-//        
-//        let identifierCode = payload[0] // URI Identifier Code
-//        
-//        guard let uriPrefix = uriPrefixes[identifierCode],
-//              let uriContent = String(data: payload.subdata(in: 1..<payload.count), encoding: .utf8) else {
-//            return nil
-//        }
-//        
-//        return uriPrefix + uriContent
-//    }
-
+    
+    //    func decodeURIPayload(_ payload: Data) -> String? {
+    //        guard payload.count > 1 else { return nil }
+    //
+    //        let identifierCode = payload[0] // URI Identifier Code
+    //
+    //        guard let uriPrefix = uriPrefixes[identifierCode],
+    //              let uriContent = String(data: payload.subdata(in: 1..<payload.count), encoding: .utf8) else {
+    //            return nil
+    //        }
+    //
+    //        return uriPrefix + uriContent
+    //    }
+    
     // Called when the reader session detects NDEF messages and Process it
-//    func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
-//        for message in messages {
-//            for record in message.records {
-//                processNDEFRecord(record)
-//                
-//                print("Type name format: \(record.typeNameFormat)")
-//                print("Payload: \(record.payload.count) bytes")
-//                print("Type: \(record.type.count) bytes")
-//                print("Identifier: \(record.identifier.count) bytes")
-//                
-////                switch record.typeNameFormat {
-////                case .absoluteURI: print("1")
-////                case .empty: print("2")
-////                case .media: print("3")
-////                case .nfcExternal: print("4")
-////                case .nfcWellKnown: print("5")
-////                    
-////                case .unchanged: print("6")
-////                case .unknown: print("7")
-////                }
-//                
-//                // Attempt to decode payload as a UTF-8 string
-//                if let payloadString = String(data: record.payload.advanced(by: 1), encoding: .utf8) {
-//                    print("NDEF message detected: \(payloadString)")
-//                } else {
-//                    print("Could not decode payload as UTF-8 string")
-//                }
-//                
-//                if let payloadString = decodeTextPayload(record.payload) {
-//                    print(payloadString)
-//                } else {
-//                    print("decodeTextPayload unsucceeded")
-//                }
-//                
-//                let hexString = printHexadecimalString(record.payload)
-//                
-//                let payloadData = hexStringToData(hexString)
-//                
-////                for byte in payloadData {
-////                    print(byte)
-////                }
-//            }
-//            
-//            // 00e2000032800000000001002a507900268000000080008000000000000000008000000008001465004010cb23400a0001010000000000
-//            // 00e2000032800000000001002a507900268000000080008000000000000000008000000008001465004010cb23400a0001010000000000
-//            
-//            // 00e2000032800000000001002a507900268000000080008000000000000000008000000008001465004010cb23400a0001010000000000
-//            
-//            //            for record in message.records {
-//            //            if let payloadString = String(data: record.payload, encoding: .utf8) {
-//            //                contentMessages = [payloadString]
-//            //                print("NDEF message detected: \(payloadString)")
-//            //            }
-//            //            }
-//        }
-//        
-//        content = messages.description
-//        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//            session.invalidate()
-//            self.sheetNFCReader = true
-//        }
-//    }
-        
+    //    func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
+    //        for message in messages {
+    //            for record in message.records {
+    //                processNDEFRecord(record)
+    //
+    //                print("Type name format: \(record.typeNameFormat)")
+    //                print("Payload: \(record.payload.count) bytes")
+    //                print("Type: \(record.type.count) bytes")
+    //                print("Identifier: \(record.identifier.count) bytes")
+    //
+    ////                switch record.typeNameFormat {
+    ////                case .absoluteURI: print("1")
+    ////                case .empty: print("2")
+    ////                case .media: print("3")
+    ////                case .nfcExternal: print("4")
+    ////                case .nfcWellKnown: print("5")
+    ////
+    ////                case .unchanged: print("6")
+    ////                case .unknown: print("7")
+    ////                }
+    //
+    //                // Attempt to decode payload as a UTF-8 string
+    //                if let payloadString = String(data: record.payload.advanced(by: 1), encoding: .utf8) {
+    //                    print("NDEF message detected: \(payloadString)")
+    //                } else {
+    //                    print("Could not decode payload as UTF-8 string")
+    //                }
+    //
+    //                if let payloadString = decodeTextPayload(record.payload) {
+    //                    print(payloadString)
+    //                } else {
+    //                    print("decodeTextPayload unsucceeded")
+    //                }
+    //
+    //                let hexString = printHexadecimalString(record.payload)
+    //
+    //                let payloadData = hexStringToData(hexString)
+    //
+    ////                for byte in payloadData {
+    ////                    print(byte)
+    ////                }
+    //            }
+    //
+    //            // 00e2000032800000000001002a507900268000000080008000000000000000008000000008001465004010cb23400a0001010000000000
+    //            // 00e2000032800000000001002a507900268000000080008000000000000000008000000008001465004010cb23400a0001010000000000
+    //
+    //            // 00e2000032800000000001002a507900268000000080008000000000000000008000000008001465004010cb23400a0001010000000000
+    //
+    //            //            for record in message.records {
+    //            //            if let payloadString = String(data: record.payload, encoding: .utf8) {
+    //            //                contentMessages = [payloadString]
+    //            //                print("NDEF message detected: \(payloadString)")
+    //            //            }
+    //            //            }
+    //        }
+    //
+    //        content = messages.description
+    //
+    //        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+    //            session.invalidate()
+    //            self.sheetNFCReader = true
+    //        }
+    //    }
+    
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
-        
-        
-//    func readerSession(_ session: NFCTagReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
+        //    func readerSession(_ session: NFCTagReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
         for message in messages {
             for record in message.records {
                 processNDEFRecord(record)
@@ -372,10 +373,9 @@ final class NFCWriterVM: NSObject, NFCNDEFReaderSessionDelegate {
     }
     
     func tagRemovalDetect(_ tag: NFCNDEFTag) {
-        // In the tag removal procedure, you connect to the tag and query for
-        // its availability. You restart RF polling when the tag becomes
-        // unavailable; otherwise, wait for certain period of time and repeat
-        // availability checking.
+        // In the tag removal procedure, you connect to the tag and query for its availability
+        // You restart RF polling when the tag becomes
+        // unavailable; otherwise, wait for certain period of time and repeat availability checking
         self.readerSession?.connect(to: tag) { (error: Error?) in
             if error != nil || !tag.isAvailable {
                 os_log("Restart polling")
@@ -391,7 +391,6 @@ final class NFCWriterVM: NSObject, NFCNDEFReaderSessionDelegate {
     
     // MARK: - NFCNDEFReaderSessionDelegate
     func readerSessionDidBecomeActive(_ session: NFCNDEFReaderSession) {
-        
         let textPayload = NFCNDEFPayload.wellKnownTypeTextPayload(
             string: "Bisquit.Host",
             locale: Locale(identifier: "En")
@@ -409,13 +408,14 @@ final class NFCWriterVM: NSObject, NFCNDEFReaderSessionDelegate {
     
     func readerSession(_ session: NFCNDEFReaderSession, didDetect tags: [NFCNDEFTag]) {
         if tags.count > 1 {
-            session.alertMessage = "More than 1 tags found. Please present only 1 tag."
+            session.alertMessage = "More than 1 tags found. Please present only 1 tag"
             self.tagRemovalDetect(tags.first!)
             return
         }
         
         // You connect to the desired tag.
         let tag = tags.first!
+        
         session.connect(to: tag) { (error: Error?) in
             if error != nil {
                 session.restartPolling()
