@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 90;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,11 +28,9 @@
 		F3308D4C2ABC4D7C00837C8F /* Morse VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3308D4B2ABC4D7C00837C8F /* Morse VM.swift */; };
 		F33C17112B29F22A0040FA63 /* Note Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C17102B29F22A0040FA63 /* Note Assets.swift */; };
 		F33C17132B2A0A360040FA63 /* Hide Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C17122B2A0A360040FA63 /* Hide Gesture.swift */; };
-		F33C2AC82C6917BC002FD150 /* QuickLooking in Frameworks */ = {isa = PBXBuildFile; productRef = F33C2AC72C6917BC002FD150 /* QuickLooking */; };
-		F33C2ACA2C691838002FD150 /* NotesQuickLookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C2AC92C691838002FD150 /* NotesQuickLookView.swift */; };
+		F33C17152B2A0D330040FA63 /* Quick Look.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C17142B2A0D330040FA63 /* Quick Look.swift */; };
 		F34185D62A97A4E000F972C2 /* BuildTime Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34185D52A97A4E000F972C2 /* BuildTime Chart.swift */; };
 		F34185D92A98CB9400F972C2 /* App Card Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34185D82A98CB9400F972C2 /* App Card Image.swift */; };
-		F34878422DB10D4D0010C0CE /* Utilitius App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34878412DB10D4D0010C0CE /* Utilitius App.swift */; };
 		F34D5BB42ADC4C8700EA8EA9 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F34D5BB32ADC4C8700EA8EA9 /* ScrechKit */; };
 		F350840F2AEAA34C00865FF6 /* Morse Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350840E2AEAA34C00865FF6 /* Morse Alphabet.swift */; };
 		F357BA182ADC6F7F00DB249F /* UWTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA172ADC6F7F00DB249F /* UWTestView.swift */; };
@@ -66,6 +64,7 @@
 		F3865BEC2BBA2473005E82D4 /* PHD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3865BEB2BBA2473005E82D4 /* PHD.swift */; };
 		F3865BEE2BBA2A31005E82D4 /* APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3865BED2BBA2A31005E82D4 /* APDU.swift */; };
 		F386B4412AC438D300F6C2BB /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386B4402AC438D300F6C2BB /* CalculatorView.swift */; };
+		F38890062B6D5ECD008597DF /* Utilitius-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38890052B6D5ECD008597DF /* Utilitius-watchOS-Info.plist */; };
 		F388900D2B6D624D008597DF /* Note List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388900C2B6D624D008597DF /* Note List.swift */; };
 		F388900E2B6D624D008597DF /* Note Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388900B2B6D624D008597DF /* Note Card.swift */; };
 		F38A644D2AE0505400A72651 /* Recorder View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A644C2AE0505400A72651 /* Recorder View.swift */; };
@@ -76,6 +75,7 @@
 		F38ACD792A94255B00B29405 /* Xcodes VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38ACD772A940DAC00B29405 /* Xcodes VM.swift */; };
 		F38ACD7D2A94C0C700B29405 /* Open Safari.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38ACD7C2A94C0C700B29405 /* Open Safari.swift */; };
 		F38ACD7F2A94C18E00B29405 /* XcodesJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = F38ACD7E2A94C18E00B29405 /* XcodesJSON.txt */; };
+		F38ACD812A94C28200B29405 /* QuickLook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38ACD802A94C28200B29405 /* QuickLook.swift */; };
 		F38B31FA2AF4EBF2002B6B5A /* Reminder Parent View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B31F92AF4EBF2002B6B5A /* Reminder Parent View.swift */; };
 		F38B31FC2AF4EC56002B6B5A /* Reminders Unavailible View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B31FB2AF4EC56002B6B5A /* Reminders Unavailible View.swift */; };
 		F38B31FE2AF4ECBE002B6B5A /* Reminder VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B31FD2AF4ECBE002B6B5A /* Reminder VM.swift */; };
@@ -94,6 +94,7 @@
 		F3A1F4482AD8964600C85355 /* Stopwatch View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F4472AD8964600C85355 /* Stopwatch View.swift */; };
 		F3A1F44A2AD8966800C85355 /* Stopwatch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F4492AD8966800C85355 /* Stopwatch VM.swift */; };
 		F3A1F44C2AD8A0FE00C85355 /* Stopwatch Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F44B2AD8A0FE00C85355 /* Stopwatch Model.swift */; };
+		F3A1F4692AD92E0100C85355 /* Utilitius App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */; };
 		F3A1F46E2AD92E3500C85355 /* Intentory Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76B2A90E5E700D5B904 /* Intentory Item.swift */; };
 		F3A1F46F2AD92E3900C85355 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABD52A60BAC3000B2495 /* Tag.swift */; };
 		F3A1F4702AD92E3D00C85355 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAC0C2A60BE1E000B2495 /* Note.swift */; };
@@ -159,6 +160,7 @@
 		F3C022C42AD7D88E008013A2 /* Storage VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C022C32AD7D88E008013A2 /* Storage VM.swift */; };
 		F3C5FC8B2AA9D9F9000D9CAD /* NFCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FC8A2AA9D9F9000D9CAD /* NFCMessage.swift */; };
 		F3C5FC8D2AA9DBDA000D9CAD /* NFC Messages View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FC8C2AA9DBDA000D9CAD /* NFC Messages View.swift */; };
+		F3CAAB9F2A60B9F7000B2495 /* Utilitius App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */; };
 		F3CAABA52A60B9FA000B2495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CAABA42A60B9FA000B2495 /* Assets.xcassets */; };
 		F3CAABB42A60B9FA000B2495 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABB32A60B9FA000B2495 /* Tests.swift */; };
 		F3CAABBE2A60B9FA000B2495 /* UI Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABBD2A60B9FA000B2495 /* UI Tests.swift */; };
@@ -235,19 +237,23 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		F36B573C2AF466BA0099AF5D /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolder = Product;
+			dstSubfolderSpec = 16;
 			files = (
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843A82B8C18730068AC2A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
 			dstPath = Contents/Library/LoginItems;
-			dstSubfolder = Wrapper;
+			dstSubfolderSpec = 1;
 			files = (
 				F3A843A92B8C18830068AC2A /* Utilitius Launcher.app in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -277,10 +283,9 @@
 		F3308D4B2ABC4D7C00837C8F /* Morse VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Morse VM.swift"; sourceTree = "<group>"; };
 		F33C17102B29F22A0040FA63 /* Note Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note Assets.swift"; sourceTree = "<group>"; };
 		F33C17122B2A0A360040FA63 /* Hide Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hide Gesture.swift"; sourceTree = "<group>"; };
-		F33C2AC92C691838002FD150 /* NotesQuickLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesQuickLookView.swift; sourceTree = "<group>"; };
+		F33C17142B2A0D330040FA63 /* Quick Look.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quick Look.swift"; sourceTree = "<group>"; };
 		F34185D52A97A4E000F972C2 /* BuildTime Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildTime Chart.swift"; sourceTree = "<group>"; };
 		F34185D82A98CB9400F972C2 /* App Card Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Card Image.swift"; sourceTree = "<group>"; };
-		F34878412DB10D4D0010C0CE /* Utilitius App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utilitius App.swift"; sourceTree = "<group>"; };
 		F350840E2AEAA34C00865FF6 /* Morse Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Morse Alphabet.swift"; sourceTree = "<group>"; };
 		F357BA172ADC6F7F00DB249F /* UWTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWTestView.swift; sourceTree = "<group>"; };
 		F357BA192ADC6FA300DB249F /* Math Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Math Utilities.swift"; sourceTree = "<group>"; };
@@ -323,6 +328,7 @@
 		F38ACD772A940DAC00B29405 /* Xcodes VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Xcodes VM.swift"; sourceTree = "<group>"; };
 		F38ACD7C2A94C0C700B29405 /* Open Safari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Open Safari.swift"; sourceTree = "<group>"; };
 		F38ACD7E2A94C18E00B29405 /* XcodesJSON.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XcodesJSON.txt; sourceTree = "<group>"; };
+		F38ACD802A94C28200B29405 /* QuickLook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLook.swift; sourceTree = "<group>"; };
 		F38B31F92AF4EBF2002B6B5A /* Reminder Parent View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder Parent View.swift"; sourceTree = "<group>"; };
 		F38B31FB2AF4EC56002B6B5A /* Reminders Unavailible View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminders Unavailible View.swift"; sourceTree = "<group>"; };
 		F38B31FD2AF4ECBE002B6B5A /* Reminder VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder VM.swift"; sourceTree = "<group>"; };
@@ -389,6 +395,7 @@
 		F3C5FC8A2AA9D9F9000D9CAD /* NFCMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCMessage.swift; sourceTree = "<group>"; };
 		F3C5FC8C2AA9DBDA000D9CAD /* NFC Messages View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Messages View.swift"; sourceTree = "<group>"; };
 		F3CAAB9B2A60B9F7000B2495 /* Utilitius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utilitius.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Utilitius App.swift"; path = "Navigation/Utilitius App.swift"; sourceTree = "<group>"; };
 		F3CAABA42A60B9FA000B2495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3CAABA62A60B9FA000B2495 /* Utilitius.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Utilitius.entitlements; sourceTree = "<group>"; };
 		F3CAABAA2A60B9FA000B2495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -446,33 +453,41 @@
 /* Begin PBXFrameworksBuildPhase section */
 		F30F20852B6D076900D95589 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F30F208D2B6D076900D95589 /* RealityKitContent in Frameworks */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A1F4512AD92D2D00C85355 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F3E1BDF22AEAC81200E78037 /* ScrechKit in Frameworks */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843692B8C0BB30068AC2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F3A843922B8C14C90068AC2A /* ScrechKit in Frameworks */,
 				F3A843AB2B8C18B80068AC2A /* ServiceManagement.framework in Frameworks */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843942B8C17C10068AC2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAAB982A60B9F7000B2495 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F39504F32AC0B21400B50018 /* YouTubeKit in Frameworks */,
-				F33C2AC82C6917BC002FD150 /* QuickLooking in Frameworks */,
 				F34D5BB42ADC4C8700EA8EA9 /* ScrechKit in Frameworks */,
 				F3A43DB12AE3B64F0072F7FA /* AlertKit in Frameworks */,
 				F39FF5882AE4819C00D77D98 /* SwiftOTP in Frameworks */,
@@ -481,17 +496,22 @@
 				F3E1BDF02AEAC5C600E78037 /* SwiftOTP in Frameworks */,
 				F3B00C022A96BA0700C20843 /* SwiftSoup in Frameworks */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABAC2A60B9FA000B2495 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F30AD1CC2ADEFC300080E879 /* ScrechKit in Frameworks */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABB62A60B9FA000B2495 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -912,6 +932,7 @@
 				F38ACD772A940DAC00B29405 /* Xcodes VM.swift */,
 				F3BFF89C2B2524F100BE23BF /* Xcodes Model.swift */,
 				F38ACD7C2A94C0C700B29405 /* Open Safari.swift */,
+				F38ACD802A94C28200B29405 /* QuickLook.swift */,
 			);
 			path = Xcodes;
 			sourceTree = "<group>";
@@ -988,12 +1009,12 @@
 		F3CAAB9D2A60B9F7000B2495 /* Utilitius */ = {
 			isa = PBXGroup;
 			children = (
-				F34878412DB10D4D0010C0CE /* Utilitius App.swift */,
+				F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */,
 				F3A43DB22AE3B6980072F7FA /* AlertKit.swift */,
 				F30B61D22B2915A800F447B4 /* Bundle */,
 				F3ED95DD2B4D43FE00A490FC /* Multiboard */,
 				F3CAABD22A60BAC3000B2495 /* SwiftData Models */,
-				F3CAABD62A60BAC3000B2495 /* Nav */,
+				F3CAABD62A60BAC3000B2495 /* Navigation */,
 				F3CAABD82A60BAC3000B2495 /* Home */,
 				F3D8C1142B2B968000C7B0A9 /* Productivity */,
 				F386B43F2AC438C200F6C2BB /* Calculator */,
@@ -1054,7 +1075,7 @@
 			path = "SwiftData Models";
 			sourceTree = "<group>";
 		};
-		F3CAABD62A60BAC3000B2495 /* Nav */ = {
+		F3CAABD62A60BAC3000B2495 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				F3CAABDC2A60BAC3000B2495 /* App Container.swift */,
@@ -1062,7 +1083,7 @@
 				F3CAABDD2A60BAC3000B2495 /* Nav Extension.swift */,
 				F3CAABDB2A60BAC3000B2495 /* Nav State.swift */,
 			);
-			path = Nav;
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		F3CAABD82A60BAC3000B2495 /* Home */ = {
@@ -1134,8 +1155,8 @@
 			isa = PBXGroup;
 			children = (
 				F3CAAC112A60BE1E000B2495 /* Note View.swift */,
+				F33C17142B2A0D330040FA63 /* Quick Look.swift */,
 				F33C17102B29F22A0040FA63 /* Note Assets.swift */,
-				F33C2AC92C691838002FD150 /* NotesQuickLookView.swift */,
 				F33C17122B2A0A360040FA63 /* Hide Gesture.swift */,
 			);
 			path = Editor;
@@ -1217,6 +1238,8 @@
 			);
 			buildRules = (
 			);
+			dependencies = (
+			);
 			name = "Utilitius visionOS";
 			packageProductDependencies = (
 				F30F208C2B6D076900D95589 /* RealityKitContent */,
@@ -1234,6 +1257,8 @@
 				F3A1F4522AD92D2D00C85355 /* Resources */,
 			);
 			buildRules = (
+			);
+			dependencies = (
 			);
 			name = "Utilitius watchOS";
 			packageProductDependencies = (
@@ -1254,6 +1279,8 @@
 			);
 			buildRules = (
 			);
+			dependencies = (
+			);
 			name = "Utilitius macOS";
 			packageProductDependencies = (
 				F3A843912B8C14C90068AC2A /* ScrechKit */,
@@ -1272,6 +1299,8 @@
 			);
 			buildRules = (
 			);
+			dependencies = (
+			);
 			name = "Utilitius Launcher";
 			productName = "Utilitius Launcher";
 			productReference = F3A843972B8C17C10068AC2A /* Utilitius Launcher.app */;
@@ -1288,6 +1317,8 @@
 			);
 			buildRules = (
 			);
+			dependencies = (
+			);
 			name = Utilitius;
 			packageProductDependencies = (
 				F3CAAC062A60BD07000B2495 /* MailCover */,
@@ -1298,7 +1329,6 @@
 				F3A43DB02AE3B64F0072F7FA /* AlertKit */,
 				F39FF5872AE4819C00D77D98 /* SwiftOTP */,
 				F3E1BDEF2AEAC5C600E78037 /* SwiftOTP */,
-				F33C2AC72C6917BC002FD150 /* QuickLooking */,
 			);
 			productName = Utilitius;
 			productReference = F3CAAB9B2A60B9F7000B2495 /* Utilitius.app */;
@@ -1351,7 +1381,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					F30F20872B6D076900D95589 = {
 						CreatedOnToolsVersion = 15.2;
@@ -1381,6 +1411,7 @@
 				};
 			};
 			buildConfigurationList = F3CAAB962A60B9F7000B2495 /* Build configuration list for PBXProject "Utilitius" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1397,9 +1428,7 @@
 				F34D5BB22ADC4C8700EA8EA9 /* XCRemoteSwiftPackageReference "ScrechKit" */,
 				F3A43DAF2AE3B64F0072F7FA /* XCRemoteSwiftPackageReference "AlertKit" */,
 				F3E1BDEE2AEAC5C600E78037 /* XCRemoteSwiftPackageReference "SwiftOTP" */,
-				F33C2AC62C6917BC002FD150 /* XCRemoteSwiftPackageReference "QuickLooking" */,
 			);
-			preferredProjectObjectVersion = 90;
 			productRefGroup = F3CAAB9C2A60B9F7000B2495 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1418,51 +1447,67 @@
 /* Begin PBXResourcesBuildPhase section */
 		F30F20862B6D076900D95589 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F30F20932B6D076A00D95589 /* Assets.xcassets in Resources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A1F4522AD92D2D00C85355 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F3D2961A2AF3FB7600ED43A0 /* Assets.xcassets in Resources */,
+				F38890062B6D5ECD008597DF /* Utilitius-watchOS-Info.plist in Resources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A8436A2B8C0BB30068AC2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F3A843752B8C0BB40068AC2A /* Assets.xcassets in Resources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843952B8C17C10068AC2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F3A8439E2B8C17C20068AC2A /* Assets.xcassets in Resources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAAB992A60B9F7000B2495 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F38ACD7F2A94C18E00B29405 /* XcodesJSON.txt in Resources */,
 				F3CAABA52A60B9FA000B2495 /* Assets.xcassets in Resources */,
 				F3CAABFE2A60BB17000B2495 /* Localizable.xcstrings in Resources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABAD2A60B9FA000B2495 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABB72A60B9FA000B2495 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F30F20842B6D076900D95589 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F3BA70042B7B8AF600015711 /* Tag.swift in Sources */,
 				F3BA70032B7B8AEB00015711 /* Note.swift in Sources */,
@@ -1474,9 +1519,11 @@
 				F37B90882BFEA0FF00597624 /* View Container.swift in Sources */,
 				F30F208F2B6D076900D95589 /* visionOS App.swift in Sources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A1F4502AD92D2D00C85355 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F3A1F4702AD92E3D00C85355 /* Note.swift in Sources */,
 				F3A1F46F2AD92E3900C85355 /* Tag.swift in Sources */,
@@ -1503,13 +1550,16 @@
 				F3A1F47D2AD92F4F00C85355 /* Stopwatch Model.swift in Sources */,
 				F3D296162AF3C6A600ED43A0 /* Reminder List.swift in Sources */,
 				F3A1F4722AD92E4D00C85355 /* NFCMessage.swift in Sources */,
+				F3A1F4692AD92E0100C85355 /* Utilitius App.swift in Sources */,
 				F37B907C2BFEA0A300597624 /* Http Code Card.swift in Sources */,
 				F3D296122AF3C38800ED43A0 /* Reminder Model.swift in Sources */,
 				F3A1F4712AD92E4100C85355 /* Timer.swift in Sources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843682B8C0BB30068AC2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F37B90802BFEA0C600597624 /* Debug View.swift in Sources */,
 				F3A8438E2B8C0C650068AC2A /* App Container.swift in Sources */,
@@ -1523,20 +1573,23 @@
 				F3A843862B8C0BF60068AC2A /* Menu App.swift in Sources */,
 				F37B907E2BFEA0BB00597624 /* Settings Storage.swift in Sources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843932B8C17C10068AC2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F3A8439A2B8C17C10068AC2A /* Utilitius_LauncherApp.swift in Sources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAAB972A60B9F7000B2495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F321D1F92AE6569C005ABC51 /* App List Icon.swift in Sources */,
 				F357BA1A2ADC6FA300DB249F /* Math Utilities.swift in Sources */,
 				F3C022C02AD7D2FB008013A2 /* Goida Memory View.swift in Sources */,
-				F33C2ACA2C691838002FD150 /* NotesQuickLookView.swift in Sources */,
 				F3ABCA022ADAA1C100A414AC /* Goida Network View.swift in Sources */,
 				F3C022BD2AD7CAF2008013A2 /* OrientationVM.swift in Sources */,
 				F394C5072AD5410900C56527 /* GoidaListLink.swift in Sources */,
@@ -1549,6 +1602,7 @@
 				F3CAABEE2A60BAC4000B2495 /* Tag.swift in Sources */,
 				F3E5E7162ACFF8300007BD3A /* Location VM.swift in Sources */,
 				F3BEF2D52AD03B38005F11D1 /* Camera VM.swift in Sources */,
+				F3CAAB9F2A60B9F7000B2495 /* Utilitius App.swift in Sources */,
 				F3DFB7D12AEB166D00191EAC /* Subscriptions View.swift in Sources */,
 				F3281C5D2AD738F40054A45B /* Goida Device View.swift in Sources */,
 				F38B31FC2AF4EC56002B6B5A /* Reminders Unavailible View.swift in Sources */,
@@ -1575,6 +1629,7 @@
 				F3CAABFA2A60BAC4000B2495 /* Countdown View.swift in Sources */,
 				F3CAAC142A60BE1E000B2495 /* System Alerts.swift in Sources */,
 				F3ACF3942AA84C85002B4638 /* NFC Writer View.swift in Sources */,
+				F38ACD812A94C28200B29405 /* QuickLook.swift in Sources */,
 				F36223222A991979002F0A8D /* Frameworks View.swift in Sources */,
 				F36859422AD7BE420017898B /* Pressure VM.swift in Sources */,
 				F3A1F4482AD8964600C85355 /* Stopwatch View.swift in Sources */,
@@ -1609,6 +1664,7 @@
 				F3FDFED52AE2678E00BCF2B8 /* Password List.swift in Sources */,
 				F3B00BFA2A96875700C20843 /* Status Code Card.swift in Sources */,
 				F30A583B2AD315140070B906 /* MathView.swift in Sources */,
+				F33C17152B2A0D330040FA63 /* Quick Look.swift in Sources */,
 				F3865BEE2BBA2A31005E82D4 /* APDU.swift in Sources */,
 				F3B00BF42A9680B800C20843 /* HTTP Status Code.swift in Sources */,
 				F3DFB7CE2AEB03BF00191EAC /* Torch VM.swift in Sources */,
@@ -1620,7 +1676,6 @@
 				F3CAABF92A60BAC4000B2495 /* Emoji Extension.swift in Sources */,
 				F3CAABED2A60BAC4000B2495 /* Preview Data.swift in Sources */,
 				F3ED95E22B4D442900A490FC /* Multiboard List.swift in Sources */,
-				F34878422DB10D4D0010C0CE /* Utilitius App.swift in Sources */,
 				F359DB4D2AC6B7250064F55C /* App List Card.swift in Sources */,
 				F3CAABF52A60BAC4000B2495 /* Timer Card.swift in Sources */,
 				F3CAABF42A60BAC4000B2495 /* Nav Extension.swift in Sources */,
@@ -1664,21 +1719,26 @@
 				F3CAABEC2A60BAC4000B2495 /* Timer.swift in Sources */,
 				F38A64512AE05FD400A72651 /* Audio File Model.swift in Sources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABAB2A60B9FA000B2495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F30AD1CA2ADEFB4E0080E879 /* Sorting.swift in Sources */,
 				F38ACD792A94255B00B29405 /* Xcodes VM.swift in Sources */,
 				F3CAABB42A60B9FA000B2495 /* Tests.swift in Sources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABB52A60B9FA000B2495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 				F3CAABBE2A60B9FA000B2495 /* UI Tests.swift in Sources */,
 				F3CAABC02A60B9FA000B2495 /* Launch Tests.swift in Sources */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -1696,7 +1756,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F30F20992B6D076A00D95589 /* Debug configuration for PBXNativeTarget "Utilitius visionOS" */ = {
+		F30F20992B6D076A00D95589 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1705,6 +1765,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -1725,7 +1786,7 @@
 			};
 			name = Debug;
 		};
-		F30F209A2B6D076A00D95589 /* Release configuration for PBXNativeTarget "Utilitius visionOS" */ = {
+		F30F209A2B6D076A00D95589 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1734,6 +1795,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -1755,7 +1817,7 @@
 			};
 			name = Release;
 		};
-		F3A1F4632AD92D2F00C85355 /* Debug configuration for PBXNativeTarget "Utilitius watchOS" */ = {
+		F3A1F4632AD92D2F00C85355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1764,6 +1826,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Utilitius-watchOS-Info.plist";
@@ -1786,7 +1849,7 @@
 			};
 			name = Debug;
 		};
-		F3A1F4642AD92D2F00C85355 /* Release configuration for PBXNativeTarget "Utilitius watchOS" */ = {
+		F3A1F4642AD92D2F00C85355 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1795,6 +1858,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Utilitius-watchOS-Info.plist";
@@ -1818,7 +1882,7 @@
 			};
 			name = Release;
 		};
-		F3A8437B2B8C0BB40068AC2A /* Debug configuration for PBXNativeTarget "Utilitius macOS" */ = {
+		F3A8437B2B8C0BB40068AC2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1829,6 +1893,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1848,7 +1913,7 @@
 			};
 			name = Debug;
 		};
-		F3A8437C2B8C0BB40068AC2A /* Release configuration for PBXNativeTarget "Utilitius macOS" */ = {
+		F3A8437C2B8C0BB40068AC2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1859,6 +1924,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1877,7 +1943,7 @@
 			};
 			name = Release;
 		};
-		F3A843A42B8C17C20068AC2A /* Debug configuration for PBXNativeTarget "Utilitius Launcher" */ = {
+		F3A843A42B8C17C20068AC2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1887,6 +1953,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1907,7 +1974,7 @@
 			};
 			name = Debug;
 		};
-		F3A843A52B8C17C20068AC2A /* Release configuration for PBXNativeTarget "Utilitius Launcher" */ = {
+		F3A843A52B8C17C20068AC2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1917,6 +1984,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1937,7 +2005,7 @@
 			};
 			name = Release;
 		};
-		F3CAABC12A60B9FA000B2495 /* Debug configuration for PBXProject "Utilitius" */ = {
+		F3CAABC12A60B9FA000B2495 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1974,7 +2042,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -2006,7 +2073,7 @@
 			};
 			name = Debug;
 		};
-		F3CAABC22A60B9FA000B2495 /* Release configuration for PBXProject "Utilitius" */ = {
+		F3CAABC22A60B9FA000B2495 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2043,7 +2110,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -2067,7 +2133,7 @@
 			};
 			name = Release;
 		};
-		F3CAABC42A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "Utilitius" */ = {
+		F3CAABC42A60B9FA000B2495 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2078,6 +2144,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2106,7 +2173,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Utilitius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
@@ -2117,7 +2183,7 @@
 			};
 			name = Debug;
 		};
-		F3CAABC52A60B9FA000B2495 /* Release configuration for PBXNativeTarget "Utilitius" */ = {
+		F3CAABC52A60B9FA000B2495 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2128,6 +2194,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2156,7 +2223,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Utilitius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
@@ -2166,13 +2232,15 @@
 			};
 			name = Release;
 		};
-		F3CAABC72A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "UtilitiusTests" */ = {
+		F3CAABC72A60B9FA000B2495 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2188,13 +2256,15 @@
 			};
 			name = Debug;
 		};
-		F3CAABC82A60B9FA000B2495 /* Release configuration for PBXNativeTarget "UtilitiusTests" */ = {
+		F3CAABC82A60B9FA000B2495 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2210,12 +2280,14 @@
 			};
 			name = Release;
 		};
-		F3CAABCA2A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "UtilitiusUITests" */ = {
+		F3CAABCA2A60B9FA000B2495 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2231,12 +2303,14 @@
 			};
 			name = Debug;
 		};
-		F3CAABCB2A60B9FA000B2495 /* Release configuration for PBXNativeTarget "UtilitiusUITests" */ = {
+		F3CAABCB2A60B9FA000B2495 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2258,78 +2332,78 @@
 		F30F20982B6D076A00D95589 /* Build configuration list for PBXNativeTarget "Utilitius visionOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F30F20992B6D076A00D95589 /* Debug configuration for PBXNativeTarget "Utilitius visionOS" */,
-				F30F209A2B6D076A00D95589 /* Release configuration for PBXNativeTarget "Utilitius visionOS" */,
+				F30F20992B6D076A00D95589 /* Debug */,
+				F30F209A2B6D076A00D95589 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3A1F4622AD92D2F00C85355 /* Build configuration list for PBXNativeTarget "Utilitius watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3A1F4632AD92D2F00C85355 /* Debug configuration for PBXNativeTarget "Utilitius watchOS" */,
-				F3A1F4642AD92D2F00C85355 /* Release configuration for PBXNativeTarget "Utilitius watchOS" */,
+				F3A1F4632AD92D2F00C85355 /* Debug */,
+				F3A1F4642AD92D2F00C85355 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3A8437A2B8C0BB40068AC2A /* Build configuration list for PBXNativeTarget "Utilitius macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3A8437B2B8C0BB40068AC2A /* Debug configuration for PBXNativeTarget "Utilitius macOS" */,
-				F3A8437C2B8C0BB40068AC2A /* Release configuration for PBXNativeTarget "Utilitius macOS" */,
+				F3A8437B2B8C0BB40068AC2A /* Debug */,
+				F3A8437C2B8C0BB40068AC2A /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3A843A32B8C17C20068AC2A /* Build configuration list for PBXNativeTarget "Utilitius Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3A843A42B8C17C20068AC2A /* Debug configuration for PBXNativeTarget "Utilitius Launcher" */,
-				F3A843A52B8C17C20068AC2A /* Release configuration for PBXNativeTarget "Utilitius Launcher" */,
+				F3A843A42B8C17C20068AC2A /* Debug */,
+				F3A843A52B8C17C20068AC2A /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3CAAB962A60B9F7000B2495 /* Build configuration list for PBXProject "Utilitius" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3CAABC12A60B9FA000B2495 /* Debug configuration for PBXProject "Utilitius" */,
-				F3CAABC22A60B9FA000B2495 /* Release configuration for PBXProject "Utilitius" */,
+				F3CAABC12A60B9FA000B2495 /* Debug */,
+				F3CAABC22A60B9FA000B2495 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3CAABC32A60B9FA000B2495 /* Build configuration list for PBXNativeTarget "Utilitius" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3CAABC42A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "Utilitius" */,
-				F3CAABC52A60B9FA000B2495 /* Release configuration for PBXNativeTarget "Utilitius" */,
+				F3CAABC42A60B9FA000B2495 /* Debug */,
+				F3CAABC52A60B9FA000B2495 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3CAABC62A60B9FA000B2495 /* Build configuration list for PBXNativeTarget "UtilitiusTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3CAABC72A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "UtilitiusTests" */,
-				F3CAABC82A60B9FA000B2495 /* Release configuration for PBXNativeTarget "UtilitiusTests" */,
+				F3CAABC72A60B9FA000B2495 /* Debug */,
+				F3CAABC82A60B9FA000B2495 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3CAABC92A60B9FA000B2495 /* Build configuration list for PBXNativeTarget "UtilitiusUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3CAABCA2A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "UtilitiusUITests" */,
-				F3CAABCB2A60B9FA000B2495 /* Release configuration for PBXNativeTarget "UtilitiusUITests" */,
+				F3CAABCA2A60B9FA000B2495 /* Debug */,
+				F3CAABCB2A60B9FA000B2495 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F33C2AC62C6917BC002FD150 /* XCRemoteSwiftPackageReference "QuickLooking" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/TopScrech/QuickLooking";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		F34D5BB22ADC4C8700EA8EA9 /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
@@ -2397,11 +2471,6 @@
 		F30F208C2B6D076900D95589 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
-		};
-		F33C2AC72C6917BC002FD150 /* QuickLooking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F33C2AC62C6917BC002FD150 /* XCRemoteSwiftPackageReference "QuickLooking" */;
-			productName = QuickLooking;
 		};
 		F34D5BB32ADC4C8700EA8EA9 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;

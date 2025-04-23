@@ -19,15 +19,6 @@
       }
     },
     {
-      "identity" : "quicklooking",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/TopScrech/QuickLooking",
-      "state" : {
-        "branch" : "main",
-        "revision" : "fb6ca05b383cb69efc31831892f21c5d642dceaf"
-      }
-    },
-    {
       "identity" : "safaricover",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TopScrech/SafariCover",
