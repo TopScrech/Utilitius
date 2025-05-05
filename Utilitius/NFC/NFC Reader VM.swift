@@ -391,7 +391,6 @@ final class NFCWriterVM: NSObject, NFCNDEFReaderSessionDelegate {
     
     // MARK: - NFCNDEFReaderSessionDelegate
     func readerSessionDidBecomeActive(_ session: NFCNDEFReaderSession) {
-        
         let textPayload = NFCNDEFPayload.wellKnownTypeTextPayload(
             string: "Bisquit.Host",
             locale: Locale(identifier: "En")
@@ -414,8 +413,9 @@ final class NFCWriterVM: NSObject, NFCNDEFReaderSessionDelegate {
             return
         }
         
-        // You connect to the desired tag.
+        // You connect to the desired tag
         let tag = tags.first!
+        
         session.connect(to: tag) { (error: Error?) in
             if error != nil {
                 session.restartPolling()
