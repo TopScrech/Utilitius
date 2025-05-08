@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/sparrowcode/AlertKit",
       "state" : {
-        "revision" : "3d35de60ad26aab58395ebecdd63b533546862ed",
-        "version" : "5.1.8"
+        "revision" : "3b73be8db5a7e7efaf474c6ed919f5a437d843c9",
+        "version" : "5.1.9"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/TopScrech/MailCover",
       "state" : {
         "branch" : "main",
-        "revision" : "29f4e2a45338335e393ef671b185def38f4c9b9f"
+        "revision" : "c33771592360b836f114ebe32ad660590c7afc28"
       }
     },
     {
@@ -24,7 +24,7 @@
       "location" : "https://github.com/TopScrech/SafariCover",
       "state" : {
         "branch" : "main",
-        "revision" : "0a5cf4d1a91e5151608bdba892d64ae9c501b37f"
+        "revision" : "6846539c6cf560373fa357fc8df82896705d390c"
       }
     },
     {
@@ -33,7 +33,16 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "e0212525cf9d72ea2ae6b8631e6ea070348f010a"
+        "revision" : "ee68ee7e4b50d9e155b8f886e7f377e08e1f1fa8"
+      }
+    },
+    {
+      "identity" : "swift-asn1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-asn1.git",
+      "state" : {
+        "revision" : "a54383ada6cecde007d374f58f864e29370ba5c3",
+        "version" : "1.3.2"
       }
     },
     {
@@ -41,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-crypto.git",
       "state" : {
-        "revision" : "cc76b894169a3c86b71bac10c78a4db6beb7a9ad",
-        "version" : "3.2.0"
+        "revision" : "e8d6eba1fef23ae5b359c46b03f7d94be2f41fed",
+        "version" : "3.12.3"
       }
     },
     {
@@ -59,8 +68,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/scinfu/SwiftSoup.git",
       "state" : {
-        "revision" : "1d39e56d364cba79ce43b341f9661b534cccb18d",
-        "version" : "2.7.1"
+        "revision" : "bba848db50462894e7fc0891d018dfecad4ef11e",
+        "version" : "2.8.7"
       }
     },
     {
@@ -68,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/alexeichhorn/YouTubeKit.git",
       "state" : {
-        "revision" : "f67f4c3dd53b85a5ce94d16a246613d4dd7faa32",
-        "version" : "0.2.0"
+        "revision" : "e7dbaa332ff190e85241bb90e9a26f3ce4993458",
+        "version" : "0.2.6"
       }
     }
   ],

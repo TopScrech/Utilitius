@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -64,7 +64,6 @@
 		F3865BEC2BBA2473005E82D4 /* PHD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3865BEB2BBA2473005E82D4 /* PHD.swift */; };
 		F3865BEE2BBA2A31005E82D4 /* APDU.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3865BED2BBA2A31005E82D4 /* APDU.swift */; };
 		F386B4412AC438D300F6C2BB /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F386B4402AC438D300F6C2BB /* CalculatorView.swift */; };
-		F38890062B6D5ECD008597DF /* Utilitius-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38890052B6D5ECD008597DF /* Utilitius-watchOS-Info.plist */; };
 		F388900D2B6D624D008597DF /* Note List.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388900C2B6D624D008597DF /* Note List.swift */; };
 		F388900E2B6D624D008597DF /* Note Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388900B2B6D624D008597DF /* Note Card.swift */; };
 		F38A644D2AE0505400A72651 /* Recorder View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A644C2AE0505400A72651 /* Recorder View.swift */; };
@@ -237,23 +236,19 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		F36B573C2AF466BA0099AF5D /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
+			dstSubfolder = Product;
 			files = (
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843A82B8C18730068AC2A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
 			dstPath = Contents/Library/LoginItems;
-			dstSubfolderSpec = 1;
+			dstSubfolder = Wrapper;
 			files = (
 				F3A843A92B8C18830068AC2A /* Utilitius Launcher.app in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -453,39 +448,30 @@
 /* Begin PBXFrameworksBuildPhase section */
 		F30F20852B6D076900D95589 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F30F208D2B6D076900D95589 /* RealityKitContent in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A1F4512AD92D2D00C85355 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3E1BDF22AEAC81200E78037 /* ScrechKit in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843692B8C0BB30068AC2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3A843922B8C14C90068AC2A /* ScrechKit in Frameworks */,
 				F3A843AB2B8C18B80068AC2A /* ServiceManagement.framework in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843942B8C17C10068AC2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAAB982A60B9F7000B2495 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F39504F32AC0B21400B50018 /* YouTubeKit in Frameworks */,
 				F34D5BB42ADC4C8700EA8EA9 /* ScrechKit in Frameworks */,
@@ -496,22 +482,17 @@
 				F3E1BDF02AEAC5C600E78037 /* SwiftOTP in Frameworks */,
 				F3B00C022A96BA0700C20843 /* SwiftSoup in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABAC2A60B9FA000B2495 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F30AD1CC2ADEFC300080E879 /* ScrechKit in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABB62A60B9FA000B2495 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -1238,8 +1219,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "Utilitius visionOS";
 			packageProductDependencies = (
 				F30F208C2B6D076900D95589 /* RealityKitContent */,
@@ -1257,8 +1236,6 @@
 				F3A1F4522AD92D2D00C85355 /* Resources */,
 			);
 			buildRules = (
-			);
-			dependencies = (
 			);
 			name = "Utilitius watchOS";
 			packageProductDependencies = (
@@ -1279,8 +1256,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "Utilitius macOS";
 			packageProductDependencies = (
 				F3A843912B8C14C90068AC2A /* ScrechKit */,
@@ -1299,8 +1274,6 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			name = "Utilitius Launcher";
 			productName = "Utilitius Launcher";
 			productReference = F3A843972B8C17C10068AC2A /* Utilitius Launcher.app */;
@@ -1316,8 +1289,6 @@
 				F36B573C2AF466BA0099AF5D /* Embed Watch Content */,
 			);
 			buildRules = (
-			);
-			dependencies = (
 			);
 			name = Utilitius;
 			packageProductDependencies = (
@@ -1381,7 +1352,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					F30F20872B6D076900D95589 = {
 						CreatedOnToolsVersion = 15.2;
@@ -1411,7 +1382,6 @@
 				};
 			};
 			buildConfigurationList = F3CAAB962A60B9F7000B2495 /* Build configuration list for PBXProject "Utilitius" */;
-			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1429,6 +1399,7 @@
 				F3A43DAF2AE3B64F0072F7FA /* XCRemoteSwiftPackageReference "AlertKit" */,
 				F3E1BDEE2AEAC5C600E78037 /* XCRemoteSwiftPackageReference "SwiftOTP" */,
 			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = F3CAAB9C2A60B9F7000B2495 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1447,67 +1418,51 @@
 /* Begin PBXResourcesBuildPhase section */
 		F30F20862B6D076900D95589 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F30F20932B6D076A00D95589 /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A1F4522AD92D2D00C85355 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3D2961A2AF3FB7600ED43A0 /* Assets.xcassets in Resources */,
-				F38890062B6D5ECD008597DF /* Utilitius-watchOS-Info.plist in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A8436A2B8C0BB30068AC2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3A843752B8C0BB40068AC2A /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843952B8C17C10068AC2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3A8439E2B8C17C20068AC2A /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAAB992A60B9F7000B2495 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F38ACD7F2A94C18E00B29405 /* XcodesJSON.txt in Resources */,
 				F3CAABA52A60B9FA000B2495 /* Assets.xcassets in Resources */,
 				F3CAABFE2A60BB17000B2495 /* Localizable.xcstrings in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABAD2A60B9FA000B2495 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABB72A60B9FA000B2495 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F30F20842B6D076900D95589 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3BA70042B7B8AF600015711 /* Tag.swift in Sources */,
 				F3BA70032B7B8AEB00015711 /* Note.swift in Sources */,
@@ -1519,11 +1474,9 @@
 				F37B90882BFEA0FF00597624 /* View Container.swift in Sources */,
 				F30F208F2B6D076900D95589 /* visionOS App.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A1F4502AD92D2D00C85355 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3A1F4702AD92E3D00C85355 /* Note.swift in Sources */,
 				F3A1F46F2AD92E3900C85355 /* Tag.swift in Sources */,
@@ -1555,11 +1508,9 @@
 				F3D296122AF3C38800ED43A0 /* Reminder Model.swift in Sources */,
 				F3A1F4712AD92E4100C85355 /* Timer.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843682B8C0BB30068AC2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F37B90802BFEA0C600597624 /* Debug View.swift in Sources */,
 				F3A8438E2B8C0C650068AC2A /* App Container.swift in Sources */,
@@ -1573,19 +1524,15 @@
 				F3A843862B8C0BF60068AC2A /* Menu App.swift in Sources */,
 				F37B907E2BFEA0BB00597624 /* Settings Storage.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3A843932B8C17C10068AC2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3A8439A2B8C17C10068AC2A /* Utilitius_LauncherApp.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAAB972A60B9F7000B2495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F321D1F92AE6569C005ABC51 /* App List Icon.swift in Sources */,
 				F357BA1A2ADC6FA300DB249F /* Math Utilities.swift in Sources */,
@@ -1719,26 +1666,21 @@
 				F3CAABEC2A60BAC4000B2495 /* Timer.swift in Sources */,
 				F38A64512AE05FD400A72651 /* Audio File Model.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABAB2A60B9FA000B2495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F30AD1CA2ADEFB4E0080E879 /* Sorting.swift in Sources */,
 				F38ACD792A94255B00B29405 /* Xcodes VM.swift in Sources */,
 				F3CAABB42A60B9FA000B2495 /* Tests.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F3CAABB52A60B9FA000B2495 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				F3CAABBE2A60B9FA000B2495 /* UI Tests.swift in Sources */,
 				F3CAABC02A60B9FA000B2495 /* Launch Tests.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -1756,7 +1698,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F30F20992B6D076A00D95589 /* Debug */ = {
+		F30F20992B6D076A00D95589 /* Debug configuration for PBXNativeTarget "Utilitius visionOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1765,7 +1707,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -1786,7 +1727,7 @@
 			};
 			name = Debug;
 		};
-		F30F209A2B6D076A00D95589 /* Release */ = {
+		F30F209A2B6D076A00D95589 /* Release configuration for PBXNativeTarget "Utilitius visionOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1795,7 +1736,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -1817,7 +1757,7 @@
 			};
 			name = Release;
 		};
-		F3A1F4632AD92D2F00C85355 /* Debug */ = {
+		F3A1F4632AD92D2F00C85355 /* Debug configuration for PBXNativeTarget "Utilitius watchOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1826,7 +1766,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Utilitius-watchOS-Info.plist";
@@ -1849,7 +1788,7 @@
 			};
 			name = Debug;
 		};
-		F3A1F4642AD92D2F00C85355 /* Release */ = {
+		F3A1F4642AD92D2F00C85355 /* Release configuration for PBXNativeTarget "Utilitius watchOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1858,7 +1797,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Utilitius-watchOS-Info.plist";
@@ -1882,7 +1820,7 @@
 			};
 			name = Release;
 		};
-		F3A8437B2B8C0BB40068AC2A /* Debug */ = {
+		F3A8437B2B8C0BB40068AC2A /* Debug configuration for PBXNativeTarget "Utilitius macOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1893,7 +1831,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1913,7 +1850,7 @@
 			};
 			name = Debug;
 		};
-		F3A8437C2B8C0BB40068AC2A /* Release */ = {
+		F3A8437C2B8C0BB40068AC2A /* Release configuration for PBXNativeTarget "Utilitius macOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1924,7 +1861,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1943,7 +1879,7 @@
 			};
 			name = Release;
 		};
-		F3A843A42B8C17C20068AC2A /* Debug */ = {
+		F3A843A42B8C17C20068AC2A /* Debug configuration for PBXNativeTarget "Utilitius Launcher" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1953,7 +1889,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1974,7 +1909,7 @@
 			};
 			name = Debug;
 		};
-		F3A843A52B8C17C20068AC2A /* Release */ = {
+		F3A843A52B8C17C20068AC2A /* Release configuration for PBXNativeTarget "Utilitius Launcher" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1984,7 +1919,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2005,7 +1939,7 @@
 			};
 			name = Release;
 		};
-		F3CAABC12A60B9FA000B2495 /* Debug */ = {
+		F3CAABC12A60B9FA000B2495 /* Debug configuration for PBXProject "Utilitius" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2042,6 +1976,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -2073,7 +2008,7 @@
 			};
 			name = Debug;
 		};
-		F3CAABC22A60B9FA000B2495 /* Release */ = {
+		F3CAABC22A60B9FA000B2495 /* Release configuration for PBXProject "Utilitius" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2110,6 +2045,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -2133,7 +2069,7 @@
 			};
 			name = Release;
 		};
-		F3CAABC42A60B9FA000B2495 /* Debug */ = {
+		F3CAABC42A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "Utilitius" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2144,7 +2080,6 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2173,6 +2108,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Utilitius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
@@ -2183,7 +2119,7 @@
 			};
 			name = Debug;
 		};
-		F3CAABC52A60B9FA000B2495 /* Release */ = {
+		F3CAABC52A60B9FA000B2495 /* Release configuration for PBXNativeTarget "Utilitius" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2194,7 +2130,6 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2223,6 +2158,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Utilitius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
@@ -2232,15 +2168,13 @@
 			};
 			name = Release;
 		};
-		F3CAABC72A60B9FA000B2495 /* Debug */ = {
+		F3CAABC72A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "UtilitiusTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2256,15 +2190,13 @@
 			};
 			name = Debug;
 		};
-		F3CAABC82A60B9FA000B2495 /* Release */ = {
+		F3CAABC82A60B9FA000B2495 /* Release configuration for PBXNativeTarget "UtilitiusTests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2280,14 +2212,12 @@
 			};
 			name = Release;
 		};
-		F3CAABCA2A60B9FA000B2495 /* Debug */ = {
+		F3CAABCA2A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "UtilitiusUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2303,14 +2233,12 @@
 			};
 			name = Debug;
 		};
-		F3CAABCB2A60B9FA000B2495 /* Release */ = {
+		F3CAABCB2A60B9FA000B2495 /* Release configuration for PBXNativeTarget "UtilitiusUITests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 8FQUA2F388;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -2332,73 +2260,65 @@
 		F30F20982B6D076A00D95589 /* Build configuration list for PBXNativeTarget "Utilitius visionOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F30F20992B6D076A00D95589 /* Debug */,
-				F30F209A2B6D076A00D95589 /* Release */,
+				F30F20992B6D076A00D95589 /* Debug configuration for PBXNativeTarget "Utilitius visionOS" */,
+				F30F209A2B6D076A00D95589 /* Release configuration for PBXNativeTarget "Utilitius visionOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3A1F4622AD92D2F00C85355 /* Build configuration list for PBXNativeTarget "Utilitius watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3A1F4632AD92D2F00C85355 /* Debug */,
-				F3A1F4642AD92D2F00C85355 /* Release */,
+				F3A1F4632AD92D2F00C85355 /* Debug configuration for PBXNativeTarget "Utilitius watchOS" */,
+				F3A1F4642AD92D2F00C85355 /* Release configuration for PBXNativeTarget "Utilitius watchOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3A8437A2B8C0BB40068AC2A /* Build configuration list for PBXNativeTarget "Utilitius macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3A8437B2B8C0BB40068AC2A /* Debug */,
-				F3A8437C2B8C0BB40068AC2A /* Release */,
+				F3A8437B2B8C0BB40068AC2A /* Debug configuration for PBXNativeTarget "Utilitius macOS" */,
+				F3A8437C2B8C0BB40068AC2A /* Release configuration for PBXNativeTarget "Utilitius macOS" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3A843A32B8C17C20068AC2A /* Build configuration list for PBXNativeTarget "Utilitius Launcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3A843A42B8C17C20068AC2A /* Debug */,
-				F3A843A52B8C17C20068AC2A /* Release */,
+				F3A843A42B8C17C20068AC2A /* Debug configuration for PBXNativeTarget "Utilitius Launcher" */,
+				F3A843A52B8C17C20068AC2A /* Release configuration for PBXNativeTarget "Utilitius Launcher" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3CAAB962A60B9F7000B2495 /* Build configuration list for PBXProject "Utilitius" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3CAABC12A60B9FA000B2495 /* Debug */,
-				F3CAABC22A60B9FA000B2495 /* Release */,
+				F3CAABC12A60B9FA000B2495 /* Debug configuration for PBXProject "Utilitius" */,
+				F3CAABC22A60B9FA000B2495 /* Release configuration for PBXProject "Utilitius" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3CAABC32A60B9FA000B2495 /* Build configuration list for PBXNativeTarget "Utilitius" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3CAABC42A60B9FA000B2495 /* Debug */,
-				F3CAABC52A60B9FA000B2495 /* Release */,
+				F3CAABC42A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "Utilitius" */,
+				F3CAABC52A60B9FA000B2495 /* Release configuration for PBXNativeTarget "Utilitius" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3CAABC62A60B9FA000B2495 /* Build configuration list for PBXNativeTarget "UtilitiusTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3CAABC72A60B9FA000B2495 /* Debug */,
-				F3CAABC82A60B9FA000B2495 /* Release */,
+				F3CAABC72A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "UtilitiusTests" */,
+				F3CAABC82A60B9FA000B2495 /* Release configuration for PBXNativeTarget "UtilitiusTests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F3CAABC92A60B9FA000B2495 /* Build configuration list for PBXNativeTarget "UtilitiusUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3CAABCA2A60B9FA000B2495 /* Debug */,
-				F3CAABCB2A60B9FA000B2495 /* Release */,
+				F3CAABCA2A60B9FA000B2495 /* Debug configuration for PBXNativeTarget "UtilitiusUITests" */,
+				F3CAABCB2A60B9FA000B2495 /* Release configuration for PBXNativeTarget "UtilitiusUITests" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
