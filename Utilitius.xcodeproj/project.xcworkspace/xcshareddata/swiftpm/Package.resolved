@@ -33,7 +33,7 @@
       "location" : "https://github.com/TopScrech/ScrechKit",
       "state" : {
         "branch" : "main",
-        "revision" : "ee68ee7e4b50d9e155b8f886e7f377e08e1f1fa8"
+        "revision" : "b4ffcdfc764889a0def8c74993b3218732cb8351"
       }
     },
     {
@@ -77,8 +77,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/alexeichhorn/YouTubeKit.git",
       "state" : {
-        "revision" : "e7dbaa332ff190e85241bb90e9a26f3ce4993458",
-        "version" : "0.2.6"
+        "revision" : "e1895c72f0edff9acd6b41977d2ad9c6245e8306",
+        "version" : "0.2.7"
       }
     }
   ],

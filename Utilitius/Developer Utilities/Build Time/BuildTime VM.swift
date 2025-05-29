@@ -1,5 +1,4 @@
 import Foundation
-import Observation
 import SwiftSoup
 
 @Observable
@@ -23,7 +22,10 @@ final class BuildTimeVM {
     }
     
     func fetchHtml(completion: @escaping (Result<String, Error>) -> Void) {
-        let url = URL(string: "https://runway.team/appreviewtimes")!
+        guard let url = URL(string: "https://runway.team/appreviewtimes") else {
+            return
+        }
+        
         let request = URLRequest(url: url)
         
         URLSession.shared.dataTask(with: request) { data, response, error in

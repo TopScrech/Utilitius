@@ -8,18 +8,13 @@ struct BuildTimeView: View {
         List {
             if let buildTime = vm.buildTime {
                 Section {
-                    BuildTimeCard("Build Processing",
-                                  value: buildTime.buildProcessing)
+                    BuildTimeCard("Build Processing", value: buildTime.buildProcessing)
                 }
                 
                 Section("Test Flight") {
-                    BuildTimeCard("In Beta Review",
-                                  value: buildTime.inBetaReview
-                    )
+                    BuildTimeCard("In Beta Review", value: buildTime.inBetaReview)
                     
-                    BuildTimeCard("Waiting for Beta Review",
-                                  value: buildTime.waitingForBetaReview
-                    )
+                    BuildTimeCard("Waiting for Beta Review", value: buildTime.waitingForBetaReview)
                 }
                 
                 Section("In Review") {
@@ -32,9 +27,7 @@ struct BuildTimeView: View {
                 }
                 .padding(.top)
                 
-                BuildTimeCard("Updated",
-                              value: buildTime.updated
-                )
+                BuildTimeCard("Updated", value: buildTime.updated)
             }
             
             Text("Powered by [Runway](https://www.runway.team/appreviewtimes)")
