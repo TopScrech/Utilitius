@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1640"
+   LastUpgradeVersion = "2600"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F3A1F4532AD92D2D00C85355"
-               BuildableName = "Utilitius watchOS.app"
-               BlueprintName = "Utilitius watchOS"
+               BuildableName = "watchOS.app"
+               BlueprintName = "watchOS"
                ReferencedContainer = "container:Utilitius.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F3A1F4532AD92D2D00C85355"
-            BuildableName = "Utilitius watchOS.app"
-            BlueprintName = "Utilitius watchOS"
+            BuildableName = "watchOS.app"
+            BlueprintName = "watchOS"
             ReferencedContainer = "container:Utilitius.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -79,8 +79,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F3A1F4532AD92D2D00C85355"
-            BuildableName = "Utilitius watchOS.app"
-            BlueprintName = "Utilitius watchOS"
+            BuildableName = "watchOS.app"
+            BlueprintName = "watchOS"
             ReferencedContainer = "container:Utilitius.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

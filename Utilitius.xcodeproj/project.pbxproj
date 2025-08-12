@@ -258,7 +258,7 @@
 		F30A583A2AD315140070B906 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
 		F30AD1C92ADEFB4E0080E879 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 		F30DED0A2A615E4F00EAF963 /* Button Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button Create.swift"; sourceTree = "<group>"; };
-		F30F20882B6D076900D95589 /* Utilitius visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utilitius visionOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30F20882B6D076900D95589 /* visionOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visionOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30F208B2B6D076900D95589 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		F30F208E2B6D076900D95589 /* visionOS App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "visionOS App.swift"; sourceTree = "<group>"; };
 		F30F20902B6D076900D95589 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
@@ -339,7 +339,7 @@
 		F3A1F4472AD8964600C85355 /* Stopwatch View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch View.swift"; sourceTree = "<group>"; };
 		F3A1F4492AD8966800C85355 /* Stopwatch VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch VM.swift"; sourceTree = "<group>"; };
 		F3A1F44B2AD8A0FE00C85355 /* Stopwatch Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch Model.swift"; sourceTree = "<group>"; };
-		F3A1F4542AD92D2D00C85355 /* Utilitius watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utilitius watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A1F4542AD92D2D00C85355 /* watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A1F4792AD92EEC00C85355 /* Stopwatch View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch View.swift"; sourceTree = "<group>"; };
 		F3A1F47B2AD92F0400C85355 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
 		F3A1F47F2AD9304600C85355 /* Stopwatch Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch Button.swift"; sourceTree = "<group>"; };
@@ -348,7 +348,7 @@
 		F3A330E42ABDA28700DEF8FC /* Inventory Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inventory Card.swift"; sourceTree = "<group>"; };
 		F3A43DB22AE3B6980072F7FA /* AlertKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertKit.swift; sourceTree = "<group>"; };
 		F3A8433F2B8BF1580068AC2A /* Otp View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Otp View.swift"; sourceTree = "<group>"; };
-		F3A8436C2B8C0BB30068AC2A /* Utilitius macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Utilitius macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A8436C2B8C0BB30068AC2A /* macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A843742B8C0BB40068AC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3A843792B8C0BB40068AC2A /* Utilitius_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Utilitius_macOS.entitlements; sourceTree = "<group>"; };
 		F3A8437E2B8C0BF60068AC2A /* Menu Bar Extra View.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "Menu Bar Extra View.swift"; sourceTree = "<group>"; tabWidth = 4; };
@@ -979,9 +979,9 @@
 				F3CAAB9B2A60B9F7000B2495 /* Utilitius.app */,
 				F3CAABAF2A60B9FA000B2495 /* UtilitiusTests.xctest */,
 				F3CAABB92A60B9FA000B2495 /* UtilitiusUITests.xctest */,
-				F3A1F4542AD92D2D00C85355 /* Utilitius watchOS.app */,
-				F30F20882B6D076900D95589 /* Utilitius visionOS.app */,
-				F3A8436C2B8C0BB30068AC2A /* Utilitius macOS.app */,
+				F3A1F4542AD92D2D00C85355 /* watchOS.app */,
+				F30F20882B6D076900D95589 /* visionOS.app */,
+				F3A8436C2B8C0BB30068AC2A /* macOS.app */,
 				F3A843972B8C17C10068AC2A /* Utilitius Launcher.app */,
 			);
 			name = Products;
@@ -1209,9 +1209,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F30F20872B6D076900D95589 /* Utilitius visionOS */ = {
+		F30F20872B6D076900D95589 /* visionOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F30F20982B6D076A00D95589 /* Build configuration list for PBXNativeTarget "Utilitius visionOS" */;
+			buildConfigurationList = F30F20982B6D076A00D95589 /* Build configuration list for PBXNativeTarget "visionOS" */;
 			buildPhases = (
 				F30F20842B6D076900D95589 /* Sources */,
 				F30F20852B6D076900D95589 /* Frameworks */,
@@ -1219,17 +1219,17 @@
 			);
 			buildRules = (
 			);
-			name = "Utilitius visionOS";
+			name = visionOS;
 			packageProductDependencies = (
 				F30F208C2B6D076900D95589 /* RealityKitContent */,
 			);
 			productName = "Utilitius visionOS";
-			productReference = F30F20882B6D076900D95589 /* Utilitius visionOS.app */;
+			productReference = F30F20882B6D076900D95589 /* visionOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F3A1F4532AD92D2D00C85355 /* Utilitius watchOS */ = {
+		F3A1F4532AD92D2D00C85355 /* watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3A1F4622AD92D2F00C85355 /* Build configuration list for PBXNativeTarget "Utilitius watchOS" */;
+			buildConfigurationList = F3A1F4622AD92D2F00C85355 /* Build configuration list for PBXNativeTarget "watchOS" */;
 			buildPhases = (
 				F3A1F4502AD92D2D00C85355 /* Sources */,
 				F3A1F4512AD92D2D00C85355 /* Frameworks */,
@@ -1237,17 +1237,17 @@
 			);
 			buildRules = (
 			);
-			name = "Utilitius watchOS";
+			name = watchOS;
 			packageProductDependencies = (
 				F3E1BDF12AEAC81200E78037 /* ScrechKit */,
 			);
 			productName = "Utilitius watchOS Watch App";
-			productReference = F3A1F4542AD92D2D00C85355 /* Utilitius watchOS.app */;
+			productReference = F3A1F4542AD92D2D00C85355 /* watchOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F3A8436B2B8C0BB30068AC2A /* Utilitius macOS */ = {
+		F3A8436B2B8C0BB30068AC2A /* macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3A8437A2B8C0BB40068AC2A /* Build configuration list for PBXNativeTarget "Utilitius macOS" */;
+			buildConfigurationList = F3A8437A2B8C0BB40068AC2A /* Build configuration list for PBXNativeTarget "macOS" */;
 			buildPhases = (
 				F3A843682B8C0BB30068AC2A /* Sources */,
 				F3A843692B8C0BB30068AC2A /* Frameworks */,
@@ -1256,12 +1256,12 @@
 			);
 			buildRules = (
 			);
-			name = "Utilitius macOS";
+			name = macOS;
 			packageProductDependencies = (
 				F3A843912B8C14C90068AC2A /* ScrechKit */,
 			);
 			productName = "Utilitius macOS";
-			productReference = F3A8436C2B8C0BB30068AC2A /* Utilitius macOS.app */;
+			productReference = F3A8436C2B8C0BB30068AC2A /* macOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F3A843962B8C17C10068AC2A /* Utilitius Launcher */ = {
@@ -1352,7 +1352,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1640;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					F30F20872B6D076900D95589 = {
 						CreatedOnToolsVersion = 15.2;
@@ -1388,6 +1388,7 @@
 				en,
 				Base,
 				ru,
+				nl,
 			);
 			mainGroup = F3CAAB922A60B9F7000B2495;
 			packageReferences = (
@@ -1405,12 +1406,12 @@
 			projectRoot = "";
 			targets = (
 				F3CAAB9A2A60B9F7000B2495 /* Utilitius */,
-				F3A1F4532AD92D2D00C85355 /* Utilitius watchOS */,
+				F3A1F4532AD92D2D00C85355 /* watchOS */,
+				F30F20872B6D076900D95589 /* visionOS */,
+				F3A8436B2B8C0BB30068AC2A /* macOS */,
+				F3A843962B8C17C10068AC2A /* Utilitius Launcher */,
 				F3CAABAE2A60B9FA000B2495 /* UtilitiusTests */,
 				F3CAABB82A60B9FA000B2495 /* UtilitiusUITests */,
-				F30F20872B6D076900D95589 /* Utilitius visionOS */,
-				F3A8436B2B8C0BB30068AC2A /* Utilitius macOS */,
-				F3A843962B8C17C10068AC2A /* Utilitius Launcher */,
 			);
 		};
 /* End PBXProject section */
@@ -1698,14 +1699,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		F30F20992B6D076A00D95589 /* Debug configuration for PBXNativeTarget "Utilitius visionOS" */ = {
+		F30F20992B6D076A00D95589 /* Debug configuration for PBXNativeTarget "visionOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Utilitius visionOS/Utilitius visionOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1716,7 +1716,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-visionOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -1727,14 +1726,13 @@
 			};
 			name = Debug;
 		};
-		F30F209A2B6D076A00D95589 /* Release configuration for PBXNativeTarget "Utilitius visionOS" */ = {
+		F30F209A2B6D076A00D95589 /* Release configuration for PBXNativeTarget "visionOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Utilitius visionOS/Utilitius visionOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1745,7 +1743,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-visionOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = xros;
@@ -1757,26 +1754,24 @@
 			};
 			name = Release;
 		};
-		F3A1F4632AD92D2F00C85355 /* Debug configuration for PBXNativeTarget "Utilitius watchOS" */ = {
+		F3A1F4632AD92D2F00C85355 /* Debug configuration for PBXNativeTarget "watchOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Utilitius watchOS/Utilitius watchOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Utilitius-watchOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Utilitius watchOS";
+				INFOPLIST_KEY_CFBundleDisplayName = Utilitius;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-watchOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1788,26 +1783,24 @@
 			};
 			name = Debug;
 		};
-		F3A1F4642AD92D2F00C85355 /* Release configuration for PBXNativeTarget "Utilitius watchOS" */ = {
+		F3A1F4642AD92D2F00C85355 /* Release configuration for PBXNativeTarget "watchOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Utilitius watchOS/Utilitius watchOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Utilitius-watchOS-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Utilitius watchOS";
+				INFOPLIST_KEY_CFBundleDisplayName = Utilitius;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-watchOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1820,7 +1813,7 @@
 			};
 			name = Release;
 		};
-		F3A8437B2B8C0BB40068AC2A /* Debug configuration for PBXNativeTarget "Utilitius macOS" */ = {
+		F3A8437B2B8C0BB40068AC2A /* Debug configuration for PBXNativeTarget "macOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1829,18 +1822,20 @@
 				CODE_SIGN_ENTITLEMENTS = "Utilitius macOS/Utilitius_macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Utilitius;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1850,7 +1845,7 @@
 			};
 			name = Debug;
 		};
-		F3A8437C2B8C0BB40068AC2A /* Release configuration for PBXNativeTarget "Utilitius macOS" */ = {
+		F3A8437C2B8C0BB40068AC2A /* Release configuration for PBXNativeTarget "macOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1859,18 +1854,20 @@
 				CODE_SIGN_ENTITLEMENTS = "Utilitius macOS/Utilitius_macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Utilitius;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1887,12 +1884,15 @@
 				CODE_SIGN_ENTITLEMENTS = "Utilitius Launcher/Utilitius_Launcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Utilitius-Launcher-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Utilitius;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSBackgroundOnly = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1900,7 +1900,6 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-Launcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1917,12 +1916,15 @@
 				CODE_SIGN_ENTITLEMENTS = "Utilitius Launcher/Utilitius_Launcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Utilitius-Launcher-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Utilitius;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSBackgroundOnly = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1930,7 +1932,6 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Utilitius-Launcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1974,6 +1975,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 8FQUA2F388;
@@ -1997,9 +1999,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TVOS_DEPLOYMENT_TARGET = 17.0;
@@ -2043,6 +2047,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
@@ -2060,8 +2065,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				TVOS_DEPLOYMENT_TARGET = 17.0;
 				WATCHOS_DEPLOYMENT_TARGET = 10.0;
@@ -2077,11 +2084,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Utilitius/Utilitius.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Utilitius/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Utilitius;
@@ -2105,7 +2115,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Utilitius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -2127,11 +2136,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Utilitius/Utilitius.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Utilitius/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Utilitius;
@@ -2155,7 +2167,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Utilitius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -2257,27 +2268,27 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F30F20982B6D076A00D95589 /* Build configuration list for PBXNativeTarget "Utilitius visionOS" */ = {
+		F30F20982B6D076A00D95589 /* Build configuration list for PBXNativeTarget "visionOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F30F20992B6D076A00D95589 /* Debug configuration for PBXNativeTarget "Utilitius visionOS" */,
-				F30F209A2B6D076A00D95589 /* Release configuration for PBXNativeTarget "Utilitius visionOS" */,
+				F30F20992B6D076A00D95589 /* Debug configuration for PBXNativeTarget "visionOS" */,
+				F30F209A2B6D076A00D95589 /* Release configuration for PBXNativeTarget "visionOS" */,
 			);
 			defaultConfigurationName = Release;
 		};
-		F3A1F4622AD92D2F00C85355 /* Build configuration list for PBXNativeTarget "Utilitius watchOS" */ = {
+		F3A1F4622AD92D2F00C85355 /* Build configuration list for PBXNativeTarget "watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3A1F4632AD92D2F00C85355 /* Debug configuration for PBXNativeTarget "Utilitius watchOS" */,
-				F3A1F4642AD92D2F00C85355 /* Release configuration for PBXNativeTarget "Utilitius watchOS" */,
+				F3A1F4632AD92D2F00C85355 /* Debug configuration for PBXNativeTarget "watchOS" */,
+				F3A1F4642AD92D2F00C85355 /* Release configuration for PBXNativeTarget "watchOS" */,
 			);
 			defaultConfigurationName = Release;
 		};
-		F3A8437A2B8C0BB40068AC2A /* Build configuration list for PBXNativeTarget "Utilitius macOS" */ = {
+		F3A8437A2B8C0BB40068AC2A /* Build configuration list for PBXNativeTarget "macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3A8437B2B8C0BB40068AC2A /* Debug configuration for PBXNativeTarget "Utilitius macOS" */,
-				F3A8437C2B8C0BB40068AC2A /* Release configuration for PBXNativeTarget "Utilitius macOS" */,
+				F3A8437B2B8C0BB40068AC2A /* Debug configuration for PBXNativeTarget "macOS" */,
+				F3A8437C2B8C0BB40068AC2A /* Release configuration for PBXNativeTarget "macOS" */,
 			);
 			defaultConfigurationName = Release;
 		};
