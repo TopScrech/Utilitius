@@ -8,28 +8,28 @@ struct GoidaDeviceView: View {
     var body: some View {
         List {
             Section("Device") {
-                ListParameter("Device", parameter: vm.deviceName)
-                ListParameter("Model", parameter: vm.deviceIdentifier ?? "-")
-                ListParameter("Architecture", parameter: vm.architecture)
+                ListParam("Device", param: vm.deviceName)
+                ListParam("Model", param: vm.deviceIdentifier ?? "-")
+                ListParam("Architecture", param: vm.architecture)
             }
             
             Section("System") {
-                ListParameter("Operating system", parameter: vm.operatingSystem)
-                ListParameter("Build number", parameter: vm.buildNumber)
+                ListParam("Operating system", param: vm.operatingSystem)
+                ListParam("Build number", param: vm.buildNumber)
             }
             
             Section {
-                ListParameter("System language", parameter: Locale.current.identifier)
-                ListParameter("System region", parameter: Locale.current.region?.identifier ?? "-")
-                ListParameter("System uptime", parameter: vm.fetchSystemUptime())
-                ListParameter("System uptime", parameter: vm.thermalState)
+                ListParam("System language", param: Locale.current.identifier)
+                ListParam("System region", param: Locale.current.region?.identifier ?? "-")
+                ListParam("System uptime", param: vm.fetchSystemUptime())
+                ListParam("System uptime", param: vm.thermalState)
             }
             
             Section("Capabilities") {
-                ListParameter("NFC", parameter: vm.isNfcAvailable)
-                ListParameter("Ultra Wideband", parameter: vm.isUltraWidebandAvailable)
-                ListParameter("Force Touch", parameter: vm.isForceTouchAvailable)
-                //                ListParameter("Bluetooth LE", parameter: bluetooth.isBluetoothLeEnabled)
+                ListParam("NFC", param: vm.isNfcAvailable)
+                ListParam("Ultra Wideband", param: vm.isUltraWidebandAvailable)
+                ListParam("Force Touch", param: vm.isForceTouchAvailable)
+                //                ListParam("Bluetooth LE", param: bluetooth.isBluetoothLeEnabled)
             }
         }
         .navigationTitle("Device")

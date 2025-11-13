@@ -44,11 +44,13 @@ final class WifiVM {
     }
     
     private func getWiFiInfo() {
-        guard let interfaces = CNCopySupportedInterfaces() as? [String],
-              let interface = interfaces.first,
-              let info = CNCopyCurrentNetworkInfo(interface as CFString) as? [String: Any],
-              let ssid = info[kCNNetworkInfoKeySSID as String] as? String,
-              let bssid = info[kCNNetworkInfoKeyBSSID as String] as? String else {
+        guard
+            let interfaces = CNCopySupportedInterfaces() as? [String],
+            let interface = interfaces.first,
+            let info = CNCopyCurrentNetworkInfo(interface as CFString) as? [String: Any],
+            let ssid = info[kCNNetworkInfoKeySSID as String] as? String,
+            let bssid = info[kCNNetworkInfoKeyBSSID as String] as? String
+        else {
             print("Failed to fetch SSID or BSSID")
             return
         }

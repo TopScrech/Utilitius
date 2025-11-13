@@ -36,7 +36,7 @@ final class Sorting: XCTestCase {
             }
         }
         
-        print("Bogobogo sorted after \(totalAttempts) attempts")
+        print("Bogobogo sort attempts:", totalAttempts)
     }
     
     func testBogobogoSort() throws {
@@ -58,7 +58,7 @@ final class Sorting: XCTestCase {
             attempts += 1
         }
         
-        print("Sorted after \(attempts) attempts.")
+        print("Sort attempts:", attempts)
     }
     
     func testBozoSort() throws {
@@ -78,7 +78,7 @@ final class Sorting: XCTestCase {
             attempts += 1
         }
         
-        print("Sorted after \(attempts) attempts.")
+        print("Sort attempts:", attempts)
     }
     
     func testBogoSort() throws {
@@ -98,7 +98,9 @@ final class Sorting: XCTestCase {
     
     func testRegularSort() throws {
         measure {
-            print(sovietLeadersStartYears.sorted { $0 < $1 })
+            print(sovietLeadersStartYears.sorted {
+                $0 < $1
+            })
         }
     }
 }

@@ -34,9 +34,12 @@ final class XcodesVM {
     }
     
     var averageDaysBetweenReleases: Double? {
-        guard sortedAndFilteredXcodes.count > 1 else { return nil }
+        guard sortedAndFilteredXcodes.count > 1 else {
+            return nil
+        }
         
         var totalDays = 0
+        
         for index in 0..<sortedAndFilteredXcodes.count - 1 {
             if let currentDate = sortedAndFilteredXcodes[index].date.date, let nextDate = sortedAndFilteredXcodes[index + 1].date.date {
                 let daysDifference = Calendar.current.dateComponents([.day], from: nextDate, to: currentDate).day ?? 0
@@ -59,7 +62,8 @@ final class XcodesVM {
             } catch {
                 print(error.localizedDescription)
             }
-        }.resume()
+        }
+        .resume()
     }
     
     func download() {
@@ -72,7 +76,7 @@ final class XcodesVM {
                     try FileManager.default.copyItem(at: fileURL, to: destinationURL)
                     print("File copied to iCloud folder")
                 } catch let error {
-                    print("Error copying file: \(error.localizedDescription)")
+                    print("Error copying file:", error.localizedDescription)
                 }
             } else {
                 // iCloud is not set up, saving to downloads directory
@@ -83,7 +87,7 @@ final class XcodesVM {
                     try FileManager.default.copyItem(at: fileURL, to: destinationURL!)
                     print("File copied to downloads folder")
                 } catch let error {
-                    print("Error copying file to downloads folder: \(error.localizedDescription)")
+                    print("Error copying file to downloads folder:", error.localizedDescription)
                 }
             }
         } else {

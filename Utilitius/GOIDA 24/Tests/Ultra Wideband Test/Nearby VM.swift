@@ -253,7 +253,7 @@ class NearbyVM: NSObject, NISessionDelegate {
     }
     
     func shareMyDiscoveryToken(token: NIDiscoveryToken) {
-        guard let encodedData = try?  NSKeyedArchiver.archivedData(withRootObject: token, requiringSecureCoding: true) else {
+        guard let encodedData = try? NSKeyedArchiver.archivedData(withRootObject: token, requiringSecureCoding: true) else {
             fatalError("Unexpectedly failed to encode discovery token.")
         }
         

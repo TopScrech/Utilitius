@@ -62,6 +62,7 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     }
     
     // MARK: - `MPCSession` private methods
+    @MainActor
     private func peerConnected(peerID: MCPeerID) {
         if let handler = peerConnectedHandler {
             main {
@@ -74,6 +75,7 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
         }
     }
     
+    @MainActor
     private func peerDisconnected(peerID: MCPeerID) {
         if let handler = peerDisconnectedHandler {
             main {
@@ -87,14 +89,15 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     }
     
     // MARK: - `MCSessionDelegate`
+    @MainActor
     internal func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
         switch state {
         case .connected:
             peerConnected(peerID: peerID)
-        
+            
         case .notConnected:
             peerDisconnected(peerID: peerID)
-        
+            
         case .connecting:
             break
             
@@ -103,6 +106,7 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
         }
     }
     
+    @MainActor
     internal func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
         if let handler = peerDataHandler {
             main {
@@ -111,22 +115,31 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
         }
     }
     
-    internal func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
+    internal func session(
+        _ session: MCSession,
+        didReceive stream: InputStream,
+        withName streamName: String,
+        fromPeer peerID: MCPeerID
+    ) {
         // The sample app intentional omits this implementation
     }
     
-    internal func session(_ session: MCSession,
-                          didStartReceivingResourceWithName resourceName: String,
-                          fromPeer peerID: MCPeerID,
-                          with progress: Progress) {
+    internal func session(
+        _ session: MCSession,
+        didStartReceivingResourceWithName resourceName: String,
+        fromPeer peerID: MCPeerID,
+        with progress: Progress
+    ) {
         // The sample app intentional omits this implementation
     }
     
-    internal func session(_ session: MCSession,
-                          didFinishReceivingResourceWithName resourceName: String,
-                          fromPeer peerID: MCPeerID,
-                          at localURL: URL?,
-                          withError error: Error?) {
+    internal func session(
+        _ session: MCSession,
+        didFinishReceivingResourceWithName resourceName: String,
+        fromPeer peerID: MCPeerID,
+        at localURL: URL?,
+        withError error: Error?
+    ) {
         // The sample app intentional omits this implementation
     }
     
@@ -146,10 +159,12 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     }
     
     // MARK: - `MCNearbyServiceAdvertiserDelegate`
-    internal func advertiser(_ advertiser: MCNearbyServiceAdvertiser,
-                             didReceiveInvitationFromPeer peerID: MCPeerID,
-                             withContext context: Data?,
-                             invitationHandler: @escaping (Bool, MCSession?) -> Void) {
+    internal func advertiser(
+        _ advertiser: MCNearbyServiceAdvertiser,
+        didReceiveInvitationFromPeer peerID: MCPeerID,
+        withContext context: Data?,
+        invitationHandler: @escaping (Bool, MCSession?) -> Void
+    ) {
         if mcSession.connectedPeers.count < maxNumPeers {
             invitationHandler(true, mcSession)
         }

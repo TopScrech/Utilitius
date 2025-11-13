@@ -5,15 +5,23 @@ final class TorchManager {
     var isTorchOn = false
     
     init() {
-        guard let device = AVCaptureDevice.default(for: .video),
-              device.hasTorch else { return }
+        guard
+            let device = AVCaptureDevice.default(for: .video),
+            device.hasTorch
+        else {
+            return
+        }
         
         isTorchOn = device.torchMode == .on
     }
     
     func toggleTorch() {
-        guard let device = AVCaptureDevice.default(for: .video),
-              device.hasTorch else { return }
+        guard
+            let device = AVCaptureDevice.default(for: .video),
+            device.hasTorch
+        else {
+            return
+        }
         
         do {
             try device.lockForConfiguration()

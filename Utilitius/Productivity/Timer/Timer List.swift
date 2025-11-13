@@ -58,7 +58,7 @@ struct TimerList: View {
 //                        }
                         
                         Section {
-                            MenuButton("Delete", role: .destructive, icon: "trash") {
+                            Button("Delete", systemImage: "trash", role: .destructive) {
                                 modelContext.delete(timer)
                             }
                         }

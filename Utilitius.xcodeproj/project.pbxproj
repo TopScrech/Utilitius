@@ -78,6 +78,8 @@
 		F38B31FA2AF4EBF2002B6B5A /* Reminder Parent View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B31F92AF4EBF2002B6B5A /* Reminder Parent View.swift */; };
 		F38B31FC2AF4EC56002B6B5A /* Reminders Unavailible View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B31FB2AF4EC56002B6B5A /* Reminders Unavailible View.swift */; };
 		F38B31FE2AF4ECBE002B6B5A /* Reminder VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38B31FD2AF4ECBE002B6B5A /* Reminder VM.swift */; };
+		F38E9F172EC605060014CBB6 /* UtilitiusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E9F162EC605060014CBB6 /* UtilitiusApp.swift */; };
+		F38E9F182EC605060014CBB6 /* UtilitiusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38E9F162EC605060014CBB6 /* UtilitiusApp.swift */; };
 		F394C4FC2AD53D2C00C56527 /* Goida Camera View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394C4FB2AD53D2C00C56527 /* Goida Camera View.swift */; };
 		F394C4FE2AD53E7500C56527 /* GoidaBatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394C4FD2AD53E7500C56527 /* GoidaBatteryView.swift */; };
 		F394C5052AD53EFF00C56527 /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F394C5042AD53EFF00C56527 /* Battery VM.swift */; };
@@ -93,7 +95,6 @@
 		F3A1F4482AD8964600C85355 /* Stopwatch View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F4472AD8964600C85355 /* Stopwatch View.swift */; };
 		F3A1F44A2AD8966800C85355 /* Stopwatch VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F4492AD8966800C85355 /* Stopwatch VM.swift */; };
 		F3A1F44C2AD8A0FE00C85355 /* Stopwatch Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A1F44B2AD8A0FE00C85355 /* Stopwatch Model.swift */; };
-		F3A1F4692AD92E0100C85355 /* Utilitius App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */; };
 		F3A1F46E2AD92E3500C85355 /* Intentory Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317E76B2A90E5E700D5B904 /* Intentory Item.swift */; };
 		F3A1F46F2AD92E3900C85355 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABD52A60BAC3000B2495 /* Tag.swift */; };
 		F3A1F4702AD92E3D00C85355 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAC0C2A60BE1E000B2495 /* Note.swift */; };
@@ -159,7 +160,6 @@
 		F3C022C42AD7D88E008013A2 /* Storage VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C022C32AD7D88E008013A2 /* Storage VM.swift */; };
 		F3C5FC8B2AA9D9F9000D9CAD /* NFCMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FC8A2AA9D9F9000D9CAD /* NFCMessage.swift */; };
 		F3C5FC8D2AA9DBDA000D9CAD /* NFC Messages View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5FC8C2AA9DBDA000D9CAD /* NFC Messages View.swift */; };
-		F3CAAB9F2A60B9F7000B2495 /* Utilitius App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */; };
 		F3CAABA52A60B9FA000B2495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CAABA42A60B9FA000B2495 /* Assets.xcassets */; };
 		F3CAABB42A60B9FA000B2495 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABB32A60B9FA000B2495 /* Tests.swift */; };
 		F3CAABBE2A60B9FA000B2495 /* UI Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAABBD2A60B9FA000B2495 /* UI Tests.swift */; };
@@ -327,6 +327,7 @@
 		F38B31F92AF4EBF2002B6B5A /* Reminder Parent View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder Parent View.swift"; sourceTree = "<group>"; };
 		F38B31FB2AF4EC56002B6B5A /* Reminders Unavailible View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminders Unavailible View.swift"; sourceTree = "<group>"; };
 		F38B31FD2AF4ECBE002B6B5A /* Reminder VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder VM.swift"; sourceTree = "<group>"; };
+		F38E9F162EC605060014CBB6 /* UtilitiusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiusApp.swift; sourceTree = "<group>"; };
 		F394C4FB2AD53D2C00C56527 /* Goida Camera View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida Camera View.swift"; sourceTree = "<group>"; };
 		F394C4FD2AD53E7500C56527 /* GoidaBatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoidaBatteryView.swift; sourceTree = "<group>"; };
 		F394C5042AD53EFF00C56527 /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
@@ -390,7 +391,6 @@
 		F3C5FC8A2AA9D9F9000D9CAD /* NFCMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCMessage.swift; sourceTree = "<group>"; };
 		F3C5FC8C2AA9DBDA000D9CAD /* NFC Messages View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NFC Messages View.swift"; sourceTree = "<group>"; };
 		F3CAAB9B2A60B9F7000B2495 /* Utilitius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utilitius.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Utilitius App.swift"; path = "Navigation/Utilitius App.swift"; sourceTree = "<group>"; };
 		F3CAABA42A60B9FA000B2495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3CAABA62A60B9FA000B2495 /* Utilitius.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Utilitius.entitlements; sourceTree = "<group>"; };
 		F3CAABAA2A60B9FA000B2495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -990,7 +990,7 @@
 		F3CAAB9D2A60B9F7000B2495 /* Utilitius */ = {
 			isa = PBXGroup;
 			children = (
-				F3CAAB9E2A60B9F7000B2495 /* Utilitius App.swift */,
+				F38E9F162EC605060014CBB6 /* UtilitiusApp.swift */,
 				F3A43DB22AE3B6980072F7FA /* AlertKit.swift */,
 				F30B61D22B2915A800F447B4 /* Bundle */,
 				F3ED95DD2B4D43FE00A490FC /* Multiboard */,
@@ -1486,6 +1486,7 @@
 				F3A1F47C2AD92F0400C85355 /* Home View.swift in Sources */,
 				F388900D2B6D624D008597DF /* Note List.swift in Sources */,
 				F3A1F4732AD92E5300C85355 /* App Container.swift in Sources */,
+				F38E9F172EC605060014CBB6 /* UtilitiusApp.swift in Sources */,
 				F3DAB30F2AD96D5F00B8462C /* Stopwatch Parent.swift in Sources */,
 				F3B9BCD12B6E5AEB00527038 /* Http Codes List.swift in Sources */,
 				F3A1F4882AD934C200C85355 /* Nav Destinations Watch.swift in Sources */,
@@ -1504,7 +1505,6 @@
 				F3A1F47D2AD92F4F00C85355 /* Stopwatch Model.swift in Sources */,
 				F3D296162AF3C6A600ED43A0 /* Reminder List.swift in Sources */,
 				F3A1F4722AD92E4D00C85355 /* NFCMessage.swift in Sources */,
-				F3A1F4692AD92E0100C85355 /* Utilitius App.swift in Sources */,
 				F37B907C2BFEA0A300597624 /* Http Code Card.swift in Sources */,
 				F3D296122AF3C38800ED43A0 /* Reminder Model.swift in Sources */,
 				F3A1F4712AD92E4100C85355 /* Timer.swift in Sources */,
@@ -1550,7 +1550,6 @@
 				F3CAABEE2A60BAC4000B2495 /* Tag.swift in Sources */,
 				F3E5E7162ACFF8300007BD3A /* Location VM.swift in Sources */,
 				F3BEF2D52AD03B38005F11D1 /* Camera VM.swift in Sources */,
-				F3CAAB9F2A60B9F7000B2495 /* Utilitius App.swift in Sources */,
 				F3DFB7D12AEB166D00191EAC /* Subscriptions View.swift in Sources */,
 				F3281C5D2AD738F40054A45B /* Goida Device View.swift in Sources */,
 				F38B31FC2AF4EC56002B6B5A /* Reminders Unavailible View.swift in Sources */,
@@ -1566,6 +1565,7 @@
 				F3BC1C202ADFEDDA007C314B /* Device Info.swift in Sources */,
 				F394C50E2AD55F7B00C56527 /* Display VM.swift in Sources */,
 				F3CAAC122A60BE1E000B2495 /* Note Card.swift in Sources */,
+				F38E9F182EC605060014CBB6 /* UtilitiusApp.swift in Sources */,
 				F350840F2AEAA34C00865FF6 /* Morse Alphabet.swift in Sources */,
 				F3DFB7CC2AEAF69300191EAC /* Reminder Card.swift in Sources */,
 				F317E76E2A90E63B00D5B904 /* Inventory View.swift in Sources */,

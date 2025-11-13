@@ -36,13 +36,13 @@ struct NoteView: View {
         }
         .toolbar {
             Menu {
-                MenuButton(showAssets ? "Hide assets" : "Show assets", icon: "photo.stack") {
+                Button(showAssets ? "Hide assets" : "Show assets", systemImage: "photo.stack") {
                     withAnimation {
                         showAssets.toggle()
                     }
                 }
                 
-                MenuButton(showDates ? "Hide dates" : "Show details", icon: "calendar.badge.clock") {
+                Button(showDates ? "Hide dates" : "Show details", systemImage: "calendar.badge.clock") {
                     withAnimation {
                         showDates.toggle()
                     }

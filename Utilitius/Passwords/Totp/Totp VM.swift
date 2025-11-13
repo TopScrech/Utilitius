@@ -50,7 +50,7 @@ final class TotpVM {
     }
     
     private func calculateTimeRemaining() -> Double {
-        let interval: Double = 30
+        let interval = 30.0
         let timeSinceEpoch = Date().timeIntervalSince1970
         return interval - fmod(timeSinceEpoch, interval)
     }
@@ -59,7 +59,13 @@ final class TotpVM {
         let timeToNextInterval = timeRemaining
         
         DispatchQueue.main.asyncAfter(deadline: .now() + timeToNextInterval) {
-            self.otpTimer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(self.updateOTP), userInfo: nil, repeats: true)
+            self.otpTimer = Timer.scheduledTimer(
+                timeInterval: 30,
+                target: self,
+                selector: #selector(self.updateOTP),
+                userInfo: nil,
+                repeats: true
+            )
         }
     }
     

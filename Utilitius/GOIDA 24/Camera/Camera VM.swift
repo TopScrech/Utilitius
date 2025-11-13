@@ -45,15 +45,15 @@ final class CameraVM {
         let longestExposure = device.activeFormat.maxExposureDuration
         print("Speed Range: \(shortestExposure) - \(longestExposure)")
         
-        print("Shortest Exposure: \(shortestExposure)")
-        print("Longest Exposure: \(longestExposure)")
+        print("Shortest Exposure:", shortestExposure)
+        print("Longest Exposure:", longestExposure)
     }
     
     func fetchCameraData(_ position: AVCaptureDevice.Position) {
         let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: position)
         
         guard let device = discoverySession.devices.first else {
-            print("No device found for specified position.")
+            print("No device found for specified position")
             return
         }
         
@@ -69,11 +69,11 @@ final class CameraVM {
         
         // Max Photo Resolution
         let maxPhotoResolution = device.activeFormat.supportedMaxPhotoDimensions
-        print("Max Photo Resolution: \(maxPhotoResolution.description)")
+        print("Max Photo Resolution:", maxPhotoResolution.description)
         
         // Aperture
         let aperture = device.lensAperture
-        print("Aperture: \(aperture)")
+        print("Aperture:", aperture)
         
         // Speed (Exposure Duration)
         let shortestExposure = device.activeFormat.minExposureDuration
@@ -82,10 +82,10 @@ final class CameraVM {
         
         // Optical Stabilization
         let isOpticalStabilizationSupported = device.activeFormat.isVideoStabilizationModeSupported(.cinematic)
-        print("Optical Stabilization Supported: \(isOpticalStabilizationSupported)")
+        print("Optical Stabilization Supported:", isOpticalStabilizationSupported)
         
         print("Max Video Resolution: \(maxVideoResolution.width) x \(maxVideoResolution.height)")
-        print("Shortest Exposure: \(shortestExposure)")
-        print("Longest Exposure: \(longestExposure)")
+        print("Shortest Exposure:", shortestExposure)
+        print("Longest Exposure:", longestExposure)
     }
 }

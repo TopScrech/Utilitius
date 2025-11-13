@@ -28,7 +28,9 @@ final class OrientationVM {
         if motionManager.isDeviceMotionAvailable {
             motionManager.deviceMotionUpdateInterval = 1
             motionManager.startDeviceMotionUpdates(to: .main) { motion, error in
-                guard let motion else { return }
+                guard let motion else {
+                    return
+                }
                 
                 withAnimation {
                     self.roll = String(format: "%.2fg", motion.attitude.roll)

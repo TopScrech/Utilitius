@@ -2,8 +2,8 @@ import XCTest
 
 final class Tests: XCTestCase {
     override func setUpWithError() throws {
-        print("\(0.1 + 0.2)")
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // Put setup code here
+        // This method is called before the invocation of each test method in the class
     }
     
     func testBuildTimeAPI() throws {
@@ -22,7 +22,8 @@ final class Tests: XCTestCase {
                     print(error.localizedDescription)
                     XCTFail("Error")
                 }
-            }.resume()
+            }
+            .resume()
             
             waitForExpectations(timeout: 10, handler: nil)
         }

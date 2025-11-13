@@ -25,7 +25,9 @@ struct ApduMessage {
     
     init?(payload: Data) {
         // Ensure payload is not empty and has a minimum expected length
-        guard !payload.isEmpty else { return nil }
+        guard !payload.isEmpty else {
+            return nil
+        }
         
         // Example of parsing the payload, starting with the APDU type
         // This assumes the first byte indicates the APDU type
@@ -38,6 +40,7 @@ struct ApduMessage {
         // Assuming the next 2 bytes could be an invokeId for simplicity (Big Endian)
         if payload.count >= 3 {
             let invokeIdRange = 1..<3
+            
             self.invokeId = Int(payload[invokeIdRange].reduce(0) { result, byte in
                 return (result << 8) | Int(byte)
             })

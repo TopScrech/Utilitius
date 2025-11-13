@@ -92,14 +92,16 @@ final class TextFileExporter: ObservableObject {
     }
     
     private func writeToFile(_ array: [String], url: URL?) {
-        guard let url else { return }
+        guard let url else {
+            return
+        }
         
         let text = array.joined(separator: "\n")
         
         do {
             try text.write(to: url, atomically: true, encoding: .utf8)
         } catch {
-            print("Failed to write to file: \(error)")
+            print("Failed to write to file:", error)
         }
     }
 }

@@ -19,7 +19,7 @@ final class MorseVM: ObservableObject {
             hapticEngine = try CHHapticEngine()
             try hapticEngine?.start()
         } catch {
-            print("Haptic engine Creation/Error: \(error)")
+            print("Haptic engine Creation/Error:", error)
             return
         }
         
@@ -35,7 +35,7 @@ final class MorseVM: ObservableObject {
             let player = try hapticEngine?.makePlayer(with: pattern)
             try player?.start(atTime: CHHapticTimeImmediate)
         } catch {
-            print("Failed to play pattern: \(error)")
+            print("Failed to play pattern:", error)
         }
     }
     

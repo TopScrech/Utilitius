@@ -6,9 +6,9 @@ struct Goida_Display_View: View {
     var body: some View {
         List {
             Section("Display") {
-                ListParameter("Screen resolution", parameter: display.fetchScreenResolution())
-                ListParameter("Refresh rate", parameter: display.refreshRate)
-                ListParameter("Brightness", parameter: display.brightness)
+                ListParam("Screen resolution", param: display.fetchScreenResolution())
+                ListParam("Refresh rate", param: display.refreshRate)
+                ListParam("Brightness", param: display.brightness)
             }
         }
         .navigationTitle("Display")

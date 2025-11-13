@@ -24,12 +24,10 @@ final class RecorderVM: NSObject, AVAudioRecorderDelegate {
             try recordingSession.setActive(true)
             
             AVAudioApplication.requestRecordPermission { allowed in
-                main {
-                    if allowed {
-                        self.buttonText = "Tap to Record"
-                    } else {
-                        print("Failed to record")
-                    }
+                if allowed {
+                    self.buttonText = "Tap to Record"
+                } else {
+                    print("Failed to record")
                 }
             }
         } catch {
@@ -91,7 +89,9 @@ final class RecorderVM: NSObject, AVAudioRecorderDelegate {
     
     // MARK: - Files
     func updateRecordedFiles() {
-        guard let directory = getDocumentsDirectory() else { return }
+        guard let directory = getDocumentsDirectory() else {
+            return
+        }
         
         do {
             let fileURLs = try FileManager.default.contentsOfDirectory(at: directory, includingPropertiesForKeys: nil)
@@ -109,6 +109,7 @@ final class RecorderVM: NSObject, AVAudioRecorderDelegate {
                 } catch {
                     print("Couldn't read file attributes")
                 }
+                
                 return nil
             }
         } catch {
@@ -117,7 +118,12 @@ final class RecorderVM: NSObject, AVAudioRecorderDelegate {
     }
     
     func getDocumentsDirectory() -> URL? {
-        guard let iCloudDocumentsURL = FileManager.default.url(forUbiquityContainerIdentifier: nil)?.appendingPathComponent("Documents") else { return nil }
+        guard
+            let iCloudDocumentsURL = FileManager.default.url(forUbiquityContainerIdentifier: nil)?
+                .appendingPathComponent("Documents")
+        else {
+            return nil
+        }
         
         if !FileManager.default.fileExists(atPath: iCloudDocumentsURL.path) {
             do {
@@ -131,7 +137,9 @@ final class RecorderVM: NSObject, AVAudioRecorderDelegate {
     }
     
     func deleteRecording(at offsets: IndexSet) {
-        guard let directory = getDocumentsDirectory() else { return }
+        guard let directory = getDocumentsDirectory() else {
+            return
+        }
         
         for index in offsets {
             let filename = recordedFiles[index].name
@@ -149,7 +157,10 @@ final class RecorderVM: NSObject, AVAudioRecorderDelegate {
     
     // MARK: - Player
     func playRecording(_ filename: String) {
-        guard let directory = getDocumentsDirectory() else { return }
+        guard let directory = getDocumentsDirectory() else {
+            return
+        }
+        
         let audioURL = directory.appendingPathComponent(filename)
         
         do {

@@ -4,7 +4,7 @@ import ScrechKit
 final class StorageVM {
     var available = ""
     var total = ""
-//    var systemSize = ""
+    //    var systemSize = ""
     
     init() {
         fetchStorageInfo()

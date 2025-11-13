@@ -6,21 +6,21 @@ struct HomeView: View {
     var body: some View {
         List {
             Section("Productivity") {
-                MenuButton("Notes", icon: "note.text") {
+                Button("Notes", systemImage: "note.text") {
                     navState.navigate(.toNotes)
                 }
                 
-                MenuButton("Reminders", icon: "checklist") {
+                Button("Reminders", systemImage: "checklist") {
                     navState.navigate(.toReminder)
                 }
                 
-                MenuButton("Stopwatch", icon: "stopwatch") {
+                Button("Stopwatch", systemImage: "stopwatch") {
                     navState.navigate(.toStopwatch)
                 }
             }
             
             Section {
-                MenuButton("HTTP Codes", icon: "hammer") {
+                Button("HTTP Codes", systemImage: "hammer") {
                     navState.navigate(.toHttpStatusCodes)
                 }
             }

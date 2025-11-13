@@ -37,7 +37,7 @@ struct ReminderList: View {
             ForEach(uncompletedReminders) { reminder in
                 ReminderCard(reminder)
                     .contextMenu {
-                        MenuButton("Delete", role: .destructive, icon: "trash") {
+                        Button("Delete", systemImage: "trash", role: .destructive) {
                             modelContext.delete(reminder)
                         }
                     }
@@ -49,7 +49,7 @@ struct ReminderList: View {
                     ForEach(completedReminders) { reminder in
                         ReminderCard(reminder)
                             .contextMenu {
-                                MenuButton("Delete", role: .destructive, icon: "trash") {
+                                Button("Delete", systemImage: "trash", role: .destructive) {
                                     modelContext.delete(reminder)
                                 }
                             }
@@ -62,7 +62,7 @@ struct ReminderList: View {
         .listStyle(.plain)
         .toolbar {
             Menu {
-//                EditButton()
+                //                EditButton()
                 
                 Button {
                     withAnimation {

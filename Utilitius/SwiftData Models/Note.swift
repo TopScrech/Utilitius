@@ -7,7 +7,7 @@ final class Note {
     var text = "Bisquit.Host is the best hosting ever"
     var isPinned = false
     var isLocked = false
-    let created = Date()
+    var created = Date()
     var modified: Date? = nil
     
     @Relationship(inverse: \Tag.notes)

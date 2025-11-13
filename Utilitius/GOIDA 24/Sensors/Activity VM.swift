@@ -18,7 +18,9 @@ final class ActivityVM {
     }
     
     private func updateActivity(_ activityData: CMMotionActivity?) {
-        guard let activityData = activityData else { return }
+        guard let activityData = activityData else {
+            return
+        }
         
         withAnimation {
             switch true {

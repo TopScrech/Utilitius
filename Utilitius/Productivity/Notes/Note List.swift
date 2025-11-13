@@ -45,12 +45,12 @@ struct NoteList: View {
                         ForEach(pinnedNotes) { note in
                             NoteCard(note)
                                 .contextMenu {
-                                    MenuButton(note.isPinned ? "Unpin" : "Pin", icon: "pin") {
+                                    Button(note.isPinned ? "Unpin" : "Pin", systemImage: "pin") {
                                         note.isPinned.toggle()
                                     }
                                     
                                     Section {
-                                        MenuButton("Delete", role: .destructive, icon: "trash") {
+                                        Button("Delete", systemImage: "trash", role: .destructive) {
                                             modelContext.delete(note)
                                         }
                                     }
@@ -68,12 +68,12 @@ struct NoteList: View {
                     ForEach(unpinnedNotes) { note in
                         NoteCard(note)
                             .contextMenu {
-                                MenuButton(note.isPinned ? "Unpin" : "Pin", icon: "pin") {
+                                Button(note.isPinned ? "Unpin" : "Pin", systemImage: "pin") {
                                     note.isPinned.toggle()
                                 }
                                 
                                 Section {
-                                    MenuButton("Delete", role: .destructive, icon: "trash") {
+                                    Button("Delete", systemImage: "trash", role: .destructive) {
                                         modelContext.delete(note)
                                     }
                                 }

@@ -35,7 +35,7 @@ final class LocationVM: NSObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Failed to update location: \(error.localizedDescription)")
+        print("Failed to update location:", error.localizedDescription)
     }
 }
 

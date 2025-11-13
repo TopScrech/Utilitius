@@ -152,7 +152,7 @@ struct XcodesView: View {
                         }
                         
                         if let link = xcode.links?.download?.url {
-                            MenuButton("Notes", icon: "") {
+                            Button("Notes") {
                                 openURL(link)
                             }
                         }

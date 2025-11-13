@@ -31,7 +31,7 @@ struct NoteAssets: View {
                                 .scaledToFit()
                                 .clipShape(.rect(cornerRadius: 16))
                                 .contextMenu {
-                                    MenuButton("Delete", role: .destructive, icon: "trash") {
+                                    Button("Delete", systemImage: "trash", role: .destructive) {
                                         note.assets.remove(at: index)
                                     }
                                 }

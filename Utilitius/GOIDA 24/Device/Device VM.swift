@@ -6,7 +6,7 @@ import NearbyInteraction
 @Observable
 final class DeviceVM {
     // Device
-    let deviceName = UIDevice.modelName
+    let deviceName = UIDevice.current.model
     var deviceIdentifier: String?
     var architecture = ""
     
@@ -95,5 +95,4 @@ final class DeviceVM {
         }
     }
 }
-
 #endif

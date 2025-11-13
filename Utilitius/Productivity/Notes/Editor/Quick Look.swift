@@ -40,7 +40,7 @@ struct NotesQuickLookView: UIViewControllerRepresentable {
             do {
                 try parent.data.write(to: tempURL)
             } catch {
-                print("Error writing the file: \(error.localizedDescription)")
+                print("Error writing the file:", error.localizedDescription)
             }
             
             return tempURL as QLPreviewItem

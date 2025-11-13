@@ -5,8 +5,8 @@ struct GoidaBatteryView: View {
     
     var body: some View {
         List {
-            ListParameter("Battery level", parameter: vm.batteryLevel)
-            ListParameter("Battery state", parameter: vm.batteryState)
+            ListParam("Battery level", param: vm.batteryLevel)
+            ListParam("Battery state", param: vm.batteryState)
         }
         .navigationTitle("Battery")
     }

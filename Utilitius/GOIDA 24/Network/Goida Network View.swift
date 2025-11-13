@@ -7,13 +7,13 @@ struct Goida_Network_View: View {
     var body: some View {
         List {
             if let ipAddress = network.getIPAddress() {
-                ListParameter("IP-address", parameter: ipAddress)
+                ListParam("IP-address", param: ipAddress)
             }
             
             Section("Wi-Fi") {
-                ListParameter("Connected to...", parameter: wifi.networkStatus)
-                ListParameter("Name", parameter: wifi.ssid)
-                ListParameter("Address", parameter: wifi.bssid)
+                ListParam("Connected to...", param: wifi.networkStatus)
+                ListParam("Name", param: wifi.ssid)
+                ListParam("Address", param: wifi.bssid)
             }
         }
         .navigationTitle("Network")
