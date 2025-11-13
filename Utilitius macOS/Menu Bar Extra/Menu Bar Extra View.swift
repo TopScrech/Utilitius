@@ -1,5 +1,5 @@
-import ScrechKit
 import SwiftData
+import SwiftUI
 
 struct MenuBarExtraView: View {
     @StateObject private var exporter = TextFileExporter()
@@ -76,7 +76,7 @@ final class TextFileExporter: ObservableObject {
     private let panel = NSSavePanel()
     
     func exportToFile(_ array: [String]) {
-        main {
+        DispatchQueue.main.async {
             self.setupSavePanel()
             
             if self.panel.runModal() == .OK {

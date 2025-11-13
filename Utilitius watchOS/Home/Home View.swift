@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct HomeView: View {
     @Environment(NavState.self) private var navState

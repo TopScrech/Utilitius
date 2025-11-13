@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct TagCard: View {
     @Bindable private var tag: Tag

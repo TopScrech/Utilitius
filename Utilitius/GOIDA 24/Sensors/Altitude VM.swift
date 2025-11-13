@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 import CoreLocation
 import CoreMotion
 

@@ -1,4 +1,4 @@
-import ScrechKit
+import Foundation
 import MultipeerConnectivity
 
 struct MPCSessionConstants {
@@ -65,7 +65,7 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     @MainActor
     private func peerConnected(peerID: MCPeerID) {
         if let handler = peerConnectedHandler {
-            main {
+            DispatchQueue.main.async {
                 handler(peerID)
             }
         }
@@ -78,7 +78,7 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     @MainActor
     private func peerDisconnected(peerID: MCPeerID) {
         if let handler = peerDisconnectedHandler {
-            main {
+            DispatchQueue.main.async {
                 handler(peerID)
             }
         }
@@ -109,7 +109,7 @@ class MPCSession: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     @MainActor
     internal func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
         if let handler = peerDataHandler {
-            main {
+            DispatchQueue.main.async {
                 handler(data, peerID)
             }
         }

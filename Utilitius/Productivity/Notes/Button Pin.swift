@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct Button_Pin: View {
     @Bindable private var note: Note

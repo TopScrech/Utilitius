@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct Settings_Parent: View {
     var body: some View {

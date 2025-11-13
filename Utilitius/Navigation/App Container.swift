@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct AppContainer: View {
     @Bindable private var navState = NavState()

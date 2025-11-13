@@ -1,5 +1,3 @@
-import ScrechKit
-
 extension String {
     func onlyEmoji() -> String {
         self.filter {

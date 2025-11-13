@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct RecorderView: View {
     private var vm = RecorderVM()

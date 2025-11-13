@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 extension View {
     func withNavDestinations() -> some View {

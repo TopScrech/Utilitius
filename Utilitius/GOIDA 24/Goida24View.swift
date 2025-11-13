@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct Goida24View: View {
     var body: some View {

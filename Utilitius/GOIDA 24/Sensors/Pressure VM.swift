@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 import CoreMotion
 
 @Observable

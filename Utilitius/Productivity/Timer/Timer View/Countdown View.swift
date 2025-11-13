@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 struct CountdownView: View {
     @Bindable private var countdown: Countdown

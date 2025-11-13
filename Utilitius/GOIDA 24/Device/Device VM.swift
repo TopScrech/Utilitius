@@ -1,5 +1,5 @@
 #if canImport(CoreNFC)
-import ScrechKit
+import SwiftUI
 import CoreNFC
 import NearbyInteraction
 

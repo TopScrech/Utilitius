@@ -1,4 +1,4 @@
-import ScrechKit
+import SwiftUI
 
 final class UIEmojiTextField: UITextField {
     override func awakeFromNib() {
@@ -65,7 +65,7 @@ struct EmojiTextField: UIViewRepresentable {
         }
         
         func textFieldDidChangeSelection(_ textField: UITextField) {
-            main { [weak self] in
+            DispatchQueue.main.async { [weak self] in
                 self?.parent.text = textField.text ?? ""
             }
         }

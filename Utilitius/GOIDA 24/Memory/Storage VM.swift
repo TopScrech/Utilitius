@@ -1,4 +1,4 @@
-import ScrechKit
+import Foundation
 
 @Observable
 final class StorageVM {
