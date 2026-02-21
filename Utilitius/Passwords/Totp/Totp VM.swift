@@ -5,8 +5,8 @@ import SwiftOTP
 final class TotpVM {
     let secret: String
     
-    var otpTimer: Timer?
-    var secondTimer: Timer?
+    var otpTimer: Foundation.Timer?
+    var secondTimer: Foundation.Timer?
     var code = ""
     
     var timeRemaining = 30.0
@@ -23,7 +23,7 @@ final class TotpVM {
     }
     
     private func startSecondTimer() {
-        secondTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
+        secondTimer = Foundation.Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             self?.timeRemaining = self?.calculateTimeRemaining() ?? 30
         }
         
@@ -59,7 +59,7 @@ final class TotpVM {
         let timeToNextInterval = timeRemaining
         
         DispatchQueue.main.asyncAfter(deadline: .now() + timeToNextInterval) {
-            self.otpTimer = Timer.scheduledTimer(
+            self.otpTimer = Foundation.Timer.scheduledTimer(
                 timeInterval: 30,
                 target: self,
                 selector: #selector(self.updateOTP),

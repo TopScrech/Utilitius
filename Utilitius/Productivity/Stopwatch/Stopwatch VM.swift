@@ -34,7 +34,7 @@ final class StopwatchVM {
     func start() {
         isRunning = true
         
-        cancellable = Timer.publish(every: 0.01, on: .main, in: .common)
+        cancellable = Foundation.Timer.publish(every: 0.01, on: .main, in: .common)
             .autoconnect()
             .sink { _ in
                 self.timeElapsed += 0.01

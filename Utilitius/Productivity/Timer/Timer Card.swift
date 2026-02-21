@@ -8,9 +8,9 @@ struct TimerCard: View {
     }
     
     @State private var currentTime = Date()
-    @State private var timer = Timer.publish(
+    @State private var timer = Foundation.Timer.publish(
         every: 1,
-        on: .main,
+        on: RunLoop.main,
         in: .default
     ).autoconnect()
     
