@@ -15,11 +15,11 @@ struct GoidaCameraView: View {
             }
 #endif
             Section("Front Camera") {
-                ListParam("Max Photo Resolution", param: vm.frontMaxPhotoResolution)
+                LabeledContent("Max Photo Resolution", value: vm.frontMaxPhotoResolution)
                 
-                ListParam("Apperture", param: vm.frontApperture)
+                LabeledContent("Apperture", value: vm.frontApperture)
                 
-                ListParam("Optical Stabilization", param: vm.frontOpticalStabilization)
+                LabeledContent("Optical Stabilization", value: vm.frontOpticalStabilization)
             }
         }
         .navigationTitle("Camera")

@@ -7,14 +7,14 @@ struct Goida_Memory_View: View {
     var body: some View {
         List {
             Section("Storage") {
-                ListParam("Total storage", param: storage.total)
-                ListParam("Available storage", param: storage.available)
+                LabeledContent("Total storage", value: storage.total)
+                LabeledContent("Available storage", value: storage.available)
             }
             
             Section("RAM") {
-                ListParam("Total RAM", param: formatBytes(memory.totalMemory, countStyle: .memory))
-                ListParam("Used RAM", param: formatBytes(memory.usedMemory, countStyle: .memory))
-                ListParam("Free RAM", param: formatBytes(memory.freeMemory, countStyle: .memory))
+                LabeledContent("Total RAM", value: formatBytes(memory.totalMemory, countStyle: .memory))
+                LabeledContent("Used RAM", value: formatBytes(memory.usedMemory, countStyle: .memory))
+                LabeledContent("Free RAM", value: formatBytes(memory.freeMemory, countStyle: .memory))
             }
         }
         .navigationTitle("Memory")

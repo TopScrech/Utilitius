@@ -10,8 +10,8 @@ struct Goida_Sensors_View: View {
     var body: some View {
         List {
             Section("Location") {
-                ListParam("Latitude", param: String(location.latitude))
-                ListParam("Longitude", param: String(location.longitude))
+                LabeledContent("Latitude", value: String(location.latitude))
+                LabeledContent("Longitude", value: String(location.longitude))
                 
                 HStack {
                     Text("True heading")
@@ -29,27 +29,27 @@ struct Goida_Sensors_View: View {
             }
             
             Section("Rotation") {
-                ListParam("Roll", param: orientation.roll)
-                ListParam("Pitch", param: orientation.pitch)
-                ListParam("Yaw", param: orientation.yaw)
-                ListParam("Orientation", param: orientation.orientation)
+                LabeledContent("Roll", value: orientation.roll)
+                LabeledContent("Pitch", value: orientation.pitch)
+                LabeledContent("Yaw", value: orientation.yaw)
+                LabeledContent("Orientation", value: orientation.orientation)
             }
             
             Section("Acceleration") {
-                ListParam("X Axis", param: orientation.x)
-                ListParam("Y Axis", param: orientation.y)
-                ListParam("Z Axis", param: orientation.z)
+                LabeledContent("X Axis", value: orientation.x)
+                LabeledContent("Y Axis", value: orientation.y)
+                LabeledContent("Z Axis", value: orientation.z)
             }
             
             Section("Altimeter") {
-                ListParam("Pressure", param: pressure.pressureKilo)
-                ListParam("Relative altitude", param: altitude.relativeAltitude)
-                ListParam("Absolute altitude", param: altitude.absoluteAltitude)
+                LabeledContent("Pressure", value: pressure.pressureKilo)
+                LabeledContent("Relative altitude", value: altitude.relativeAltitude)
+                LabeledContent("Absolute altitude", value: altitude.absoluteAltitude)
             }
             
             Section("Motion coprocessor") {
-                ListParam("Activity", param: activity.activity)
-                ListParam("Confidence", param: activity.confidence)
+                LabeledContent("Activity", value: activity.activity)
+                LabeledContent("Confidence", value: activity.confidence)
             }
         }
         .numericTransition()
