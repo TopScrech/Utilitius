@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 90;
+	objectVersion = 100;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -692,7 +692,7 @@
 				F3A43DAF2AE3B64F0072F7FA /* XCRemoteSwiftPackageReference "AlertKit" */,
 				F3E1BDEE2AEAC5C600E78037 /* XCRemoteSwiftPackageReference "SwiftOTP" */,
 			);
-			preferredProjectObjectVersion = 90;
+			preferredProjectObjectVersion = 100;
 			productRefGroup = F3CAAB9C2A60B9F7000B2495 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
