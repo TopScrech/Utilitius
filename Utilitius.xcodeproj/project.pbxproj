@@ -1478,8 +1478,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F39504F12AC0B21400B50018 /* XCRemoteSwiftPackageReference "YouTubeKit" */ = {
@@ -1494,8 +1494,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/SafariCover";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F3A43DAF2AE3B64F0072F7FA /* XCRemoteSwiftPackageReference "AlertKit" */ = {
@@ -1518,8 +1518,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/MailCover";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		F3E1BDEE2AEAC5C600E78037 /* XCRemoteSwiftPackageReference "SwiftOTP" */ = {
