@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 100;
+	objectVersion = 110;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -153,6 +153,7 @@
 		F3D296172AF3C70400ED43A0 /* Reminder Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder Card.swift"; sourceTree = "<group>"; };
 		F3DAB30E2AD96D5F00B8462C /* Stopwatch Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch Parent.swift"; sourceTree = "<group>"; };
 		F3DAB3102AD96E4600B8462C /* Stopwatch Laps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stopwatch Laps.swift"; sourceTree = "<group>"; };
+		F3ED4B4130573DF000B6F884 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -441,6 +442,7 @@
 			isa = PBXGroup;
 			children = (
 				F3865BED2BBA2A31005E82D4 /* APDU.swift */,
+				F3ED4B4130573DF000B6F884 /* AGENTS.md */,
 				F3B1B30E2F49C16500AA5AD3 /* Utilitius */,
 				F3A1F4582AD92D2D00C85355 /* Utilitius watchOS */,
 				F3A8436D2B8C0BB30068AC2A /* Utilitius macOS */,
@@ -692,7 +694,7 @@
 				F3A43DAF2AE3B64F0072F7FA /* XCRemoteSwiftPackageReference "AlertKit" */,
 				F3E1BDEE2AEAC5C600E78037 /* XCRemoteSwiftPackageReference "SwiftOTP" */,
 			);
-			preferredProjectObjectVersion = 100;
+			preferredProjectObjectVersion = 110;
 			productRefGroup = F3CAAB9C2A60B9F7000B2495 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
