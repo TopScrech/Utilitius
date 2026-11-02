@@ -15,6 +15,20 @@
   "packages": [
     {
       "kind": "remote",
+      "repository": "https://github.com/TopScrech/swift-update.git",
+      "version": {
+        "up-to-next-major-version": "1.1.2"
+      }
+    },
+    {
+      "kind": "remote",
+      "repository": "https://github.com/SimplyDanny/SwiftLintPlugins",
+      "version": {
+        "up-to-next-major-version": "0.65.1"
+      }
+    },
+    {
+      "kind": "remote",
       "repository": "https://github.com/TopScrech/MailCover",
       "version": {
         "up-to-next-major-version": "1.0.0",
@@ -58,6 +72,9 @@
     },
   ],
   "files": [
+    {
+      "path": ".swiftlint.yml"
+    },
     { "path": "APDU.swift", "target-membership": [ "Utilitius/compile-sources" ] },
     { "path": "AGENTS.md" },
     {
@@ -253,6 +270,12 @@
       "kind": "group",
       "name": "Products",
       "children": [
+        {
+          "path": "<PRODUCTS>/Package Update Tools.bundle",
+          "id": "A2517C74C33968B2597F74C2",
+          "type": "wrapper.cfbundle",
+          "index": false
+        },
         { "path": "<PRODUCTS>/Utilitius.app", "id": "F3CAAB9B2A60B9F7000B2495", "type": "wrapper.application", "index": false },
         { "path": "<PRODUCTS>/UtilitiusTests.xctest", "id": "F3CAABAF2A60B9FA000B2495", "type": "wrapper.cfbundle", "index": false },
         { "path": "<PRODUCTS>/UtilitiusUITests.xctest", "id": "F3CAABB92A60B9FA000B2495", "type": "wrapper.cfbundle", "index": false },
@@ -271,6 +294,62 @@
   ],
   "targets": [
     {
+      "name": "Package Update Tools",
+      "id": "ED2535718808B20E88EE5B83",
+      "product": "id:A2517C74C33968B2597F74C2",
+      "build-phases": [],
+      "product-type": "bundle",
+      "dependencies": [
+        {
+          "kind": "package",
+          "package": "swift-update",
+          "product-name": "swift-update"
+        }
+      ],
+      "build-settings": {
+        "SDKROOT": "macosx",
+        "SUPPORTED_PLATFORMS": "macosx",
+        "MACOSX_DEPLOYMENT_TARGET": "13.0",
+        "CODE_SIGNING_ALLOWED": "NO",
+        "GENERATE_INFOPLIST_FILE": "YES",
+        "PRODUCT_BUNDLE_IDENTIFIER": "dev.topscrech.Utilitius.PackageUpdateTools",
+        "PRODUCT_NAME": "Package Update Tools",
+        "SKIP_INSTALL": "YES"
+      }
+    },
+    {
+      "name": "Check Package Updates",
+      "id": "191BEFFF1BC744D438F2B00C",
+      "kind": "aggregate",
+      "dependencies": [
+        "Package Update Tools"
+      ],
+      "build-phases": [
+        {
+          "kind": "script",
+          "name": "Check Package Updates",
+          "run-on-every-build": true,
+          "shell": "/bin/sh",
+          "script": "\"$BUILT_PRODUCTS_DIR/swift-update\" --xcode --path \"$PROJECT_FILE_PATH\" || true"
+        }
+      ],
+      "build-settings": {
+        "ENABLE_USER_SCRIPT_SANDBOXING": "NO",
+        "SDKROOT": "macosx",
+        "SKIP_INSTALL": "YES",
+        "SUPPORTED_PLATFORMS": "macosx"
+      }
+    },
+    {
+      "dependencies": [
+        "Check Package Updates",
+        {
+          "kind": "package",
+          "package": "SwiftLintPlugins",
+          "product-name": "SwiftLintBuildToolPlugin",
+          "product-type": "build-tool-plugin"
+        }
+      ],
       "name": "Utilitius",
       "id": "F3CAAB9A2A60B9F7000B2495",
       "product": "Products/Utilitius.app",
@@ -370,6 +449,15 @@
         "TARGETED_DEVICE_FAMILY": "1,3",
       },
     }, {
+      "dependencies": [
+        "Check Package Updates",
+        {
+          "kind": "package",
+          "package": "SwiftLintPlugins",
+          "product-name": "SwiftLintBuildToolPlugin",
+          "product-type": "build-tool-plugin"
+        }
+      ],
       "name": "watchOS",
       "id": "F3A1F4532AD92D2D00C85355",
       "product": "Products/watchOS.app",
@@ -413,6 +501,15 @@
         "WATCHOS_DEPLOYMENT_TARGET": "10.0",
       },
     }, {
+      "dependencies": [
+        "Check Package Updates",
+        {
+          "kind": "package",
+          "package": "SwiftLintPlugins",
+          "product-name": "SwiftLintBuildToolPlugin",
+          "product-type": "build-tool-plugin"
+        }
+      ],
       "name": "visionOS",
       "id": "F30F20872B6D076900D95589",
       "product": "Products/visionOS.app",
@@ -453,6 +550,15 @@
         "VALIDATE_PRODUCT[config=Release]": "YES",
       },
     }, {
+      "dependencies": [
+        "Check Package Updates",
+        {
+          "kind": "package",
+          "package": "SwiftLintPlugins",
+          "product-name": "SwiftLintBuildToolPlugin",
+          "product-type": "build-tool-plugin"
+        }
+      ],
       "name": "macOS",
       "id": "F3A8436B2B8C0BB30068AC2A",
       "product": "Products/macOS.app",
@@ -505,6 +611,15 @@
         "SWIFT_VERSION": "5.0",
       },
     }, {
+      "dependencies": [
+        "Check Package Updates",
+        {
+          "kind": "package",
+          "package": "SwiftLintPlugins",
+          "product-name": "SwiftLintBuildToolPlugin",
+          "product-type": "build-tool-plugin"
+        }
+      ],
       "name": "Utilitius Launcher",
       "id": "F3A843962B8C17C10068AC2A",
       "product": "Products/Utilitius Launcher.app",
@@ -549,6 +664,13 @@
       "product-type": "bundle.unit-test",
       "test-host-target": "Utilitius",
       "dependencies": [
+        "Check Package Updates",
+        {
+          "kind": "package",
+          "package": "SwiftLintPlugins",
+          "product-name": "SwiftLintBuildToolPlugin",
+          "product-type": "build-tool-plugin"
+        },
         "Utilitius",
       ],
       "build-phases": [
@@ -588,6 +710,13 @@
       "product-type": "bundle.ui-testing",
       "test-host-target": "Utilitius",
       "dependencies": [
+        "Check Package Updates",
+        {
+          "kind": "package",
+          "package": "SwiftLintPlugins",
+          "product-name": "SwiftLintBuildToolPlugin",
+          "product-type": "build-tool-plugin"
+        },
         "Utilitius",
       ],
       "build-phases": [
